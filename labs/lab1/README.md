@@ -64,22 +64,21 @@
 
 ## Running a Sopel bot
 
-* type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
-    I can't seem to find the configuration file, so let's generate it!
----
-    Please answer the following questions to create your configuration file:
+Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
+>    I can't seem to find the configuration file, so let's generate it!
+>    Please answer the following questions to create your configuration file:
+>
+>    Enter the nickname for your bot. [Sopel] ssamotbot
+>    Enter the server to connect to. [irc.dftba.net] irc.freenode.net
+>    Should the bot connect with SSL? (y/n) [n] y
+>    Enter the port to connect on. [6697]
+>    Enter your own IRC name (or that of the bot's owner) ssamotbot
+>    Enter the channels to connect to at startup, separated by commas. []
+>    ? #ce888
+>    ?
+>    Would you like to see if there are any modules that need configuring (y/n)? [n]
+>    Config file written sucessfully!
 
-    Enter the nickname for your bot. [Sopel] ssamotbot
-    Enter the server to connect to. [irc.dftba.net] irc.freenode.net
-    Should the bot connect with SSL? (y/n) [n] y
-    Enter the port to connect on. [6697]
-    Enter your own IRC name (or that of the bot's owner) ssamotbot
-    Enter the channels to connect to at startup, separated by commas. []
-    ? #ce888
-    ?
-    Would you like to see if there are any modules that need configuring (y/n)? [n]
-    Config file written sucessfully!
----
 
 * Once you have reached this point, press ctrl+c to exit (once the bot is connected)
 * Configure sopel modules to point the current directory
@@ -97,25 +96,24 @@
 	* Obviously create the directory if it doesn't exist 
 
 
-## Lab Exercices
-* Create a pycharm project in the remote directory of your labs
-* I will tell everyone what to comment on in the IRC channel!
+## Lab Exercises
+- [ ] Create a pycharm project in the remote directory of your labs
+- [ ] I will tell everyone what to comment on in the IRC channel!
 	* You will need to type messages from time to time as the lab progresses
-* Using the emotion detector, find the average of each emotion present in the comments
+- [ ] Using the emotion detector, find the average of each emotion present in the comments
 	* Add the emotions for each message
 	* Divide by the number of emotions by the number of messages received 
 	* Also find the average of each emotion for each nick!
-* Print the results every time a new comment is entered and it contains some new emotional information
-* Find the rolling average for each emotion
+- [ ] Print the results every time a new comment is entered and it contains some new emotional information
+- [ ] Find the rolling average for each emotion
 	* Calculate rolling average as ``ave = ave + a * (emotion -ave)``
 	* Set `a = 0.01`
 	* Find the average emotion for each nick as well
-* Once you are done, save your changes in github
+- [ ] Once you are done, save your changes in github
 	* Go inside your lab directory and do 
       * ``git add -a -V``
       * ``git commit -m <message>``
       * ``git push origin master``
-	
 
 
 
