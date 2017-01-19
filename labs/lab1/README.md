@@ -66,17 +66,28 @@
 
 Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 >    I can't seem to find the configuration file, so let's generate it!
+>
 >    Please answer the following questions to create your configuration file:
 >
+>
 >    Enter the nickname for your bot. [Sopel] ssamotbot
+>
 >    Enter the server to connect to. [irc.dftba.net] irc.freenode.net
+>
 >    Should the bot connect with SSL? (y/n) [n] y
+>
 >    Enter the port to connect on. [6697]
+>
 >    Enter your own IRC name (or that of the bot's owner) ssamotbot
+>
 >    Enter the channels to connect to at startup, separated by commas. []
+>
 >    ? #ce888
+>
 >    ?
+>
 >    Would you like to see if there are any modules that need configuring (y/n)? [n]
+>
 >    Config file written sucessfully!
 
 
