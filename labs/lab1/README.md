@@ -65,8 +65,8 @@
 ## Running a Sopel bot
 
 * type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
-```   I can't seem to find the configuration file, so let's generate it!
-
+    I can't seem to find the configuration file, so let's generate it!
+---
     Please answer the following questions to create your configuration file:
 
     Enter the nickname for your bot. [Sopel] ssamotbot
@@ -79,7 +79,7 @@
     ?
     Would you like to see if there are any modules that need configuring (y/n)? [n]
     Config file written sucessfully!
-```
+---
 
 * Once you have reached this point, press ctrl+c to exit (once the bot is connected)
 * Configure sopel modules to point the current directory
