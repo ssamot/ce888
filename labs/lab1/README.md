@@ -28,6 +28,7 @@
 ## Creating a github account and CE888 project
 * Got to [www.github.com](www.github.com)
 * Create an account (if you don't have one already)
+* You can request a student account to get private repos if you want
 * Create a new project called `ce888labs`
 	* Set the .gitignore to python
 	* Add a default README.md
@@ -41,7 +42,7 @@
 * Login to IRC: [https://kiwiirc.com/client](https://kiwiirc.com/client)
 * Use your username
 * set `#ce888` for the channel name
-* Type some random stuff one you are in
+* Type some random stuff once you are in
 	
 
 
