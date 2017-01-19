@@ -30,9 +30,10 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 Labs are every **Fridays 15:00-18:00, CES Lab 3**. Labs are assessed and they should be completed either in class or later on. 
 
 Please download the lab Virtual Machine from here: [MLVM Virtual Machine](https://docs.google.com/uc?id=0B_kDfEzMuWD6ZGJFU1VfeEY3TnM&export=download)
+All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](https://github.com/ssamot/ce888/tree/master/labs/)
 
+* <a id="lab1"></a> [Lab 1: VM Setup and simple emotional detection](https://github.com/ssamot/ce888/tree/master/labs/lab1)
 <!--
-* [Lab 1: Hello World and beyond](./labs/lab1/01-labs.html)
 * [Lab 2: Lights On!](./labs/lab2/02-labs.html)
 * [Lab 3: Lights On Continued...!](./labs/lab3/03-labs.html)
 * [Lab 4: Lights On with Custom Dialogs!](./labs/lab4/04-labs.html)
