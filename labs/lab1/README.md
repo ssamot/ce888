@@ -108,8 +108,8 @@ Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 
 
 ## Lab Exercises
-- [ ] Create a pycharm project in the remote directory of your labs
-- [ ] I will tell everyone what to comment on in the IRC channel!
+- [ ] Create a pycharm project in the remote directory of your labs. You will need to modify `bot.py`
+- [ ] I will tell everyone what to comment in the IRC channel!
 	* You will need to type messages from time to time as the lab progresses
 - [ ] Using the emotion detector, find the average of each emotion present in the comments
 	* Add the emotions for each message

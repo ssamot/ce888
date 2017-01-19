@@ -10,12 +10,12 @@ pandoc tmp.md -o index.html --template template.html --toc --toc-depth 2
 
 
 #for lec_name in "01-Introduction" "02-Layout" "03-Lifecycles" "04-Fragmenu.md" "05-Sensors" "06-Threads.md" "07-Persistance"
-for lec_name in "01-Introduction"
-	do
-	echo Building slides for lecture $lec_name
-	pandoc  --slide-level 2 --template=custom.beamer -V theme=bjeldbak -V linkcolor=blue --toc -t beamer $lec_name.md -o ./slides/$lec_name-slides.pdf
-	pdfnup ./slides/$lec_name-slides.pdf -q --nup 2x2 --noautoscale false --delta "0.2cm 0.3cm" --frame true --scale 0.95 -o ./slides/$lec_name-handouts.pdf
-done
+# for lec_name in "01-Introduction"
+# 	do
+# 	echo Building slides for lecture $lec_name
+# 	pandoc  --slide-level 2 --template=custom.beamer -V theme=bjeldbak -V linkcolor=blue --toc -t beamer $lec_name.md -o ./slides/$lec_name-slides.pdf
+# 	pdfnup ./slides/$lec_name-slides.pdf -q --nup 2x2 --noautoscale false --delta "0.2cm 0.3cm" --frame true --scale 0.95 -o ./slides/$lec_name-handouts.pdf
+# done
 
 
 #for lab_name in "1" "2" "3" "4" "5" "6" "7" "8"
