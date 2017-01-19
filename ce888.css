@@ -1,0 +1,41 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.navbar.navbar-default {
+background: url("graphics/banner4.png") repeat;
+background-color: #FFFFFF;
+
+}
+
+.dropdown-menu { background-color: #FFFFFF}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar.navbar-default .navbar-brand { color: #121212}
+.navbar.navbar-default .navbar-brand:hover { color: #121212}
+.navbar.navbar-default .navbar-nav>li>a { color: #000f89}
+.navbar.navbar-default .navbar-nav>li>a:hover, .navbar.navbar-default .navbar-nav>li>a:focus { color: #000f89}
+.navbar.navbar-default .navbar-nav>.active>a,.navbar.navbar-default .navbar-nav>.open>a, .navbar.navbar-default .navbar-nav>.open>a:hover, .navbar.navbar-default .navbar-nav>.open>a:focus { color: #000f89}
+.navbar.navbar-default .navbar-nav>.active>a:hover, .navbar.navbar-default .navbar-nav>.active>a:focus { color: #000f89}
+.dropdown-menu>li>a { color: #000f89}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #000f89}
+.navbar.navbar-default .navbar-nav>.dropdown>a .caret { border-top-color: #121212}
+.navbar.navbar-default .navbar-nav>.dropdown>a:hover .caret { border-top-color: #121212}
+.navbar.navbar-default .navbar-nav>.dropdown>a .caret { border-bottom-color: #121212}
+.navbar.navbar-default .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #121212}
+
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
