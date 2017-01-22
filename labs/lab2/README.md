@@ -1,0 +1,3 @@
+bootstrap
+permutation
+cross-validation

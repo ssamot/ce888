@@ -15,6 +15,10 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 1. [Lecture 1: Introduction](./slides/01-Introduction-slides.pdf), [Handouts](./slides/01-Introduction-handouts.pdf) 
 
+<a id="lec2"></a> 
+
+2. [Lecture 2: Summary and resampling statistics](./slides/02-Stats-Slides.pdf), [Handouts](./slides/02-Stats-handouts.pdf) 
+
 
 <!--
 * [Lecture 2: Testing, Layouts (and dynamic view switching)](./slides/02-Layout-slides.pdf), [Handouts](./slides/02-Layout-handouts.pdf)
@@ -37,7 +41,7 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab1"></a>
 
-1. [Lab 1: VM Setup and simple emotional detection](https://github.com/ssamot/ce888/tree/master/labs/lab1) 
+1. [Lab 1: VM setup and simple emotion detection](https://github.com/ssamot/ce888/tree/master/labs/lab1) 
 
 <!--
 * [Lab 2: Lights On!](./labs/lab2/02-labs.html)
@@ -87,6 +91,17 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Breiman, Leo. "Statistical modeling: The two cultures (with comments and a rejoinder by the author)." Statistical Science 16.3 (2001): 199-231.](http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726%20)
 
 [Anderson, Philip W. "More is different." Science 177.4047 (1972): 393-396.](https://www.tkm.kit.edu/downloads/TKM1_2011_more_is_different_PWA.pdf)
+
+
+**Lecture 2**
+
+[Efron, Bradley, and Robert J. Tibshirani. An introduction to the bootstrap. CRC press, 1994.](http://cds.cern.ch/record/526679/files/0412042312_TOC.pdf)
+
+[Jake VanderPlas, Python Data Science Handbook Essential Tools for Working with Data 2016. O'Reilly Media, 2016](https://github.com/jakevdp/PythonDataScienceHandbook)
+
+[Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. "False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant." Psychological science 22.11 (2011): 1359-1366.](http://www.haas.berkeley.edu/groups/online_marketing/facultyCV/papers/nelson_false-positive.pdf)
+
+[Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.](tps://www.jstor.org/stable/2685796)
 
 ### People
 * Module Supervisor: *Spyros Samothrakis*, <ssamot@essex.ac.uk>

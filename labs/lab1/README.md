@@ -123,7 +123,7 @@ Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 	* Find the average emotion for each nick as well
 - [ ] Once you are done, save your changes in github
 	* Go inside your lab directory and do 
-      * ``git add -a -V``
+      * ``git add -A -v``
       * ``git commit -m <message>``
       * ``git push origin master``
 
