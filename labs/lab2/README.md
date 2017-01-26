@@ -7,10 +7,12 @@ Overleaf is an online latex typesetting system. You will need it to create the p
 Go here [www.overleaf.com](www.overleaf.com) and create an account and a new document.
 
 ## Setting up 
+* Do the following from the unix prompt of your VM
+	* Go to the directory you "cloned" the module files last time
+	* Do `git pull origin master' to bring the new files
 
-* Do the following tasks using your windows share or your unix account in the VM
-	* Go to the directory you "cloned" the course last time
-	* Copy the lab files into your own github account "lab2" folder
+* Do the following tasks using your windows share or your unix account in the VM	
+	* Copy the lab files from the module directory into your own github lab directory, in "lab2" folder
 	* Remove everything from the copied README.md
 
 ## Histogram and Scaterplot
@@ -32,7 +34,9 @@ The business analysts come up a super-complicated comparison algorithm that requ
 - [ ] Find the upper and lower bound of the standard deviation of the current fleet
 - [ ] Do the same with the new fleet
 - [ ] Are the standard deviations comparable? 
+
 ## Present the analysis
+
 - [ ] Write a very small text on what you did in your README.md. Include the generated plots as below 
 
 '''
