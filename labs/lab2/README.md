@@ -39,12 +39,12 @@ The business analysts come up a super-complicated comparison algorithm that requ
 
 - [ ] Write a very small text on what you did in your README.md. Include the generated plots as below 
 
-'''
+~~~markdown
 
 ![logo](./scaterplot.png?raw=true)
 
 
-'''
+~~~
 
 - [ ] Write a very small text description of the analysis in overleaf, download the pdf and put in in github alongside the rest of your lab2 
 
