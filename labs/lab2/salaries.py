@@ -48,7 +48,7 @@ if __name__ == "__main__":
 	sns_plot2 = sns.distplot(data, bins=20, kde=False, rug=True).get_figure()
 
 	axes = plt.gca()
-	axes.set_xlabel('Sales in Million Dollars') 
+	axes.set_xlabel('Millons of pounds in sales') 
 	axes.set_ylabel('Sales count')
 
 	sns_plot2.savefig("histogram.png",bbox_inches='tight')

@@ -11,9 +11,8 @@
 ## Summary statistics and resampling statistics
 
 * Today we are going to discuss summary statistics and resampling statistics
-	* Summary statistics try to capture the "essence" of a set of observations
-	* Resampling statistics try to find out how if we can "trust" a parameter we inferred from the observations
-		* If we re-did the sampling, would we still found out the same thing? 
+	* Summary statistics try to capture the "essence" of a set of observations (the sample)
+	* Resampling statistics create different samples from the original sample in order to gain further insights 
 * Resampling statistics are far more intuitive to understand then using t-tests (I think...)
 
 
@@ -21,7 +20,7 @@
 # Summary statistics
 
 ## An example problem
-* Let's say that a journalist was tasked with finding the salaries of a bigger corporation
+* Let's say that a journalist was tasked with finding the salaries of a business
 * But could only find through friends and acquaintances the salaries of certain employees
 
 
@@ -201,8 +200,8 @@ Note that there are tons of other summary statistics, this is practically for il
 ## Are we confident we got the right mean?
 * How confident should the journalist or the analyst be about their summary statistics?
 * If they sampled another 14 days, maybe the sale numbers would be completely different?
-* We if possible we would like to build something termed "confidence intervals" (CI)
-	* Get a measure of "If I do this sampling process a lot of times, how many of them would I actually see a certain range "
+* We would like to build some notion of "confidence intervals" (CI)
+	* Get a measure of "If I do this sampling process over and over again, what would I expect to be seeing?"
 * We are going to take the above statement seriously
 	* And introduce the bootstrap!
 
@@ -219,8 +218,8 @@ Note that there are tons of other summary statistics, this is practically for il
 
 
 ## Bootstrapping (1)
-* Ideally, so that we can find our confidence interval we would sample from the population
-	* i.e. the journalist would go over to a different set of friends (possibly interloping)
+* Ideally, we could possibly sample again and again from the population 
+	* i.e. the journalist would go over to a different set of friends 
 	* Ask them to get her some salaries
 	* Repeat
 * Once we have a collection of different means we can say that a mean will fall within a certain range with a 
@@ -286,21 +285,21 @@ $X^B = {X^B_8, X_3^B , X^4_2, X^1_4...}$
 
 ## What can we say about the means now? 
 
-* Salaries mean is 
-* Sales mean is
+* Salaries mean is... 
+* Sales mean is...
 * We can do bootstrap to estimate *any* quantity we want as long as the distribution has a defined variance and mean
 	* i.e. not always
 * But for most practical matters, yes
-* No need for any other test
+
 
 ## Data bias
 
 
-* I have described a very biased process of collecting samples above
+* I have described a very biased process of collecting samples
 	* The journalist asked her friends 
 	* All her friends love football
 	* What he might actually have learned is the salary of football loving employees
-* How about the sales? 
+* How about the sales figures? 
 	* Was there anything extra-ordinary on the day these measurements where taken?
 	* Maybe it was Christmas
 * Be very careful to randomise properly, and if not at least take care to state your bias
@@ -314,7 +313,7 @@ $X^B = {X^B_8, X_3^B , X^4_2, X^1_4...}$
 ## A/B Testing
 * Suppose you had two versions of a website
 	* and you would like to check if the newer version is better
-* Two version of an e-mail
+* Two versions of an e-mail
 	* and you would like to check if the newer, fancier version is better
 * A new drug
 	* and you would like to see if it actually cures
@@ -323,11 +322,12 @@ $X^B = {X^B_8, X_3^B , X^4_2, X^1_4...}$
 
 ## Hypothesis testing
 * Same as A/B testing
+* Not just limited to binary cases
 * The name people used to call the same procedure when testing for
 	* Drug effects
 	* Physical effects
 	* Quality management
-* A lot of Data science concepts are just "re-imigani
+* A lot of Data science concepts are just "re-imaginings"
 
 
 ## Example problem
@@ -360,11 +360,13 @@ Should they change?
 
 ## Hypothesis forming
 
-$H_0$: The two e-mails make no difference (their means are equal) - this is called the *null* hypothesis
+$H_0$: The two e-mails have no difference (their means are equal) - this is called the *null* hypothesis
 
 $H_1$: The second e-mail is better,and thus has a higher mean
 
 * Set $\alpha = 0.05$, or equivalently the $95\%$ CI $t_{obs}$ does not contain $H_1$
+
+* The CI of $H_0$ does not contain $H_1$
 
 * What is the probability of observing something as extreme as we just observed by pure chance?
 
@@ -459,8 +461,8 @@ $t_{obs} = \mu_{new} - \mu_{old} =  0.19$
 
 ## Errors
 
-* Type I error: Rejecting $H_0$ even though it is true
-* Type II error: Failing to reject $H_0$ even though it is false  
+* Type I error: rejecting $H_0$ even though it is true
+* Type II error: failing to reject $H_0$ even though it is false  
 
 \tiny
 
@@ -469,22 +471,27 @@ $t_{obs} = \mu_{new} - \mu_{old} =  0.19$
 |Reject $H_0$| Type I error (false positive) | Correct Inference             |
 |Fail to reject $H_0$| Correct inference             | Type II error (false negative) |
 
-## Specificity and Sensitivity 
+## Specificity 
 
-*  Specificity refers to the level we set $\alpha$
-	* $\alpha$ is "false positive rate"
-	* The higher, the more susceptible the test is to Type I errors
-	* Think of this as raising false alarms
-* Sensitivity refers to another parameter, which we haven't set at all for now, called $\beta$
-	* $\beta$ is "false negative rate"
-	* The higher it is, the more we are bound to do Type II errors
-	* Think of this as failure to detect a phenomenon
+* False positive rate refers to the level we set $\alpha$
+* $1 - \alpha$ is the *specificity* of the test, the proportion of true negatives
+* The higher, the more susceptible the test is to Type I errors
+* Think of this as raising false alarms
+
+## Sensitivity 
+
+
+* False negative rate refers to another parameter, which we haven't set at all for now, called $\beta$
+* $1-\beta$ is the *sensitivity* or power of a test / the ratio of true positives
+* The higher it is, the more we are bound to do Type II errors
+* Think of this as failure to detect a phenomenon
+* It is indirectly influenced by effect size and sample size 
 	
 * "Surely you only need one of them!" (No!)
 
 ## Power analysis
 
-* A question that would naturally rise up is how many samples do we need to collect if we are to perform a study within a certain error
+* A question that would naturally rise up is how many samples do we need to collect, if we are to perform a study within a certain error
 * No easy solution
 * In practice, sample as much as you can
 * See previous studies in the literature
@@ -528,6 +535,6 @@ measures be combined or transformed or both?"
 * Cross validation? 
 * Real life problems (usually) have more data and are more noisy
 	* But you can send e-mails, get clicks etc. trivially
-* If there is one think to keep from this lecture is the use of bootstrapping to learn parameter confidence intervals
+* If there is one thing to keep from this lecture is the use of bootstrapping to learn parameter confidence intervals
 	* We will use bootstrap later on this module when we are going to model things
 
