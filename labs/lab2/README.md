@@ -30,7 +30,7 @@ A business is looking at changing their current vehicle fleet and replacing thei
 The business analysts come up a super-complicated comparison algorithm that requires the standard deviation bounds to in order to say which fleet is better. 
 
 - [ ] Find the standard deviation of both samples
-* Use the example code for the bootstrap provided above to do the following
+Use the example code for the bootstrap provided above to do the following
 - [ ] Find the upper and lower bound of the standard deviation of the current fleet
 - [ ] Do the same with the new fleet
 - [ ] Are the standard deviations comparable? 
