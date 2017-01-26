@@ -8,8 +8,9 @@ Go here [www.overleaf.com](www.overleaf.com) and create an account
 
 ## Histogram and Scaterplot
 
+df
 
-[logo]:(./blob/master/scaterplot.png)
+![logo](./blob/master/scaterplot.png)
 
 ## Variance comparison via the boostrap
 
