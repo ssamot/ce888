@@ -4,7 +4,7 @@
 
 Overleaf is an online latex typesetting system. You will need it to create the project for this module. 
 
-Go here [www.overleaf.com](www.overleaf.com) and create an account and a new document.
+Go to [www.overleaf.com](https://www.overleaf.com) and create an account and a new document.
 
 ## Setting up 
 * Do the following from the unix prompt of your VM
@@ -40,7 +40,10 @@ The business analysts come up a super-complicated comparison algorithm that requ
 - [ ] Write a very small text on what you did in your README.md. Include the generated plots as below 
 
 '''
+
 ![logo](./scaterplot.png?raw=true)
+
+
 '''
 
 - [ ] Write a very small text description of the analysis in overleaf, download the pdf and put in in github alongside the rest of your lab2 
