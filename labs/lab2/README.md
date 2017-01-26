@@ -10,7 +10,7 @@ Go here [www.overleaf.com](www.overleaf.com) and create an account
 
 df
 
-![logo](./blob/master/scaterplot.png)
+![logo](./scaterplot.png?raw=true)
 
 ## Variance comparison via the boostrap
 
