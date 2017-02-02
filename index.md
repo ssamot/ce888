@@ -19,18 +19,11 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 2. [Lecture 2: Summary and resampling statistics](./slides/02-Stats-Slides.pdf), [Handouts](./slides/02-Stats-handouts.pdf) 
 
+<a id="lec3"></a> 
 
-<!--
-* [Lecture 2: Testing, Layouts (and dynamic view switching)](./slides/02-Layout-slides.pdf), [Handouts](./slides/02-Layout-handouts.pdf)
-* [Lecture 3: Components, Activity Lifecycle and Intents](./slides/03-Lifecycles-slides.pdf), [Handouts](./slides/03-Lifecycles-handouts.pdf)
-* [Lecture 4: Services, Menus, Dialogs and Fragments](./slides/04-Fragmenu-slides.pdf), [Handouts](./slides/04-Fragmenu-handouts.pdf)
-* [Lecture 5: Sensors](./slides/05-Sensors-slides.pdf), [Handouts](./slides/05-Sensors-handouts.pdf)
-* [Lecture 6: Threads and Surface Views](./slides/06-Threads-slides.pdf), [Handouts](./slides/06-Threads-handouts.pdf)
-* [Lecture 7: Persistence](./slides/07-Persistance-slides.pdf), [Handouts](./slides/07-Persistance-handouts.pdf)
-* [Lecture 9: Networking and Publishing](./slides/09-Networks-slides.pdf), [Handouts](./slides/09-Networks-handouts.pdf)
+3. [Lecture 3: Predictive modelling](./slides/03-Modelling-slides.pdf), [Handouts](./slides/03-Modelling-handouts.pdf) 
 
-* [Lecture 10: Publishing](./slides/10-Publishing-slides.pdf), [Handouts](./slides/10-Publishing-handouts.pdf)
--->
+
 
 ### Labs
 Labs are every **Fridays 15:00-18:00, CES Lab 3**. Labs are assessed and they should be completed either in class or later on. 
@@ -43,16 +36,14 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 1. [Lab 1: VM setup and simple emotion detection](https://github.com/ssamot/ce888/tree/master/labs/lab1) 
 
-<!--
-* [Lab 2: Lights On!](./labs/lab2/02-labs.html)
-* [Lab 3: Lights On Continued...!](./labs/lab3/03-labs.html)
-* [Lab 4: Lights On with Custom Dialogs!](./labs/lab4/04-labs.html)
-* [Lab 5: Bubble Game!](./labs/lab5/05-labs.html)
-* [Lab 6: GPS and Threads](./labs/lab6/06-labs.html)
-* [Lab 7: SQ Lite](./labs/lab7/07-labs.html)
-* [Lab 8: Networking](./labs/lab8/08-labs.html)
+<a id="lab2"></a>
 
--->
+2. [Lab 2: Creating plots, overleaf and confidence bounds](https://github.com/ssamot/ce888/tree/master/labs/lab2) 
+
+<a id="lab3"></a>
+
+2. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab2) 
+
 
 
 
@@ -66,16 +57,11 @@ You can use whatever IDE you want for the course, however my proposal would be t
 
 The objective of the module and the main assignment is to produce a Data Science app (i.e. make use of data to generate results, make inferences, present the results to third parties) and write down the description of the methods and the results in a scientific paper. Some ideas for possible apps are provided [here](#assignment-suggestions).
 
-<!--
 
-S
+* Assigments
+	* [Assignment 1](./assignments/ce888-assignment-1.pdf)
 
-* Assigments and Tests
-	* [Assignment 1](./assignments/CE881Assignment1.pdf)
-	* [Assignment 2](./assignments/CE881Assignment2.pdf)
-	* Progress Test [sample](./assignments/sample_progress_test.pdf)
-
--->	
+	
 
 See FASER for exact assignment deadlines. 
 
@@ -97,11 +83,19 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 [Efron, Bradley, and Robert J. Tibshirani. An introduction to the bootstrap. CRC press, 1994.](http://cds.cern.ch/record/526679/files/0412042312_TOC.pdf)
 
-[Jake VanderPlas, Python Data Science Handbook Essential Tools for Working with Data 2016. O'Reilly Media, 2016](https://github.com/jakevdp/PythonDataScienceHandbook)
-
 [Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. "False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant." Psychological science 22.11 (2011): 1359-1366.](http://www.haas.berkeley.edu/groups/online_marketing/facultyCV/papers/nelson_false-positive.pdf)
 
-[Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.](tps://www.jstor.org/stable/2685796)
+[Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.](htps://www.jstor.org/stable/2685796)
+
+**Lecture 3** 
+
+[Jake VanderPlas, Python Data Science Handbook Essential Tools for Working with Data 2016. O'Reilly Media, 2016](https://github.com/jakevdp/PythonDataScienceHandbook)
+
+[Kohavi, Ron. "A study of cross-validation and bootstrap for accuracy estimation and model selection." IJCAI. Vol. 14. No. 2. 1995.](https://pdfs.semanticscholar.org/0be0/d781305750b37acb35fa187febd8db67bfcc.pdf)
+
+[Geman, Stuart, Elie Bienenstock, and René Doursat. "Neural networks and the bias/variance dilemma." Neural computation 4.1 (1992): 1-58.](https://stuff.mit.edu/afs/athena.mit.edu/course/6/6.435/www/Geman92.pdf)
+
+[scikit-learn's website](http://scikit-learn.org/)
 
 ### People
 * Module Supervisor: *Spyros Samothrakis*, <ssamot@essex.ac.uk>

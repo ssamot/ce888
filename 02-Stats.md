@@ -130,7 +130,7 @@ rug=True).get_figure()
 ## Measurements of dispersion
 
 * (Sample) Standard deviation 
-	* $\sigma = \sqrt {\frac{1}{N-1}\sum\limits_{i = 1}^N {\left( {x_i - \bar x} \right)^2 } }$
+	* $\sigma = \sqrt {\frac{1}{N-1}\sum\limits_{i = 1}^N {\left( {X_i - \bar X} \right)^2 } }$
 	* Variance is $\sigma^2$
 * Median absolute deviation
 	* $MAD = M(|X_i - M(X)|)$ 

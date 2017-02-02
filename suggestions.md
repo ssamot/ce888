@@ -77,7 +77,7 @@ Dropout is a well understood method for regularising neural networks. Outside ne
 
 ### Cause and effect 
 
-Understanding cause from effect in pairs of data is of paramount important; for example one might want to understand if the raise in height is causing a drop in temperature or the other way around. This project will try to learn the causal direction of cause-effect pairs using recurrent neural networks. Data is presented as a set of collected datapoints (not a sequence, but we will treat it is us such) of various lengths and recurrent neural network should be trained to infer the causal direction of the data. 
+Understanding cause from effect in pairs of data is of paramount importance; for example one might want to understand if the raise in height is causing a drop in temperature or the other way around. This project will try to learn the causal direction of cause-effect pairs using recurrent neural networks. Data is presented as a set of collected datapoints (not a sequence, but we will treat it is us such) of various lengths and recurrent neural network should be trained to infer the causal direction of the data. 
 
 **References:**
 
@@ -95,7 +95,7 @@ Understanding cause from effect in pairs of data is of paramount important; for 
 
 ### Bootstrapping for polling 
 
-It has been hypothesised that recent (repeated) poll failures have to do with three key assumptions a) that the "undecided" crowd will invariably move towards the status quo b) that voters are not lying on purpose or out of fear c) that no section of the demographic is completely missing from the poll. This project will try to align polling results with demographic data using a biased version of bootstrapping, where one should try to sample (and thus present to a learning algorithm) sampling points according to how often we assume they occur in the general population. 
+It has been hypothesised that recent (repeated) poll failures have to do with three key assumptions a) that the "undecided" crowd will invariably move towards the status quo b) that voters are not lying on purpose or out of fear c) that no section of the demographic is completely missing from the poll. This project will try to align polling results with demographic data using a biased version of bootstrapping, where one should try to re-sample (and thus present to a learning algorithm) sampling points according to how often we assume they occur in the general population. 
 
 **References:**
 
