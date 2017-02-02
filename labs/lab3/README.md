@@ -31,7 +31,7 @@
 
 Attribute Information:
 
-`
+~~~
 Input variables:
 # bank client data:
 1 - age (numeric)
@@ -61,7 +61,7 @@ Input variables:
 Output variable (desired target):
 21 - y - has the client subscribed a term deposit? (binary: 'yes','no')
 
-`
+~~~
 
 
 
