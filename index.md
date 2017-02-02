@@ -42,7 +42,7 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab3"></a>
 
-2. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab2) 
+2. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab3) 
 
 
 
