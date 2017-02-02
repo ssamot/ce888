@@ -27,7 +27,7 @@
 	
 * Check the dataset 
 	* [https://archive.ics.uci.edu/ml/datasets/Bank+Marketing](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
-	* ``bank-additional-full.csv`` in your hard lab
+	* ``bank-additional-full.csv`` in your lab directory
 
 Attribute Information:
 
