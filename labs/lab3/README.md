@@ -26,8 +26,8 @@
 * Creating new ipython notebook
 	
 * Check the dataset 
-	* https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
-	* bank-additional-full.csv
+	* [https://archive.ics.uci.edu/ml/datasets/Bank+Marketing](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+	* ``bank-additional-full.csv`` in your hard lab
 
 Attribute Information:
 
@@ -62,6 +62,18 @@ Output variable (desired target):
 21 - y - has the client subscribed a term deposit? (binary: 'yes','no')
 
 ~~~
+
+
+## Lab Exercises
+In the Ipython notebook you created
+
+- [ ] Load the data from `bank-additional-full.csv`
+- [ ] Use a classifier (anything, but `ExtraTreesClassifier` with 100 estimators is the easiest option) on the data with outcome/output variable "y"
+    * Convert to dummies using `df_dummies = pd.get_dummies(df)`
+    * Columns "y_no" and "duration" must be deleted - use something like `del df_copy["attribute"]` for this
+    * Get the values and run a classifier
+    * Report the results of 10-Kfold stratified cross-validation
+
 
 
 
