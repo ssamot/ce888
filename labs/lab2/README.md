@@ -51,3 +51,9 @@ Use the example code for the bootstrap provided in ``bootstrap.py'' to do the fo
 - [ ] Write a very small text description of the analysis in overleaf, download the pdf and put in in github alongside the rest of your lab2 
 
 (The data is from a Japanese vs American cars MPG comparison I found online in a stat book - can't find it again though!)
+
+- [ ] Once you are done, save your changes in github
+	* Go inside your lab directory and do 
+      * ``git add -A -v``
+      * ``git commit -m <message>``
+      * ``git push origin master``

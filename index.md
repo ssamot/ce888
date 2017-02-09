@@ -23,6 +23,9 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 3. [Lecture 3: Predictive modelling](./slides/03-Modelling-slides.pdf), [Handouts](./slides/03-Modelling-handouts.pdf) 
 
+<a id="lec4"></a> 
+
+4. [Lecture 4: Bandits](./slides/04-Bandits-slides.pdf), [Handouts](./slides/04-Bandits-handouts.pdf) 
 
 
 ### Labs
@@ -96,6 +99,14 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Geman, Stuart, Elie Bienenstock, and René Doursat. "Neural networks and the bias/variance dilemma." Neural computation 4.1 (1992): 1-58.](https://stuff.mit.edu/afs/athena.mit.edu/course/6/6.435/www/Geman92.pdf)
 
 [scikit-learn's website](http://scikit-learn.org/)
+
+**Lecture 4**
+
+[White, John. Bandit algorithms for website optimization. " O'Reilly Media, Inc.", 2012.](http://shop.oreilly.com/product/0636920027393.do)
+
+[Oza, Nikunj C. "Online bagging and boosting." Systems, man and cybernetics, 2005 IEEE international conference on. Vol. 3. IEEE, 2005.](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20050239012.pdf)
+
+[Osband, Ian, et al. "Deep exploration via bootstrapped DQN." Advances In Neural Information Processing Systems. 2016.](http://papers.nips.cc/paper/6500-deep-exploration-via-bootstrapped-dqn.pdf)
 
 ### People
 * Module Supervisor: *Spyros Samothrakis*, <ssamot@essex.ac.uk>

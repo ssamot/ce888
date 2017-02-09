@@ -8,617 +8,408 @@
 
 # About
 
-## Predictive Modelling
+## Bandits
 
-* We will change paradigm now and focus on one form of predictive modelling
-	* Supervised learning
-* "Can I predict a quantity if I know other relevant quantities"
-	* Can I predict the weather if know historical data, time of the year etc
-	* Can I predict if a car will break down given how old it is? 
-	* Facebook likes on a page? 
+* We will discuss bandits
+* We are in effect revisiting some ideas from lecture two
+    * Hypothesis testing
+* I think this is a much easier to understand framework vs hypothesis testing
 
-## How good are these predictions?
-* Quality of learning
-	* Bias - Variance decomposition
-	* Measuring the quality of a supervised learning algorithm
-	* Getting error estimates on predictions
-* Another name for "applied machine learning"
-	* Statistics, Machine Learning, Data Mining, Data Science
-
-
-## Scikit-learn
-
-* This is not a machine learning module, we have more of a "birds-eye" view of the algorithms involved
-	* We will see them as objects that have various interesting properties
-	* You still need to understand what they do more or less
-* You will need to be able to use scikit-learn to create new models
-* Essential part of the Data Science toolbox
-* Golden trinity alongside Pandas and Numpy
+## Examples
+* You send a user an e-mail
+    * User clicks on the link you get $r = 1$
+    * User fails to click on the link after 3 days $r = 0$
+* Playing games
+    * What is the next best action to take in Chess? 
+        * Chess has a sequential element - hence "Reinforcement Learning"
+        * But close enough...
+* Online adverts
+    * User clicks on an advert ($r=1$)
+    * User clicks fails to click on an advert ($r=0$)
 
 
-## Modelling data
+# Bandits
 
-The example data I am going to use today comes from:  
+## The bandit problem
 
-Moro, Sérgio, Paulo Rita, and Bernardo Vala. "Predicting social media performance metrics and evaluation of the impact on brand building: A data mining approach." Journal of Business Research 69.9 (2016): 3341-3351.
+* Bandits are a tuple $<A,R>$
+* Where $a \in A$ is a set of actions
+    * Sometimes actions are called "arms"
+* $r \in R$ is a set of rewards
+* $R(a,r) = P(r|a)$
+    * The probability of getting a reward $r$ given that I have done action $a$
+* "You do an action, you get some feedback"
 
-Around 500 publicly available instances
+## The goal
+* Find an optimal policy $\pi(a) = P(a)$ that maximises the long term sum of rewards
+    * Long term sum is $\sum\limits_{t = 0}^{T} = r_t$  
 
-We are trying to predict the performance of a new post
+* The "action-value" function $Q(a)$ is the expected reward for taking action $a$
+    * Q = $E[r|a]$
+* The "value" function is $V = E_\pi[r]$
+    * The average Q values, given a policy that I follow
 
-## Given a list of samples
+## Example problem
 
 \tiny
 
-
-\begin{tabular}{lrrlrrrr}
-\toprule
-{} &  Category &  Page total likes &    Type &  Post Month &  Post Hour &  Post Weekday &  Paid \\
-\midrule
-0 &         2 &            139441 &   Photo &          12 &          3 &             4 &   0.0 \\
-1 &         2 &            139441 &  Status &          12 &         10 &             3 &   0.0 \\
-2 &         3 &            139441 &   Photo &          12 &          3 &             3 &   0.0 \\
-3 &         2 &            139441 &   Photo &          12 &         10 &             2 &   1.0 \\
-4 &         2 &            139441 &   Photo &          12 &          3 &             2 &   0.0 \\
-\bottomrule
-\end{tabular}
-
-
-
-\begin{tabular}{lrrr}
-\toprule
-{} &    like &  share &  Total Interactions \\
-\midrule
-0 &    79.0 &   17.0 &                 100 \\
-1 &   130.0 &   29.0 &                 164 \\
-2 &    66.0 &   14.0 &                  80 \\
-3 &  1572.0 &  147.0 &                1777 \\
-4 &   325.0 &   49.0 &                 393 \\
-\bottomrule
-\end{tabular}
-
-# Data loading
-
-## Loading the data
-\tiny
-
-~~~python
-df = pd.read_csv("./dataset_Facebook.csv", delimiter = ";")
-df.head() # just prints top 5 columns if you are in ipython
-
-features = ["Category",
-            "Page total likes",
-            "Type",
-            "Post Month",
-            "Post Hour",
-            "Post Weekday",
-            "Paid"]
-
-
-outcomes=  ["Lifetime Post Total Reach",
-            "Lifetime Post Total Impressions",
-            "Lifetime Engaged Users",
-            "Lifetime Post Consumers",
-            "Lifetime Post Consumptions",
-            "Lifetime Post Impressions by people who have liked your Page",
-            "Lifetime Post reach by people who like your Page",
-            "Lifetime People who have liked your Page and engaged with your post",
-            "comment",
-            "like",
-            "share",
-            "Total Interactions"]
+\hrulefill
 
 ~~~
+Dear Sir/Madam, 
 
-## Cleaning up 
+Best quality flasks and vials for your experiments
 
-scikit-learn does not accept string formatted data
+Click the link below to buy - discounted prices
 
-\tiny
-
-~~~python
-df = df.dropna()
-
-outcomes_of_interest = ["Lifetime Post Consumers", "likes"]
-
-df[["Type"]] = df[["Type"]].apply(LabelEncoder().fit_transform)
-
-X_df = df[features].copy()
-y_df = df[outcomes_of_interest].copy()
-
-X_df.head()
+(Link)
 
 ~~~
 
 
-\begin{tabular}{lrrrrrrr}
-\toprule
-{} &  Category &  Page total likes &  Type &  Post Month &  Post Hour &  Post Weekday &  Paid \\
-\midrule
-0 &         2 &            139441 &     1 &          12 &          3 &             4 &   0.0 \\
-1 &         2 &            139441 &     2 &          12 &         10 &             3 &   0.0 \\
-2 &         3 &            139441 &     1 &          12 &          3 &             3 &   0.0 \\
-3 &         2 &            139441 &     1 &          12 &         10 &             2 &   1.0 \\
-4 &         2 &            139441 &     1 &          12 &          3 &             2 &   0.0 \\
-\bottomrule
-\end{tabular}
-
-## Playing with dataframes
-
-* Make sure you make copies of the dataframe if you want to modify it but keep the original
-* Otherwise it is just views on the same data
-	* You will modify everything
-
-* Not the double "[[column1, column2...]]" notation
-	* If you just use [column1] you get back a Series, not a DataFrame
-* We used the LabelEncoder to encode the labels
-	* but how about decoding?
-
-## Some pandas trivia
+\hrulefill
 
 
-~~~python
-# Adding a new column
-y_df['id'] = range(1, len(df) + 1)
+~~~
+Dear <Name>,
+
+This is Nick from www.MegaFlasksAndVials.com - super discounts below
+
+(Link)
+
 ~~~
 
-* If the column exists, it will replace it
-* If the column does not, it will create it
-* Make sure the data you are trying to insert has the same column length
+\hrulefill
+
+
+## Let's simulate
+
+* First e-mail is $a_0$
+* Second e-mail is $a_1$
+* Policy is $\pi(a_0) = 0.5, \pi(a_1) = 0.5$
+* Let's manually calculate some Q's and V's on the e-mail sending problem
 
 
 
-## Plotting the data
+
+
+## Goals (1)
+
+* So our goal is to find the best action
+* Optimal $V^* = \max\limits_{a \in A} Q(a)$
+* But these values can only be found through averages
+    * $\hat{Q}(a), \hat{V}$
+* We could have done hypothesis testing...
+    * But this would entail a random policy
+    * Maybe we can do better
+
+## Goals (2)
+* We would like to find the best action using the minimum amount of samples possible
+* Keep focusing on the best action
+    * While also checking making sure that other actions are sufficiently explored
+* This is known as the "exploration/exploitation" dilemma
+
+## Regret (1)
+
+
+* Regret is $I_t = E\left[\sum\limits_{t = 0}^{T}\left( V^* - Q(a_t)  \right)\right]$
+    * Or, equivalently $E\left[\sum\limits_{t = 0}^{T}\left( \max\limits_{a \in A} Q(a) - Q(a_t)  \right)\right]$
+* The count is $N_t(a)$, the number of times we took action $a$ until time $t$
+* The gap $\Delta_a = V^*(a) - Q(a)$, the difference between the optimal action and the action taken 
+
+## Regret (2)
+
+* It turns out that
+    * $\sum\limits_{a \in A} \left( E\left[N_t(a) \Delta_a\right] \right)$
+* We would like to minimise the times we have large gaps
+* But we have no clue what the gaps are...
+
+## Another example
+
+* Three actions to choose from
+* Link in internal promo e-mail
+    * Thus users more likely to click
+
 \tiny
 
 ~~~python
-# Notice how aspect changes the aspect ratio
-sns_plot = sns.lmplot(x="id", y= attribute, data=y_df, fit_reg=False, aspect = 2)
+n_actions = 3
+
+def action_0():
+    return np.random.choice([1,0], p=[0.5, 0.5])
+
+def action_1():
+    return np.random.choice([1,0], p=[0.6, 0.4])
+
+def action_2():
+    return np.random.choice([1,0], p=[0.2, 0.8])
+
+rewards = [action_0, action_1, action_2]
 ~~~
 
-\includegraphics[width = \textwidth]{graphics/lec3/scaterplot_lpc.pdf}
 
 
-## Joint Plot with "likes"
+## Pure exploration
+
+* Somewhat similiar to the A/B case
+    * But in A/B you should have set a cut-off point
+* You send more or less the equal number of e-mails
+* Very simple setup
+
+## Regret of pure exploration
+
+\includegraphics[width = \textwidth]{graphics/lec4/random.pdf}
+
+## Greedy 
+
+* You choose the action with the highest $\hat{Q}(a)$
+* Can you see a problem with this? 
+    * It might get stuck in suboptimal actions
+* Let's try it out
+
+## Regret of greedy
+
+\includegraphics[width = \textwidth]{graphics/lec4/greedy.pdf}
+
+## $\epsilon$-greedy
+
+* You set a small probability $\epsilon$ with which you act randomly
+* The rest of the time you add greedily
+    * i.e. you choose the best action
+* This is a very common (but inefficient setup)
+* What is the optimal $\epsilon$? 
+
+## Regret of $\epsilon$-greedy
+
+\includegraphics[width = \textwidth]{graphics/lec4/{0.2-greedy}.pdf}
+
+## $\epsilon$-decreasing
+
+* Same as epsilon greedy, but now you decrease epsilon as you choose actions
+* We do 
+
+~~~python
+e *= 0.99
+~~~
+
+## Regret of $\epsilon$-decreasing
+
+\includegraphics[width = \textwidth]{graphics/lec4/{0.2-decreasing}.pdf}
+
+
+## Optimism in the face of uncertainty
+
+* There is a principle termed "optimism in face of uncertainty"
+* In practical terms this means that you should try actions with highly uncertain outcomes
+    * You believe the best action is the one you haven't explored enough
+* Works well in practice
+
+## Upper Confidence Bounds
+
+* A very popular algorithm
+* Fairly robust
+* $UCB(a) = \hat{Q}(a) + U(a)$
+* $UCB1(a) = \hat{Q}(a) + C  \sqrt{\frac{log(t)}{N_t(a)}}$
+* $N_t(a)$ is the times action $a$ was executed
+* $t$ is the current timepoint/time
+* $C \in [0,\inf]$ is a constant - I set it to 0.5 for the plots below
+    * Can you guess what the effect of C is? 
+
+
+## Regret of upper confidence bounds
+
+\includegraphics[width = \textwidth]{graphics/lec4/UCB.pdf}
+
+
+
+## Bootstrap thompson sampling 
+
+* What if you could take bootstrap samples of action rewards that we have collected?
+* You would have incorporated the uncertainty within your bootstrap samples
+* If you have a large number of bootstrap samples you have a distribution over possible $\hat{Q}(s)$
+* Sample from this distribution
+* A version of probability matching
+    * $\pi(a) = P[\hat{Q}(a) > \hat{Q}(a') ,\quad \forall a' \in A]$
+
+
+## Priors
+
+* You can get stuck here as well (like greedy)
+* Add some pseudo-rewards
+* Or act randomly a bit
+
+
+## Regret of Bootstrap Thomson Sampling
+
+\includegraphics[width = \textwidth]{graphics/lec4/BootstrapTS.pdf}
+
+
+## Code
 
 \tiny
 
 ~~~python
-# Notice how "aspect" changes the aspect ratio
-sns_plot = sns.lmplot(x="id", y= attribute, data=y_df, fit_reg=False, aspect = 2)
-~~~
+class Bandit(object):
+    def __init__(self,n_actions):
+        self.counts = np.zeros(n_actions) 
+        self.action_rewards = [[] for i in range(n_actions)] 
+        self.rewards = []
+        self.n_actions = n_actions
 
-\includegraphics[width = 0.6\textwidth]{graphics/lec3/joint_plot.pdf}
+    def select_action(self):
+        """Selection which arm/action to pull"""
+        pass
 
-## Modelling the data
-
-* We would like to learn some model of the data in relationship to the outcome
-* That is, if someone gives as a row of features we should be able to predict the corresponding outcome
-* The word "model" is overloaded, it is used for many different things
-	* Use depends on context
-
-## Decision Trees and Random Forests
-
-* For classification and regression we are going to use CART Trees
-* A tree creates a function between the features and an output attribute
-* When this output is real-valued the procedure is called "regression"
-* When you are predicting a certain type (e.g. "apple" vs "oranges") it is called classification
-* If you fit multiple decision trees on different bootstraps of the data (and features) and get the mean you have a random forest
-	* Ignore this for the moment
-	* Just think of Random forests as better at modelling than decision trees
-
-
-
-## Prediction
-
-* Let's build a tree and fit on the data
-
-~~~python
-
-X = X_df.values
-y = y_df.values.T[0]
-y = (y-y.min())/(y.max() - y.min())
-
-
-clf.fit(X,y)
-
-print mse(y,clf.predict(X))
-
-~~~
-
-
-## Mean squared Error
-
-* Reality is $f(x)$ 
-* Our model is $\hat{f}(x)$ (e.g. a decision tree)
-* Sample from the model are $\{y_{0}... y_{N}\}$
-
-	* $MSE = \frac{1} {N} \sum\limits_{i = 1}^N \left( y_{i} - \hat{f}(x_{i}) \right)^2$
-* For every possible sample
-	* $E\left[\left(y-\hat{f}(x)\right)^2\right]$
-
-
-* 1.5083614548e-05
-* Is this number meaningful? vs what? 
-* Let's build a tree with fictional dice rolls
-* Let's roll two dice
-	* See if we can have a tree there...
-	* This is known as overfitting - we are not learning anything of importance
-
-# Bias-variance
-
-
-## Bias-variance decomposition 
-
-* What does this error represent? 
-* One way of understanding the quality of a regressor is to use the bias-variance decomposition of the error
-
-* The noise is the lower bound on performance
-* Bias is the error you expect because reality and your model are different
-* Variance is the error you expect due to random noise and only seeing a sample of your data
-
-
-## A bit more formally
-
-
-
-$E\left[(y-\hat{f}(x))^2\right] = \left(E[\hat{f}(x)]-f(x)\right)^2 + E\left[\left(\hat{f}(x)-E[\hat{f}(x)]\right)^2\right] +\sigma^2$
-$E\left[(y-\hat{f}(x))^2\right] = \mathit{Bias}^2 + \mathit{Variance} + \mathit{Noise}^2$
-
-$\mathit{Bias}^2 = \left(E[\hat{f}(x)]-f(x)\right)^2$
-$\mathit{Variance} = E\left[\left(\hat{f}(x)-E[\hat{f}(x)]\right)^2\right] = Var[\hat{f}(x)]$
-
-$\mathit{Noise} = \sigma^2$
-
-## Bias
-
-* A high bias model is strongly opinionated vs the data
-	* A constant function (predicting "0" all the time)
-	* A linear function on very non-linear data
-* A low bias fits the data closely
-	* A model that was created to fit the data
-		* A decision tree when the data was created using rules
-	* A linear function when the data is generated by a linear process
-
-## Variance
-
-* A high variance model changes opinions about the data based on the samples it sees
-	* A decision tree on very few data points
-	* A very complex model on a very simple function
-* A low variance model keeps is not impacted by the training data that much
-	* A constant function
-	* The mean
-* Variance comes from randomness in the training set
-
-## The tradeoff
-
-* We can't really measure the noise that easily
-	* It's also the lower bound on our performance
-* Models with high variance have low bias
-* Models with high bias have low variance
-
-## Bias-variance - using the bootstrap (1)
-
-
-Let's assume noise is zero, hence:
-
-$E\left[(y-\hat{f}(x))^2\right] = \left(E[\hat{f}(x)]-f(x)\right)^2 + E\left[\left(\hat{f}(x)-E[\hat{f}(x)]\right)^2\right]$
-
-We don't have access to all the samples - what should we do? 
-
-
-## Bias-variance - using the bootstrap (2)
-\tiny
-
-~~~python
-
-n_test = 100
-n_repeat = 1000
-
-#estimator = DecisionTreeRegressor()
-estimator = RandomForestRegressor()
-
-# Compute predictions
-y_predicts = np.zeros((n_repeat, len(X)))
-for i in range(n_repeat):
+    def update(self,action,reward):
+        """Update the actions""" 
+        self.counts[action] = self.counts[action] + 1
+        self.action_rewards[action].append(reward)
+        self.rewards.append(reward)
+       
+        
+    def get_Q_values(self):
+        Q_values = []
+        for q_v in self.action_rewards:
+             Q_values.append(np.array(q_v).mean())
+                
+        return np.array(Q_values)
     
-    sample  = np.random.choice(range(len(X)),replace = True, size = len(X))
-    
-    train_ids = sample[:-n_test]
-    test_ids  = sample[-n_test:]
-    test_ids = np.setdiff1d(test_ids, train_ids)
-    if(len(test_ids) == 0 ):
-        continue
-
-    X_train,y_train = X[train_ids], y[train_ids]
-    X_test, y_test = X[test_ids], y[test_ids]
-    
-    estimator.fit(X_train, y_train)
-    y_predict = estimator.predict(X_test)
-    y_predicts[i,test_ids] = y_predict
+    def get_V_value(self):
+        return np.array(self.v_value.mean())
 ~~~
 
-## Bias-variance - using the bootstrap (3)
+# Adapting to changing rewards regimes
 
-\tiny
+## Change of rewards
 
-~~~python
-y_bias = (y - np.mean(y_predicts, axis=0)) **2
+* What if rewards just change
+* Because people are bored of your e-mails
+    * They talk to each other
+    * Out of fashion
+* You might want to have continuous adaptation
+* Keeping all values and finding $\hat{Q}(a)$ is expensive
+    * What happens in e-mail 1000? e-mail 100K? 
+    * How many additions?  
 
-y_error = ((y - y_predicts) **2).mean()
-y_var = np.var(y_predicts, axis=0, ddof = 1)
+## The sequential case
+* What if you are to take a series of actions?
+* Surely your current action depends on your future actions
+* Hence there is going to be a change in the distribution of rewards
+    * Induced by the experimenter
+* "Reinforcement Learning"
 
-clf_type = "Decision tree"
-print("{0}: {1:.4f} (error) = {2:.4f} (bias^2) "
-          "+ {3:.4f} (var)".format(clf_type,
-                                                      np.mean(y_error),
-                                                      np.mean(y_bias),
-                                                      np.mean(y_var)))
+## Example e-mail campaign
 
-print("{0}: {1:.4f} ((bias^2) + (var)) = {2:.4f} (bias^2) "
-          "+ {3:.4f} (var)".format(clf_type,
-                                                      np.mean(y_bias) + np.mean(y_var),
-                                                      np.mean(y_bias),
-                                                      np.mean(y_var)))
+* You send your first e-mail
+    * "Please buy this product"
+* Send second e-mail 
+    * "Will you buy the add-on?"
+* Send third e-mail 
+    * "Let us service your product"
 
-~~~
+* You want to maximise your rewards 
+* Creates a tree of possible actions
 
-## Measuring error
-\tiny
-Decision tree: 0.0110 (error) = 0.0100 (bias^2) + 0.0010 (var)
+## Tree
 
-Decision tree: 0.0110 ((bias^2) + (var)) = 0.0100 (bias^2) + 0.0010 (var)
+* Let's draw the tree of the above example
+    * Three different actions for each "state"
+* What do you observe? 
 
 
-Random Forest: 0.0107 (error) = 0.0099 (bias^2) + 0.0008 (var)
+## Introducing state
 
-Random Forest: 0.0107 ((bias^2) + (var)) = 0.0099 (bias^2) + 0.0008 (var)
+* $s \in S$ can be used to differentiate between different "states", conditioning $\pi$, V and Q values on states
+* $\pi(s,a), V(s), Q(s,a)$
+* e.g. in the example above, you have $Q(``firstemail'',``emailtypeA'')$
+* Let's write the rest of the states, the policies, V and Q-Values
 
-\normalfont
+## Incremental calculation of a mean 
+$\mathrm{v_t}$ can be the reward or the sum of rewards you got at different steps
 
-* The procedure for using the bootstrap to find better values for model is called "Bagging"
-	* Mostly minimises the variance
-	* Very commonly used trick
+$\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \frac{\overbrace{\mathrm{v_t} - \hat{Q}_{t-1}(s,a)}^{\textbf{Error}} }{t}$
 
 
-## Intuition
 
-\includegraphics[width = 0.6\textwidth]{graphics/lec3/bias-variance.png}
+$\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \frac{1 }{t} \overbrace{\mathrm{v_t} - \hat{Q}_{t-1}(s,a)}^{\textbf{Error}}$
+$\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \alpha \left[\mathrm{v_t} - \hat{Q}_{t-1}(s,a)\right]$
 
-http://tex.stackexchange.com/questions/307117/reconstructing-the-following-bias-variance-diagram
 
+## Incremental bootstrap
 
+Oza, Nikunj C., and Stuart Russell "Online bagging and boosting." Systems, man and cybernetics, 2005 IEEE international conference on. Vol. 3. IEEE, 2005.
 
-## Error vs validation (or test set )
+* We will implement this in the labs
 
-\includegraphics[width = 0.6\textwidth]{graphics/lec3/bias-variance2.png}
+# The adversarial case
 
-https://github.com/MartinThoma/LaTeX-examples/tree/master/tikz/bias-variance
+## Equilibria
 
-# Regression
+* We will discuss (very) briefly the notion of equilibria
+    * Imagine you are putting up large advert banners on your website
+    * They hide content
+    * User can click on the top right corner and quit the banner
+* Where should you put the banner? 
+* How often should the banner pop-up?
 
-## Cross validation (1)
+## Adversarial bandits
+* Most bandits we discussed until now assume the environment is indifferent
+* i.e. the user will click in the link if she thinks it is interesting for her to click
+* But quite often, people are annoyed by your efforts - so they will try to "adapt" around you
+    * Close the advert-super fast without thinking
+* Solution - put the advert in random places
+    * Mixed policies
+* Exp3 - but not now 
 
-* One of the most common procedures used when evaluating a model
-	* We take data X,y
-	* Split into 10 different random chunks
-* Learn a model using 9 of them
-	* Test performance on the one you did not learn on
-	* Pick another 9, test on another set
-* Keep on going until you test on all test subsets
-* K-fold cross-validation
-	* There are other methods, but all related to this
-# Cross validation and Regression
+# Contextual Bandits
 
-## Cross validation (2)
-It is largely automated on scikit-learn
+## Rethinking states
 
-\tiny
+* States as we have defined them until now are black solid boxes
+    * They can only be enumerated
+* i.e. state $s_0$, state $s_1$
+* What if a state could be decomposed into a set of features?
+    * $sex, age, married, job...$
+* Highly reminiscent of supervised learning
+    * We are given features, we would like to predict the reward - i.e. the outcome!
+* We could now do something that looks like regression!
 
-~~~python
 
-clf = RandomForestRegressor(n_estimators = 1000,max_depth = 2)
-dummy_clf = DummyRegressor()
-scores = cross_val_score(clf, X, y, cv=10,scoring = make_scorer(mse))
-dummy_scores = cross_val_score(dummy_clf, X, y, cv=10, scoring = make_scorer(mse))
+## Combining states and actions
 
-print("MSE: %0.8f (+/- %0.8f)" % (scores.mean(), scores.std()))
-print("Dummy MSE: %0.8f (+/- %0.8f)" % (dummy_scores.mean(), dummy_scores.std()))
+* So you now have features that you can encode
+* Various encoding strategies
+    * One regressor per action
+    * A single regressor with dummy encoded actions
+* Let's do an example
+* What could be a problem if you don't have separate regressors for each action?
 
-~~~
 
-MSE: 0.00699996 (+/- 0.00748646)
-Dummy MSE: 0.00616020 (+/- 0.00521769)
+## $\epsilon$-greedy and $\epsilon$-decreasing
 
-## What can we say about our model? 
+* Set $\epsilon$ to some small value
+* Keep decreasing...
+* Very popular because of its simplicity
+* You need to be smart about your decreasing schedule
+    * Possibly set some lower bound
 
-* It is bad
-* We are worse than just predicting the average!
-* Hence we can't really say much about if there is any relationship between our variables of interest
-	* You can't prove a negative
-	* Maybe our regressor is not good enough? 
-* We are not seeing any predictive effect here
 
+## Bootstrap Thomson Sampling
 
-## Ridge Regression
+* Get a bootstrap sample of all your data
+* Learn a regressor
+* Act greedily using the regressor you learned
+* Repeat
 
-Maybe we can get better results with a different regressor?
-
-\tiny
-
-~~~Python
-cat_features = ["Category",
-            "Type",
-            "Paid"]
-
-
-X_df = pd.get_dummies(X_df, cat_columns = features)
-
-~~~
-
-
-Here is how "category" is converted to dummy
-
-\begin{tabular}{lrrr}
-\toprule
-{} &  Category\_1 &  Category\_2 &  Category\_3 \\
-\midrule
-0 &         0.0 &         1.0 &         0.0 \\
-1 &         0.0 &         1.0 &         0.0 \\
-2 &         0.0 &         0.0 &         1.0 \\
-3 &         0.0 &         1.0 &         0.0 \\
-4 &         0.0 &         1.0 &         0.0 \\
-\bottomrule
-\end{tabular}
-
-
-## BayesianRidge Regression
-\tiny
-
-~~~python
-from sklearn.linear_model import  BayesianRidge
-clf = BayesianRidge(normalize = True)
-dummy_clf = DummyRegressor()
-scores = cross_val_score(clf, X, y, cv=10,scoring = make_scorer(mse))
-dummy_scores = cross_val_score(dummy_clf, X, y, cv=10, scoring = make_scorer(mse))
-
-print("MSE: %0.8f (+/- %0.8f)" % (scores.mean(), scores.std()))
-print("Dummy MSE: %0.8f (+/- %0.8f)" % (dummy_scores.mean(), dummy_scores.std()))
-
-~~~
-
-MSE: 0.00479575 (+/- 0.00511744)
-Dummy MSE: 0.00616020 (+/- 0.00521769
-
-Not great (at all!), but better
-
-
-# Classification
-
-## Binning samples
-
-* Maybe we can try to create classes out of the data
-
-\tiny
-
-~~~python
-
-outcomes_of_interest = ["Lifetime Post Consumers", "like"]
-n_bins = 20
-
-X_df = df[features].copy()
-y_df = df[outcomes_of_interest].copy()
-
-bins =  pd.qcut(y_df[outcomes_of_interest[0]].values,n_bins)
-y_df = df[outcomes_of_interest].copy()
-y_df[outcomes_of_interest[0]] = bins
-y_df[outcomes_of_interest] = y_df[outcomes_of_interest].apply(LabelEncoder().fit_transform)
-~~~
-
-## Metrics for classification
-
-* Each row is now assigned to a class of ${y_i} \in{0..20}$
-
-* Accuracy is the obvious one 
-	* $\mathit{accuracy} = \frac{1} {N} \sum\limits_{i=0}^{N-1} {y_i = \hat{f}(x) }$
-	* The higher the accuracy the better
-* What if the dataset is unbalanced - how informative is accuracy then?
-* There are multiple metric functions
-	* Use the one appropriate for your problem
-
-## Now with the classifier
-
-
-
-\tiny
-
-~~~python
-
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import ExtraTreesClassifier
-
-clf = ExtraTreesClassifier(n_estimators = 1000,max_depth = 4)
-
-dummy_clf = DummyClassifier()
-scores = cross_val_score(clf, X, y, cv=10,scoring = make_scorer(acc))
-dummy_scores = cross_val_score(dummy_clf, X, y, cv=10, scoring = make_scorer(acc))
-
-print("ACC: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std()))
-print("Dummy ACC: %0.2f (+/- %0.2f)" % (dummy_scores.mean(), dummy_scores.std()))
-~~~
-
-\normalfont
-
-ACC: 0.18 (+/- 0.06)
-Dummy ACC: 0.05
-
-
-## Generate feature importances
-\tiny
-
-~~~python
-importances = clf.feature_importances_
-std = np.std([tree.feature_importances_ for tree in clf.estimators_],
-             axis=0)
-indices = np.argsort(importances)[::-1]
-
-print("Feature ranking:")
-for f in range(X.shape[1]):
-    print("%d. %s (%f)" % (f + 1, features[indices[f]],  importances[indices[f]]))
-
-# Plot the feature importances of the forest
-fig = plt.figure()
-plt.title("Feature importances")
-plt.bar(range(X.shape[1]), importances[indices],
-       color="r", yerr=std[indices], align="center")
-plt.xticks(range(X.shape[1]), np.array(features)[indices])
-plt.xlim([-1, X.shape[1]])
-fig.set_size_inches(15,8)
-axes = plt.gca()
-axes.set_ylim([0,None])
-
-
-~~~
-
-
-## Feature importances
-
-\includegraphics[width = \textwidth]{graphics/lec3/importances.pdf}
-
-
-## Generate a confusion matrix
-
-\tiny
-
-~~~python 
-###... code
-
-# Compute confusion matrix
-y_pred = clf.predict(X)
-cnf_matrix = confusion_matrix(y, y_pred)
-np.set_printoptions(precision=2)
-
-# Plot non-normalized confusion matrix
-plt.figure()
-plot_confusion_matrix(cnf_matrix, classes=range(len(set(y))), normalize = True,
-                      title='Confusion matrix')
-~~~
-
-
-## Confusion Matrix?
-
-\includegraphics[width = 0.6\textwidth]{graphics/lec3/confusion.pdf}
 
 # Conclusion
 
 ## Conclusion
 
-* We have just touched the subject
-* More in the labs
-* We will revisit some of the concepts later on
-* You should (after the labs) be able to train a basic model
-* If you are to optimise hyperparameters, you need to do nested cross-validation
-	* Hyperparameters are things like tree size, depth etc. 
-	* Again, we will see this later on
+* First hit on bandits
+* Super-exciting research area
+* Used quite a bit on website optimisation and recommender systems
+* We will delve deeper in the adversarial case and recommender systems in the future
+* Again, the bootstrap saves the day
 
 

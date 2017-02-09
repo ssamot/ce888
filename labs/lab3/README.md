@@ -75,6 +75,13 @@ In the Ipython notebook you created
     * Get the values and run a classifier (with outcome `y_yes`)
     * Report the results of 10-Kfold stratified cross-validation
     * Get sample importances and a confusion matrix
+    
+- [ ] Once you are done, save your changes in github
+	* Go inside your lab directory and do 
+      * ``git add -A -v``
+      * ``git commit -m <message>``
+      * ``git push origin master``
+
 
 
 
