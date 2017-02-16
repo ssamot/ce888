@@ -27,6 +27,11 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 4. [Lecture 4: Bandits](./slides/04-Bandits-slides.pdf), [Handouts](./slides/04-Bandits-handouts.pdf) 
 
+<a id="lec5"></a> 
+
+5. [Lecture 5: Recommender systems](./slides/05-Recommender-slides.pdf), [Handouts](./slides/05-Recommender-handouts.pdf) 
+
+
 
 ### Labs
 Labs are every **Fridays 15:00-18:00, CES Lab 3**. Labs are assessed and they should be completed either in class or later on. 
@@ -45,7 +50,16 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab3"></a>
 
-2. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab3) 
+3. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab3) 
+
+<a id="lab4"></a>
+
+4. [Lab 4: Bandits and time series plotting](https://github.com/ssamot/ce888/tree/master/labs/lab4) 
+
+<a id="lab5"></a>
+
+4. [Lab 5: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab5) 
+
 
 
 
@@ -107,6 +121,15 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Oza, Nikunj C. "Online bagging and boosting." Systems, man and cybernetics, 2005 IEEE international conference on. Vol. 3. IEEE, 2005.](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20050239012.pdf)
 
 [Osband, Ian, et al. "Deep exploration via bootstrapped DQN." Advances In Neural Information Processing Systems. 2016.](http://papers.nips.cc/paper/6500-deep-exploration-via-bootstrapped-dqn.pdf)
+
+**Lecture 5**
+
+[Simon Funk, Netflix Update: Try This at Home](http://sifter.org/~simon/journal/20061211.html)
+
+[Barkan, Oren, and Noam Koenigstein. "Item2vec: neural item embedding for collaborative filtering." Machine Learning for Signal Processing (MLSP), 2016 IEEE 26th International Workshop on. IEEE, 2016.](https://arxiv.org/pdf/1603.04259.pdf)
+
+[Hu, Yifan, Yehuda Koren, and Chris Volinsky. "Collaborative filtering for implicit feedback datasets." Data Mining, 2008. ICDM'08. Eighth IEEE International Conference on. Ieee, 2008.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.167.5120&rep=rep1&type=pdf)
+
 
 ### People
 * Module Supervisor: *Spyros Samothrakis*, <ssamot@essex.ac.uk>

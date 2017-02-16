@@ -14,7 +14,7 @@ $endif$
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{:}
 \setbeamercolor{caption name}{fg=normal text.fg}
-\usepackage{amssymb,amsmath}
+\usepackage{amssymb,amsmath,fancyvrb}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \usepackage{lmodern}
@@ -170,6 +170,9 @@ $endfor$
 \setbeamertemplate{navigation symbols}{}
 
 \DeclareMathOperator*{\argmax}{arg\,max}
+
+
+\newcommand{\vect}[1]{\boldsymbol{#1}} % Uncomment for BOLD vectors.
 
 $if(title)$
 \title{$title$}

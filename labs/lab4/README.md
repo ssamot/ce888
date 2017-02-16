@@ -14,13 +14,13 @@
 * Start ipython/jupiter by typing `ipython notebook --ip='*'`
 * Start a browser and connect to `http://mlvm:8888/`
 	* You will need to input the token that was provided to you when you started ipython (looks like "c3fad33a4d227d5f395f6b2ce5de34c05b2dfa0ca516b36f" (NOT THIS ONE))
-* Using the web page, go to lab3
+* Using the web page, go to lab4
 
 ## Ipython notebooks
 
 * Inside `lab4` you will see Bandits.ipynb
 
-* Creating new ipython notebook
+* Create a new ipython notebook
 
 ## Compare and plot Q-values
 
