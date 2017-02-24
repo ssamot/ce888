@@ -65,7 +65,7 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab6"></a>
 
-4. [Lab 6: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
+4. [Lab 6: Census Data and custering](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
 
 
 
