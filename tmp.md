@@ -31,6 +31,9 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 5. [Lecture 5: Recommender systems](./slides/05-Recommender-slides.pdf), [Handouts](./slides/05-Recommender-handouts.pdf) 
 
+<a id="lec6"></a> 
+
+5. [Lecture 6: Data exploration](./slides/06-Exploration-slides.pdf), [Handouts](./slides/06-Exploration-handouts.pdf) 
 
 
 ### Labs
@@ -59,6 +62,10 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 <a id="lab5"></a>
 
 4. [Lab 5: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab5) 
+
+<a id="lab6"></a>
+
+4. [Lab 6: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
 
 
 
@@ -129,6 +136,11 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Barkan, Oren, and Noam Koenigstein. "Item2vec: neural item embedding for collaborative filtering." Machine Learning for Signal Processing (MLSP), 2016 IEEE 26th International Workshop on. IEEE, 2016.](https://arxiv.org/pdf/1603.04259.pdf)
 
 [Hu, Yifan, Yehuda Koren, and Chris Volinsky. "Collaborative filtering for implicit feedback datasets." Data Mining, 2008. ICDM'08. Eighth IEEE International Conference on. Ieee, 2008.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.167.5120&rep=rep1&type=pdf)
+
+**Lecture 6**
+
+[Rousseeuw, Peter J. "Silhouettes: a graphical aid to the interpretation and validation of cluster analysis." Journal of computational and applied mathematics 20 (1987): 53-65.][http://www.sciencedirect.com/science/article/pii/0377042787901257]
+[Arthur, David, and Sergei Vassilvitskii. "k-means++: The advantages of careful seeding." Proceedings of the eighteenth annual ACM-SIAM symposium on Discrete algorithms. Society for Industrial and Applied Mathematics, 2007.](http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf)
 
 
 ### People

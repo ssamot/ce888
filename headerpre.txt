@@ -1,0 +1,1507 @@
+                           U.S. DEPARTMENT OF COMMERCE
+                                 BUREAU OF CENSUS
+
+                          *** DATA EXTRACTION SYSTEM ***
+
+  DOCUMENTATION OF: FILE CONTENTS
+
+  FOR DATA COLLECTION: 'pums901p' - 1990 Decenial Census 1% PUMS - Persons Records
+
+    VAR: = Variable Name
+    TYP: = Variable Type     ( C = Categorical, N = Numeric Continuous )
+    DES: = Designation       ( P = Primary Variable, X = Non-Primary )
+    LEN: = Length            ( of the Variable in Characters )
+    CAT: = Category          ( of the Variable )
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AAGE         C       X      1             Age Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AANCSTR1     C       X      1             First Ancestry Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AANCSTR2     C       X      1             Second Ancestry Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AAUGMENT     C       X      1             Augmented Pers. See Text Pp. C 5
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ABIRTHPL     C       X      1             Place of Birth
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ACITIZEN     C       X      1             Citizenship Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ACLASS       C       X      1             Class of Worker Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ADEPART      C       X      1             Time of Departure to Work Allocation Fla
+                                  0       No
+                                  1       Yes
+
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ADISABL1     C       X      1             Work Limitation Stat. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ADISABL2     C       X      1             Work Prevention Stat. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AENGLISH     C       X      1             Ability to Speak English Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AFERTIL      C       X      1             Chld. Ever Born Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AGE          C       X      2             Age
+                                  00      Less Than 1 Year
+                                  90      90 or More Yrs. Old
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AHISPAN      C       X      1             Detailed Hispanic Origin Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AHOUR89      C       X      1             Usual Hrs. Worked Per Week in 1989 Alloc
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AHOURS       C       X      1             Hrs. Worked Last Week Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AIMMIGR      C       X      1             Yr. of Entry Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME1     C       X      1             Wages and Salary Inc. Allocation Flag
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME2     C       X      1             Nonfarm Self Employment Inc. Allocation
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME3     C       X      1             Farm Self Employment Inc. Allocation Fla
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME4     C       X      1             Int., Dividend, and Net Rental Inc. Allo
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME5     C       X      1             Soc. Sec Inc. Allocation Flag
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME6     C       X      1             Pub. Asst. Allocation Flag
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME7     C       X      1             Ret. Inc. Allocation Flag
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINCOME8     C       X      1             All Other Inc. Allocation Flag
+                                  0       No
+                                  1       No Derived
+                                  2       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AINDUSTR     C       X      1             Ind. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ALABOR       C       X      1             Employment Stat. Recode Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ALANG1       C       X      1             Language Other Than English Allocation F
+                                  0       No
+                                  1       Yes
+
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ALANG2       C       X      1             Language Spoken At Home Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ALSTWRK      C       X      1             Yr. Last Worked Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AMARITAL     C       X      1             Marital Stat. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AMEANS       C       X      1             Means of Transportation to Work Allocati
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AMIGSTAT     C       X      1             Migration State Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AMOBLLIM     C       X      1             Mobility Limitation Stat. Allocation Fla
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AMOBLTY      C       X      1             Mobility Stat. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ANCSTRY1     C       X      3             Ancestry First Entry See Appendix I Ance
+                                  999     Not Reported
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ANCSTRY2     C       X      3             Ancestry Second Entry See Appendix I Anc
+                                  000     No Secondary Ancestry
+                                  999     Not Reported
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AOCCUP       C       X      1             Occupation Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+APERCARE     C       X      1             Personal Care Limitation Stat. Allocatio
+                                  0       No
+
+
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+APOWST       C       X      1             Place of Work State Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ARACE        C       X      1             Detailed Race Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ARELAT1      C       X      1             Rel. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ARIDERS      C       X      1             Vehicle Occupancy Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ASCHOOL      C       X      1             School Enrollment Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ASERVPER     C       X      1             Military Per. of Srvc. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ASEX         C       X      1             Sex Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ATRAVTME     C       X      1             Travel Time to Work Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AVAIL        C       X      1             Available for Work
+                                  0       N/a Less Than 16 Yrs./at Work/not Lookin
+                                  1       No, Already Has a Job
+                                  2       No, Temply. Ill
+                                  3       No, Other Reasons in School, Etc.
+                                  4       Yes, Could Have Taken a Job
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AVETS1       C       X      1             Military Srvc. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AWKS89       C       X      1             Wks. Worked in 1989 Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AWORK89      C       X      1             Worked Last Yr. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AYEARSCH     C       X      1             Highest Education Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+AYRSSERV     C       X      1             Yrs. of Military Srvc. Allocation Flag
+                                  0       No
+                                  1       Yes
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+CITIZEN      C       X      1             Citizenship
+                                  0       Born in the U.S.
+                                  1       Born in Puerto Rico, Guam, and Outlying
+                                  2       Born Abroad of American Parents
+                                  3       U.S. Citizen by Naturalization
+                                  4       Not a Citizen of the U.s
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+CLASS        C       X      1             Class of Worker
+                                  0       N/a Less Than 16 Yrs. Old/unemp. Who Nev
+                                  1       Emp. of a Private for Profit Company or
+                                  2       Emp. of a Private Not for Profit, Tax Ex
+                                  3       Local Gov. Emp. City, County, Etc.
+                                  4       State Gov. Emp.
+                                  5       Fed. Gov. Emp.
+                                  6       Self Emp. in Own Not Incorp.d Business,
+                                  7       Self Emp. in Own Incorp.d Business, Prof
+                                  8       Working Without Pay in Fam. Bus. or Farm
+                                  9       Unemp., Last Worked in 1984 or Earlier
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+DEPART       C       X      4             Time of Departure for Work Hour and Minu
+                                  0000    N/a Not a Worker or Worker Who Worked At
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+DISABL1      C       X      1             Work Limitation Stat.
+                                  0       N/a Less Than 16 Yrs., and Selected Pers
+                                  1       Yes, Limited in Kind or Amt. of Work
+                                  2       No, Not Limited
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+DISABL2      C       X      1             Work Prevented Stat.
+                                  0       N/a Less Than 16 Yrs., and Selected Pers
+
+
+                                  1       Yes, Prevented From Working
+                                  2       No, Not Prevented From Working
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ENGLISH      C       X      1             Ability to Speak English
+                                  0       N/a Less Than 5 Yrs. Old/speaks Only Eng
+                                  1       Very Well
+                                  2       Well
+                                  3       Not Well
+                                  4       Not At All
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+FEB55        C       X      1             Served February 1955 July 1964
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+FERTIL       C       X      2             No. of Chld. Ever Born
+                                  00      N/a Less Than 15 Yrs./male
+                                  01      No Chld.
+                                  02      1 Child
+                                  03      2 Chld.
+                                  04      3 Chld.
+                                  05      4 Chld.
+                                  06      5 Chld.
+                                  07      6 Chld.
+                                  08      7 Chld.
+                                  09      8 Chld.
+                                  10      9 Chld.
+                                  11      10 Chld.
+                                  12      11 Chld.
+                                  13      12 or More Chld.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+HISPANIC     C       X      3             Detailed Hispanic Origin Code See Append
+                                  000     Not Hispanic 006 199
+                                  001     Mexican, Mex Am 210 220
+                                  002     Puerto Rican 261 270
+                                  003     Cuban 271 274
+                                  004     Other Hispanic 200 209, 250 260, 290 401
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+HOUR89       C       X      2             Usual Hrs. Worked Per Week Last Yr. 1989
+                                  00      N/a Less Than 16 Yrs. Old/did Not Work i
+                                  99      99 or More Usual Hrs.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+HOURS        C       X      2             Hrs. Worked Last Week
+                                  00      N/a Less Than 16 Yrs. Old/not At Work/un
+                                  99      99 or More Hrs. Worked Last Week
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+IMMIGR       C       X      2             Yr. of Entry
+                                  00      Born in the U.S.
+                                  01      1987 to 1990
+                                  02      1985 to 1986
+                                  03      1982 to 1984
+
+
+                                  04      1980 or 1981
+                                  05      1975 to 1979
+                                  06      1970 to 1974
+                                  07      1965 to 1969
+                                  08      1960 to 1964
+                                  09      1950 to 1959
+                                  10      Before 1950
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME1      C       X      6             Wages or Salary Inc. in 1989
+                                  000000  N/a Less Than 16 Yrs. Old/none
+                                  140000  Topcode
+                                  140001  140001 or More State Median of Topcoded
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME2      C       X      6             Nonfarm Self Employment Inc. in 1989 Sig
+                                  000000  N/a Less Than 16 Yrs./none
+                                  000001  Break Even or $1
+                                  090000  Topcode
+                                  090001  $90, 001 or More State Median of Topcode
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME3      C       X      6             Farm Self Employment Inc. in 1989 Signed
+                                  000000  N/a Less Than 16 Yrs./none
+                                  1       Break Even or $1
+                                  54000   Topcode
+                                  54001   $54001 or More State Median of Topcoded
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME4      C       X      6             Int., Dividends, and Net Rental Inc. in
+                                  000000  N/a Less Than 15 Yrs./none
+                                  1       Break Even or $1
+                                  40000   Topcode
+                                  40001   $40001 or More State Median of Topcoded
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME5      C       X      5             Soc. Sec Inc. in 1989
+                                  00000   N/a Less Than 15 Yrs./none
+                                  17000   Topcode
+                                  17001   17001 or More State Median of Topcoded V
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME6      C       X      5             Pub. Asst. Inc. in 1989
+                                  00000   N/a Less Than 15 Yrs./none
+                                  10000   Topcode
+                                  10001   $10001 or More State Median
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME7      C       X      5             Ret. Inc. in 1989
+                                  00000   N/a Less Than 15 Yrs./none
+                                  30000   Topcode
+                                  30001   $30001 or More State Median of Topcoded
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INCOME8      C       X      5             All Other Inc. in 1989
+                                  00000   N/a Less Than 15 Yrs./none
+
+
+                                  20000   Topcode
+                                  20001   $20, 001 or More State Median of Topcode
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+INDUSTRY     C       X      3             Ind. See Appendix I Ind..lst
+                                  000     N/a Less Than 16 Yrs. Old/unemp. Who Nev
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+KOREAN       C       X      1             Served Korean Conflict June 1950 January
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+LANG1        C       X      1             Language Other Than English At Home
+                                  0       N/a Less Than 5 Yrs. Old
+                                  1       Yes, Speaks Another Language
+                                  2       No, Speaks Only English
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+LANG2        C       X      3             Language Spoken At Home See Appendix I L
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+LOOKING      C       X      1             Looking for Work
+                                  0       N/a Less Than 16 Yrs. Old/at Work/did No
+                                  1       Yes
+                                  2       No
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MARITAL      C       X      1             Marital Stat.
+                                  0       Now Married, Except Separated
+                                  1       Widowed
+                                  2       Divorced
+                                  3       Separated
+                                  4       Never Married or Under 15 Yrs. Old
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MAY75880     C       X      1             Served May 1975 to August 1980
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MEANS        C       X      2             Means of Transportation to Work
+                                  00      N/a Not a Worker Not in the Labor Force,
+                                  01      Car, Truck, or Van
+                                  02      Bus or Trolley Bus
+                                  03      Streetcar or Trolley Car
+                                  04      Subway or Elevated
+                                  05      Railroad
+                                  06      Ferryboat
+                                  07      Taxicab
+                                  08      Motorcycle
+                                  09      Bicycle
+                                  10      Walked
+                                  11      Worked At Home
+                                  12      Other Method
+
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MIGPUMA      C       X      5             Migration Puma State Dependent
+                                  00000   N/a Pers. Less Than 5 Yrs. Old/lived in
+                                  99900   Abroad
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MIGSTATE     C       X      2             Migration State or Foreign Country Code
+                                  00      N/a Pers. Less Than 5 Yrs. Old/lived in
+                                  01      Alabama
+                                  02      Alaska
+                                  04      Arizona
+                                  05      Arkansas
+                                  06      California
+                                  08      Colorado
+                                  09      Connecticut
+                                  10      Delaware
+                                  11      District of Columbia
+                                  12      Florida
+                                  13      Georgia
+                                  15      Hawaii
+                                  16      Idaho
+                                  17      Illinois
+                                  18      Indiana
+                                  19      Iowa
+                                  20      Kansas
+                                  21      Kentucky
+                                  22      Louisiana
+                                  23      Maine
+                                  24      Maryland
+                                  25      Massachusetts
+                                  26      Michigan
+                                  27      Minnesota
+                                  28      Mississippi
+                                  29      Missouri
+                                  30      Montana
+                                  31      Nebraska
+                                  32      Nevada
+                                  33      New Hampshire
+                                  34      New Jersey
+                                  35      New Mexico
+                                  36      New York
+                                  37      North Carolina
+                                  38      North Dakota
+                                  39      Ohio
+                                  40      Oklahoma
+                                  41      Oregon
+                                  42      Pennsylvania
+                                  44      Rhode Island
+                                  45      South Carolina
+                                  46      South Dakota
+                                  47      Tennessee
+                                  48      Texas
+                                  49      Utah
+                                  50      Vermont
+                                  51      Virginia
+                                  53      Washington
+                                  54      West Virginia
+                                  55      Wisconsin
+                                  56      Wyoming
+                                  72      Puerto Rico
+                                  98      Other Abroad in 1985
+
+
+                                  99      State Not Identified B Sample
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MILITARY     C       X      1             Military Srvc.
+                                  0       N/a Less Than 16 Yrs. Old
+                                  1       Yes, Now on Active Duty
+                                  2       Yes, on Active Duty in Past, But Not Now
+                                  3       Yes, Srvc. in Reserves or Nat. Guard Onl
+                                  4       No Srvc.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MOBILITY     C       X      1             Mobility Stat. Lived Here on April 1, 19
+                                  0       N/a Less Than 5 Yrs. Old
+                                  1       Yes Same House Nonmovers
+                                  2       No, Different House Movers
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+MOBILLIM     C       X      1             Mobility Limitation
+                                  0       N/a Less Than 15 Yrs./instit. Person, an
+                                  1       Yes, Has a Mobility Limitation
+                                  2       No, Does Not Have a Mobility Limitation
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+OCCUP        C       X      3             Occupation See Appendix I Occup.lst
+                                  000     N/a Less Than 16 Yrs. Old/unemp. Who Nev
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+OTHRSERV     C       X      1             Served Any Other Time
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+PERSCARE     C       X      1             Personal Care Limitation
+                                  0       N/a Less Than 15 Yrs./instit. Person, an
+                                  1       Yes, Has a Personal Care Limitation
+                                  2       No, Does Not Have a Personal Care Limita
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+POB          C       X      3             Place of Birth Appendix I Birth.lst Unit
+                                  001     Alabama
+                                  002     Alaska
+                                  004     Arizona
+                                  005     Arkansas
+                                  006     California
+                                  008     Colorado
+                                  009     Connecticut
+                                  010     Delaware
+                                  011     District of Columbia
+                                  012     Florida
+                                  013     Georgia
+                                  015     Hawaii
+                                  016     Idaho
+                                  017     Illinois
+                                  018     Indiana
+                                  019     Iowa
+                                  020     Kansas
+                                  021     Kentucky
+
+
+                                  022     Louisiana
+                                  023     Maine
+                                  024     Maryland
+                                  025     Massachusetts
+                                  026     Michigan
+                                  027     Minnesota
+                                  028     Mississippi
+                                  029     Missouri
+                                  030     Montana
+                                  031     Nebraska
+                                  032     Nevada
+                                  033     New Hampshire
+                                  034     New Jersey
+                                  035     New Mexico
+                                  036     New York
+                                  037     North Carolina
+                                  038     North Dakota
+                                  039     Ohio
+                                  040     Oklahoma
+                                  041     Oregon
+                                  042     Pennsylvania
+                                  044     Rhode Island
+                                  045     South Carolina
+                                  046     South Dakota
+                                  047     Tennessee
+                                  048     Texas
+                                  049     Utah
+                                  050     Vermont
+                                  051     Virginia
+                                  053     Washington
+                                  054     West Virginia
+                                  055     Wisconsin
+                                  056     Wyoming
+                                  060     American Samoa
+                                  066     Guam
+                                  067     Johnston Atoll
+                                  069     Northern Mariana Islands
+                                  071     Midway Islands
+                                  072     Puerto Rico
+                                  076     Navassa Island
+                                  078     U.S. Virgin Islands
+                                  079     Wake Island
+                                  081     Baker Island
+                                  084     Howland Island
+                                  086     Jarvis Island
+                                  089     Kingman Reef
+                                  095     Palmyra Atoll
+                                  096     U.S. Territory, Not Specified
+                                  100     Albania
+                                  101     Andorra
+                                  102     Austria
+                                  103     Belgium
+                                  104     Bulgaria
+                                  105     Czechoslovakia
+                                  106     Denmark
+                                  107     Faroe Islands
+                                  108     Finland
+                                  109     France
+                                  110     Germany, Not Specified
+                                  111     West Germany
+                                  112     West Berlin
+                                  113     East Berlin
+                                  114     East Germany
+                                  115     Gibraltar
+
+
+                                  116     Greece
+                                  117     Hungary
+                                  118     Iceland
+                                  119     Ireland
+                                  120     Italy
+                                  121     Jan Mayen
+                                  122     Liechtenstein
+                                  123     Luxembourg
+                                  124     Malta
+                                  125     Monaco
+                                  126     Netherlands
+                                  127     Norway
+                                  128     Poland
+                                  129     Portugal
+                                  130     Azores Islands
+                                  131     Madeira Islands
+                                  132     Romania
+                                  133     San Marino
+                                  134     Spain
+                                  135     Svalbard
+                                  136     Sweden
+                                  137     Switzerland
+                                  138     United Kingdom, Not Specified
+                                  139     England
+                                  140     Scotland
+                                  141     Wales
+                                  142     Northern Ireland
+                                  143     Guernsey
+                                  144     Jersey
+                                  145     Isle of Man
+                                  146     Vatican City
+                                  147     Yugoslavia
+                                  148     Europe, Not Specified
+                                  149     Central Europe, Not Specified
+                                  150     Eastern Europe, Not Specified
+                                  151     Lapland, Not Specified
+                                  152     Northern Europe, Not Specified
+                                  153     Southern Europe, Not Specified
+                                  154     Western Europe, Not Specified
+                                  180     Union of Soviet Soc.ist Repub.s U.S.
+                                  181     Baltic States, Not Specified
+                                  182     Estonia
+                                  183     Latvia
+                                  184     Lithuania
+                                  200     Afghanistan
+                                  201     Bahrain
+                                  202     Bangladesh
+                                  203     Bhutan
+                                  204     Brunei
+                                  205     Burma
+                                  206     Cambodia
+                                  207     China
+                                  208     Cyprus
+                                  209     Hong Kong
+                                  210     India
+                                  211     Indonesia
+                                  212     Iran
+                                  213     Iraq
+                                  214     Israel
+                                  215     Japan
+                                  216     Jordan
+                                  217     Korea, Not Specified
+                                  218     South Korea
+                                  219     North Korea
+
+
+                                  220     Kuwait
+                                  221     Laos
+                                  222     Lebanon
+                                  223     Macau
+                                  224     Malaysia
+                                  225     Maldives
+                                  226     Mongolia
+                                  227     Nepal
+                                  228     Oman
+                                  229     Pakistan
+                                  230     Paracel Islands
+                                  231     Philippines
+                                  232     Qatar
+                                  233     Saudi Arabia
+                                  234     Singapore
+                                  235     Spratley Islands
+                                  236     Sri Lanka
+                                  237     Syria
+                                  238     Taiwan
+                                  239     Thailand
+                                  240     Turkey
+                                  241     United Arab Emirates
+                                  242     Vietnam
+                                  243     Yemen, Peoples Democratic Repub.
+                                  244     Yemen Arab Repub.
+                                  245     Asia, Not Specified
+                                  246     Asia Minor, Not Specified
+                                  247     East Asia, Not Specified
+                                  248     Gaza Strip
+                                  249     Indochina, Not Specified
+                                  250     Iraq Saudi Arabia Neutral Zone
+                                  251     Mesopotamia, Not Specified
+                                  252     Middle East, Not Specified
+                                  253     Palestine, Not Specified
+                                  254     Persian Gulf States, Not Specified
+                                  255     Southeast Asia, Not Specified
+                                  256     West Bank
+                                  300     Bermuda
+                                  301     Canada
+                                  302     Greenland
+                                  303     St. Pierre and Miquelon
+                                  304     North America, Not Specified
+                                  310     Belize
+                                  311     Costa Rica
+                                  312     El Salvador
+                                  313     Guatemala
+                                  314     Honduras
+                                  315     Mexico
+                                  316     Nicaragua
+                                  317     Panama
+                                  318     Central America, Not Specified
+                                  330     Anguilla
+                                  331     Antigua and Barbuda
+                                  332     Aruba
+                                  333     Bahamas
+                                  334     Barbados
+                                  335     British Virgin Islands
+                                  336     Cayman Islands
+                                  337     Cuba
+                                  338     Dominica
+                                  339     Dominican Repub.
+                                  340     Grenada
+                                  341     Guadeloupe
+                                  342     Haiti
+
+
+                                  343     Jamaica
+                                  344     Martinique
+                                  345     Montserrat
+                                  346     Netherlands Antilles
+                                  347     St. Barthelemy
+                                  348     St. Kitts Nevis
+                                  349     St. Lucia
+                                  350     St. Vincent and the Grenadines
+                                  351     Trinidad and Tobago
+                                  352     Turks and Caicos Islands
+                                  353     Caribbean, Not Specified
+                                  354     Antilles, Not Specified
+                                  355     British West Indies, Not Specified
+                                  356     Latin America, Not Specified
+                                  357     Leeward Islands, Not Specified
+                                  358     West Indies, Not Specified
+                                  359     Windward Islands, Not Specified
+                                  375     Argentina
+                                  376     Bolivia
+                                  377     Brazil
+                                  378     Chile
+                                  379     Colombia
+                                  380     Ecuador
+                                  381     Falkland Islands
+                                  382     French Guiana
+                                  383     Guyana
+                                  384     Paraguay
+                                  385     Peru
+                                  386     Suriname
+                                  387     Uruguay
+                                  388     Venezuela
+                                  389     South America, Not Specified
+                                  400     Algeria
+                                  401     Angola
+                                  402     Bassas Da India
+                                  403     Benin
+                                  404     Botswana
+                                  405     British Indian Ocean Territory
+                                  406     Burkina Faso
+                                  407     Burundi
+                                  408     Cameroon
+                                  409     Cape Verde
+                                  410     Central African Repub.
+                                  411     Chad
+                                  412     Comoros
+                                  413     Congo
+                                  414     Djibouti
+                                  415     Egypt
+                                  416     Equatorial Guinea
+                                  417     Ethiopia
+                                  418     Europa Island
+                                  419     Gabon
+                                  420     Gambia
+                                  421     Ghana
+                                  422     Glorioso Islands
+                                  423     Guinea
+                                  424     Guinea Bissau
+                                  425     Ivory Coast
+                                  426     Juan De Nova Island
+                                  427     Kenya
+                                  428     Lesotho
+                                  429     Liberia
+                                  430     Libya
+                                  431     Madagascar
+
+
+                                  432     Malawi
+                                  433     Mali
+                                  434     Mauritania
+                                  435     Mayotte
+                                  436     Morocco
+                                  437     Mozambique
+                                  438     Namibia
+                                  439     Niger
+                                  440     Nigeria
+                                  441     Reunion
+                                  442     Rwanda
+                                  443     Sao Tome and Principe
+                                  444     Senegal
+                                  445     Mauritius
+                                  446     Seychelles
+                                  447     Sierra Leone
+                                  448     Somalia
+                                  449     South Africa
+                                  450     St. Helena
+                                  451     Sudan
+                                  452     Swaziland
+                                  453     Tanzania
+                                  454     Togo
+                                  455     Tromelin Island
+                                  456     Tunisia
+                                  457     Uganda
+                                  458     Western Sahara
+                                  459     Zaire
+                                  460     Zambia
+                                  461     Zimbabwe
+                                  462     Africa, Not Specified
+                                  463     Central Africa, Not Specified
+                                  464     Eastern Africa, Not Specified
+                                  465     Equatorial Africa, Not Specified
+                                  466     French Equatorial Africa, Not Specified
+                                  467     French West Africa, Not Specified
+                                  468     North Africa, Not Specified
+                                  469     Western Africa, Not Specified
+                                  470     Southern Africa, Not Specified
+                                  500     Ashmore and Cartier Islands
+                                  501     Australia
+                                  502     Christmas Island, Indian Ocean
+                                  503     Clipperton Island
+                                  504     Cocos Islands
+                                  505     Cook Islands
+                                  506     Coral Sea Islands
+                                  507     Fiji
+                                  508     French Polynesia
+                                  509     Kiribati
+                                  510     Marshall Islands
+                                  511     Micronesia
+                                  512     Nauru
+                                  513     New Caledonia
+                                  514     New Zealand
+                                  515     Niue
+                                  516     Norfolk Island
+                                  517     Palau
+                                  518     Papua New Guinea
+                                  519     Pitcairn Islands
+                                  520     Solomon Islands
+                                  521     Tokelau
+                                  522     Tonga
+                                  523     Tuvalu
+                                  524     Vanuatu
+
+
+                                  525     Wallis and Futuna Islands
+                                  526     Western Samoa
+                                  527     Oceania, Not Specified
+                                  528     Polynesia, Not Specified
+                                  529     Melanesia, Not Specified
+                                  550     Antarctica
+                                  551     Bouvet Island
+                                  552     French Southern and Antarctic Lands
+                                  553     Heard and Mcdonald Islands
+                                  554     At Sea
+                                  555     Abroad, Not Specified
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+POVERTY      C       X      3             Pers. Poverty Stat. Recode See Appendix
+                                  000     N/a
+                                  501     501% or More of Poverty Value
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+POWPUMA      C       X      5             Place of Work Puma State Dependent
+                                  00000   N/a Not a Worker Not in the Labor Force,
+                                  99900   Abroad
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+POWSTATE     C       X      2             Place of Work State Appendix I
+                                  00      N/a Not a Worker Not in the Labor Force,
+                                  01      Alabama
+                                  02      Alaska
+                                  04      Arizona
+                                  05      Arkansas
+                                  06      California
+                                  08      Colorado
+                                  09      Connecticut
+                                  10      Delaware
+                                  11      District of Columbia
+                                  12      Florida
+                                  13      Georgia
+                                  15      Hawaii
+                                  16      Idaho
+                                  17      Illinois
+                                  18      Indiana
+                                  19      Iowa
+                                  20      Kansas
+                                  21      Kentucky
+                                  22      Louisiana
+                                  23      Maine
+                                  24      Maryland
+                                  25      Massachusetts
+                                  26      Michigan
+                                  27      Minnesota
+                                  28      Mississippi
+                                  29      Missouri
+                                  30      Montana
+                                  31      Nebraska
+                                  32      Nevada
+                                  33      New Hampshire
+                                  34      New Jersey
+                                  35      New Mexico
+                                  36      New York
+                                  37      North Carolina
+                                  38      North Dakota
+                                  39      Ohio
+
+
+                                  40      Oklahoma
+                                  41      Oregon
+                                  42      Pennsylvania
+                                  44      Rhode Island
+                                  45      South Carolina
+                                  46      South Dakota
+                                  47      Tennessee
+                                  48      Texas
+                                  49      Utah
+                                  50      Vermont
+                                  51      Virginia
+                                  53      Washington
+                                  54      West Virginia
+                                  55      Wisconsin
+                                  56      Wyoming
+                                  98      Abroad
+                                  99      State Not Identified
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+PWGT1        C       P      4             Pers. Wgt
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RACE         C       X      3             Recoded Detailed Race Code Appendix C Ra
+                                  001     White 800 869, 971
+                                  002     Black 870 934, 972
+                                  004     Eskimo 935 940, 974
+                                  005     Aleut 941 970, 975
+                                  006     Chinese, Except Taiwanese 605, 976
+                                  007     Taiwanese 606, 607
+                                  008     Filipino 608, 977
+                                  009     Japanese 611, 981
+                                  010     Asian Indian 600, 982
+                                  011     Korean 612, 979
+                                  012     Vietnamese 619, 980
+                                  013     Cambodian 604
+                                  014     Hmong 609
+                                  015     Laotian 613
+                                  016     Thai 618
+                                  017     Bangladeshi 601
+                                  018     Burmese 603
+                                  019     Indonesian 610
+                                  020     Malayan 614
+                                  021     Okinawan 615
+                                  022     Pakistani 616
+                                  023     Sri Lankan 617
+                                  024     All Other Asian 602, 620 652, 985
+                                  025     Hawaiian 653, 654, 978
+                                  026     Samoan 655, 983
+                                  027     Tahitian 656
+                                  028     Tongan 657
+                                  029     Other Polynesian 658, 659
+                                  030     Guamanian 660, 984
+                                  031     Northern Mariana Islander 661, 671, 673
+                                  032     Palauan 663
+                                  033     Other Micronesian 662, 664 670, 672, 674
+                                  034     Fijian 676
+                                  035     Other Melanesian 677 680
+                                  036     Pacific Islander, Not Specified 681 699
+                                  037     Other Race 700 799, 986 999
+                                  301     Alaskan Athabaskan 000, 001, 008, 009, 0
+                                  302     Apache 255 264
+
+
+                                  303     Blackfoot 360
+                                  304     Cherokee 416 422, 555 557, 562
+                                  305     Cheyenne 361 363
+                                  306     Chickasaw 436
+                                  307     Chippewa 330 353, 355, 544
+                                  308     Choctaw 226, 228, 404, 434, 520, 559
+                                  309     Comanche 325, 523
+                                  310     Creek 423, 425, 426, 429 432, 449, 540,
+                                  311     Crow 322
+                                  312     Iroquois 405 415
+                                  313     Kiowa 276, 522
+                                  314     Lumbee 464
+                                  315     Navajo 275
+                                  316     Osage 320
+                                  317     Paiute 175 192, 542
+                                  318     Pima 217
+                                  319     Potawatomi 367 374
+                                  320     Pueblo 229 254, 506, 573
+                                  321     Seminole 428, 438 443
+                                  322     Shoshone 195 206, 494, 518
+                                  323     Sioux 282 312, 326, 327
+                                  324     Tlingit 017
+                                  325     Tohono Oodham 218 222
+                                  326     All Other Tribes 002 007, 010 013, 015,
+                                  327     Tribe Not Specified 548, 549, 576 598 Tr
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RAGECHLD     C       X      1             Presence and Age of Own Chld.
+                                  0       N/a Male
+                                  1       With Own Chld. Under 6 Yrs. Only
+                                  2       With Own Chld. 6 to 17 Yrs. Only
+                                  3       With Own Chld. Under 6 Yrs. and 6 to 17
+                                  4       No Own Chld. .incl. Females Under 16 Yrs
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+REARNING     C       X      6             Total Pers. Earnings
+                                  000000  N/a No Earnings
+                                  284000  $284000 Topcode
+                                  284001  State Medians Included
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RECTYPE      C       X      1             Rec. Type
+                                  P       Pers. Record
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RELAT1       C       X      2             Rel. or Not Related or Grp. Qtrs.
+                                  00      Hshldr.
+                                  01      Husband/wife
+                                  02      Son/daughter
+                                  03      Stepson/stepdaughter
+                                  04      Brother/sister
+                                  05      Father/mother
+                                  06      Grandchild
+                                  07      Other Rel.
+                                  08      Roomer/boarder/foster Child
+                                  09      Housemate/roommate
+                                  10      Unmarried Partner
+                                  11      Other Nonrel.
+                                  12      Instit. Person
+                                  13      Other Pers. in Grp. Qtrs.
+
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RELAT2       C       X      1             Detailed Rel. Other Rel.
+                                  0       N/a Gq/not Other Rel.
+                                  1       Son in Law/daughter in Law
+                                  2       Father in Law/mother in Law
+                                  3       Brother in Law/sister in Law
+                                  4       Nephew/niece
+                                  5       Grandparent
+                                  6       Uncle/aunt
+                                  7       Cousin
+                                  8       Other Related by Blood or Marriage
+                                  9       Other Rel.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+REMPLPAR     C       X      3             Employment Stat. of Parents
+                                  000     N/a Not Own Child of Hshldr., and Not Ch
+                                  111     Both Parents At Work 35 or More Hrs.
+                                  112     Father Only At Work 35 or More Hrs.
+                                  113     Mother Only At Work 35 or More Hrs.
+                                  114     Neither Parent At Work 35 or More Hrs.
+                                  121     Father At Work 35 or More Hrs.
+                                  122     Father Not At Work 35 or More Hrs.
+                                  133     Mother At Work 35 or More Hrs.
+                                  134     Mother Not At Work 35 or More Hrs.
+                                  141     Neither Parent in Labor Force
+                                  211     Father At Work 35 or More Hrs.
+                                  212     Father Not At Work 35 or More Hrs.
+                                  213     Father Not in Labor Force
+                                  221     Mother At Work 35 or More Hrs.
+                                  222     Mother Not At Work 35 or More Hrs.
+                                  223     Mother Not in Labor Force
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RIDERS       C       X      1             Vehicle Occupancy
+                                  0       N/a Not a Worker or Worker Whose Means o
+                                  1       Drove Alone
+                                  2       2 People
+                                  3       3 People
+                                  4       4 People
+                                  5       5 People
+                                  6       6 People
+                                  7       7 to 9 People
+                                  8       10 or More People
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RLABOR       C       X      1             Employment Stat. Recode
+                                  0       N/a Less Than 16 Yrs. Old
+                                  1       Civilian Emp., At Work
+                                  2       Civilian Emp., With a Job But Not At Wor
+                                  3       Unemp.
+                                  4       Armed Forces, At Work
+                                  5       Armed Forces, With a Job But Not At Work
+                                  6       Not in Labor Force
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+ROWNCHLD     C       X      1             Own Child See Appendix B, Page 14
+                                  0       Not Own Child
+                                  1       Own Child
+
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RPINCOME     C       X      6             Total Pers. Inc. Signed
+                                  000000  N/a No Inc.
+                                  401000  Topcode of Total Pers. Income
+                                  401001  State Medians Included
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RPOB         C       X      2             Place of Birth Recode
+                                  10      Born in State of Res.
+                                  21      Northeast
+                                  22      Midwest
+                                  23      South
+                                  24      West
+                                  31      Puerto Rico
+                                  32      American Samoa
+                                  33      Guam
+                                  34      Northern Marianas
+                                  35      Us Virgin Islands
+                                  36      Elsewhere
+                                  40      Born Abroad of American Parents
+                                  51      Naturalized Citizen
+                                  52      Not a Citizen
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RRELCHLD     C       X      1             Related Child See Appendix B, Page 14
+                                  0       Not Related Child
+                                  1       Related Child
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RSPOUSE      C       X      1             Married, Spouse Present/spouse Absent
+                                  0       N/a Less Than 15 Yrs. Old
+                                  1       Now Married, Spouse Present
+                                  2       Now Married, Spouse Absent
+                                  3       Widowed
+                                  4       Divorced
+                                  5       Separated
+                                  6       Never Married
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+RVETSERV     C       X      2             Veteran Per. of Srvc.
+                                  00      N/a Less Than 16 Yrs. Old, No Active Dut
+                                  01      September 1980 or Later Only
+                                  02      May 1975 to August 1980 Only
+                                  03      May 1975 to August 1980 and September 19
+                                  04      Vietnam Era, No Korean Conflict, No Wwii
+                                  05      Vietnam Era and Korean Conflict, No Wwii
+                                  06      Vietnam Era and Korean Conflict and Wwii
+                                  07      February 1955 to July 1964 Only
+                                  08      Korean Conflict, No Vietnam Era, No Wwii
+                                  09      Korean Conflict and Wwii, No Vietnam Era
+                                  10      Wwii, No Korean Conflict, No Vietnam Era
+                                  11      Other Srvc.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+SCHOOL       C       X      1             School Enrollment
+                                  0       N/a Less Than 3 Yrs. Old
+                                  1       Not Attending School
+
+
+                                  2       Yes, Pub. School, Pub. Coll.
+                                  3       Yes, Private School, Private Coll.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+SEPT80       C       X      1             Served September 1980 or Later
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+SERIALNO     C       P      7             Hu/gq Pers. Serial No. Unique Within Sta
+
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+SEX          C       X      1             Sex
+                                  0       Male
+                                  1       Female
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+SUBFAM1      C       X      1             Subfam. Rel.
+                                  0       N/a Gq/not in a Subfam.
+                                  1       Husband/wife
+                                  2       Parent in a Parent/child Subfam.
+                                  3       Child in Subfam.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+SUBFAM2      C       X      1             Subfam. Number
+                                  0       N/a Gq/not in a Subfam.
+                                  1       In Subfam. 1
+                                  2       In Subfam. 2
+                                  3       In Subfam. 3
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+TMPABSNT     C       X      1             Temp. Absence From Work
+                                  0       N/a Less Than 16 Yrs. Old/at Work/did No
+                                  1       Yes, on Layoff
+                                  2       Yes, on Vacation, Temp. Illness, Labor D
+                                  3       No
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+TRAVTIME     C       X      2             Travel Time to Work
+                                  00      N/a Not a Worker or Worker Who Worked At
+                                  99      99 Minutes or More to Get to Work
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+VIETNAM      C       X      1             Served Vietnam Era August 1964 April 197
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+WEEK89       C       X      2             Wks. Worked Last Yr. 1989
+                                  00      N/a Less Than 16 Yrs. Old/did Not Work i
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+WORK89       C       X      1             Worked Last Yr. 1989
+
+
+                                  0       N/a Less Than 16 Yrs. Old
+                                  1       Worked Last Year
+                                  2       Did Not Work Last Year
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+WORKLWK      C       X      1             Worked Last Week
+                                  0       N/a Less Than 16 Yrs. Old/not At Work/ U
+                                  1       Worked
+                                  2       Did Not Work
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+WWII         C       X      1             Served World War II September 1940 July
+                                  0        Did Not Serve This Per./less Than 16 Yr
+                                  1       Served This Per.
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+YEARSCH      C       X      2             Ed. Attainment
+                                  00      N/a Less Than 3 Yrs. Old
+                                  01      No School Completed
+                                  02      Nursery School
+                                  03      Kindergarten
+                                  04      1st, 2nd, 3rd, or 4th Grade
+                                  05      5th, 6th, 7th, or 8th Grade
+                                  06      9th Grade
+                                  07      10th Grade
+                                  08      11th Grade
+                                  09      12th Grade, No Diploma
+                                  10      High School Graduate, Diploma or Ged
+                                  11      Some Coll., But No Degree
+                                  12      Associate Degree in Coll., Occupational
+                                  13      Associate Degree in Coll., Academic Prog
+                                  14      Bachelors Degree
+                                  15      Masters Degree
+                                  16      Professional Degree
+                                  17      Doctorate Degree
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+YEARWRK      C       X      1             Yr. Last Worked
+                                  0       N/a Less Than 16 Yrs. Old
+                                  1       1990
+                                  2       1989
+                                  3       1988
+                                  4       1985 to 1987
+                                  5       1980 to 1984
+                                  6       1979 or Earlier
+                                  7       Never Worked
+
+VAR:        TYP:   DES:    LEN:   CAT:    VARIABLE/CATEGORY LABEL:
+__________________________________________________________________________________
+YRSSERV      C       X      2             Yrs. of Active Duty Military Srvc.
+                                  00      N/a Less Than 16 Yrs./no Active Duty Mil
+                                  01      1 Yr. or Less of Srvc.
+                                  50      50 or More Yrs. of Srvc.
+
