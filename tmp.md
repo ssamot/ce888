@@ -73,7 +73,7 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab6"></a>
 
-7. [Lab 6: Neural networks and MNIST](https://github.com/ssamot/ce888/tree/master/labs/lab7) 
+7. [Lab 7: Neural networks and MNIST](https://github.com/ssamot/ce888/tree/master/labs/lab7) 
 
 
 
