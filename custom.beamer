@@ -9,6 +9,7 @@ $if(fonttheme)$
 \usefonttheme{$fonttheme$}
 $endif$
 \usepackage{ragged2e}
+\usepackage{animate}
 \newcommand{\columnsbegin}{\begin{columns}}
 \newcommand{\columnsend}{\end{columns}}
 \setbeamertemplate{caption}[numbered]

@@ -33,7 +33,11 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 <a id="lec6"></a> 
 
-5. [Lecture 6: Data exploration](./slides/06-Exploration-slides.pdf), [Handouts](./slides/06-Exploration-handouts.pdf) 
+6. [Lecture 6: Data exploration](./slides/06-Exploration-slides.pdf), [Handouts](./slides/06-Exploration-handouts.pdf) 
+
+<a id="lec7"></a> 
+
+7. [Lecture 7: Neural networks](./slides/07-Neural-slides.pdf), [Handouts](./slides/07-Neural-handouts.pdf) 
 
 
 ### Labs
@@ -61,11 +65,15 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab5"></a>
 
-4. [Lab 5: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab5) 
+5. [Lab 5: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab5) 
 
 <a id="lab6"></a>
 
-4. [Lab 6: Clustering and visualisation](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
+6. [Lab 6: Clustering and visualisation](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
+
+<a id="lab6"></a>
+
+7. [Lab 6: Neural networks and MNIST](https://github.com/ssamot/ce888/tree/master/labs/lab7) 
 
 
 
@@ -139,8 +147,17 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 **Lecture 6**
 
-[Rousseeuw, Peter J. "Silhouettes: a graphical aid to the interpretation and validation of cluster analysis." Journal of computational and applied mathematics 20 (1987): 53-65.][http://www.sciencedirect.com/science/article/pii/0377042787901257]
+[Rousseeuw, Peter J. "Silhouettes: a graphical aid to the interpretation and validation of cluster analysis." Journal of computational and applied mathematics 20 (1987): 53-65.](http://www.sciencedirect.com/science/article/pii/0377042787901257)
+
 [Arthur, David, and Sergei Vassilvitskii. "k-means++: The advantages of careful seeding." Proceedings of the eighteenth annual ACM-SIAM symposium on Discrete algorithms. Society for Industrial and Applied Mathematics, 2007.](http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf)
+
+**Lecture 7**
+
+[Hinton, Geoffrey E., and Ruslan R. Salakhutdinov. "Reducing the dimensionality of data with neural networks." science 313.5786 (2006): 504-507.](https://pdfs.semanticscholar.org/7d76/b71b700846901ac4ac119403aa737a285e36.pdf)
+
+[Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep learning. MIT Press, 2016.](http://www.deeplearningbook.org/)
+
+[Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.](http://www.nowpublishers.com/article/DownloadSummary/MAL-006)
 
 
 ### People

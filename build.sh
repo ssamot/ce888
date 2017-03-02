@@ -9,8 +9,8 @@ pandoc tmp.md -o index.html --template template.html --toc --toc-depth 2
 #pandoc suggestions.md --template template.html  -o ./labs/suggestions/suggestions.html --variable suggestions=True --variable topdir=../..
 
 
-#for lec_name in "01-Introduction" "02-Stats" "03-Modelling" "04-Bandits" "05-Recommender" 
- for lec_name in "06-Exploration" 
+#for lec_name in "01-Introduction" "02-Stats" "03-Modelling" "04-Bandits" "05-Recommender" "06-Exploration" 
+ for lec_name in 07-Neural
  	do
  	echo Building slides for lecture $lec_name
  	pandoc  --slide-level 2 --template=custom.beamer -V theme=bjeldbak -V linkcolor=blue --toc -t beamer $lec_name.md -o ./slides/$lec_name-slides.pdf
