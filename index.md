@@ -40,6 +40,8 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 7. [Lecture 7: Neural networks](./slides/07-Neural-slides.pdf), [Handouts](./slides/07-Neural-handouts.pdf) 
 
 
+
+
 ### Labs
 Labs are every **Fridays 15:00-18:00, CES Lab 3**. Labs are assessed and they should be completed either in class or later on. 
 
@@ -158,6 +160,13 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep learning. MIT Press, 2016.](http://www.deeplearningbook.org/)
 
 [Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.](http://www.nowpublishers.com/article/DownloadSummary/MAL-006)
+
+
+**Lecture **
+
+[Halevy, Alon, Peter Norvig, and Fernando Pereira. "The unreasonable effectiveness of data." IEEE Intelligent Systems 24.2 (2009): 8-12.](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf)
+
+[Zhou, Zhi-Hua, and Ji Feng. "Deep Forest: Towards An Alternative to Deep Neural Networks." arXiv preprint arXiv:1702.08835 (2017).](https://arxiv.org/pdf/1702.08835.pdf)
 
 
 ### People
