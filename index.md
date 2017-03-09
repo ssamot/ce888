@@ -76,11 +76,13 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 6. [Lab 6: Clustering and visualisation](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
 
-<a id="lab6"></a>
+<a id="lab7"></a>
 
 7. [Lab 7: Neural networks and MNIST](https://github.com/ssamot/ce888/tree/master/labs/lab7) 
 
+<a id="lab8"></a>
 
+7. [Lab 8: IMDB and text data](https://github.com/ssamot/ce888/tree/master/labs/lab8) 
 
 
 
