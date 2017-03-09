@@ -39,6 +39,9 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 7. [Lecture 7: Neural networks](./slides/07-Neural-slides.pdf), [Handouts](./slides/07-Neural-handouts.pdf) 
 
+<a id="lec7"></a> 
+
+8. [Lecture 8: Images, Video, Audio, Text](./slides/08-Text-slides.pdf), [Handouts](./slides/07-Text-handouts.pdf) 
 
 
 

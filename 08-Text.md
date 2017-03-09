@@ -1,4 +1,4 @@
-% Images, text, video  and generative models 
+% Images, text, video, sound and generative models 
 % Spyros Samothrakis \
   Research Fellow, IADS \
   University of Essex 
@@ -401,6 +401,25 @@ model.add(Dense(1))
 model.add(Activation('sigmoid'))
 
 ~~~
+
+## Sound
+
+* Sound is captured in terms of
+    * Bit depth (e.g. 16bit)
+    * Sample size (e.g. 44.1KHz)
+* 16 bits of information are collected times a 44100 second
+* You could feed this directly to an RNN/Conv network
+* But usually a spectrogram is passed
+    * You turn audio into an image classification problem!
+
+## Spectrogram
+
+\includegraphics[width=0.9\textwidth]{./graphics/lec8/Spectrogram-19thC.png}
+
+\tiny
+\url{By Aquegg - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5544473}
+\url{https://yerevann.github.io/2016/06/26/combining-cnn-and-rnn-for-spoken-language-identification/}
+
 
 # Generating data
 
