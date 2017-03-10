@@ -1,4 +1,4 @@
-# Lab6
+# Lab8
 
 ## Setting up 
 * Do the following from the unix prompt of your VM
@@ -10,14 +10,6 @@
 	* Remove everything from the copied README.md
 
 
-## Lab setup
-
-You shouldn't need to setup anything for this lab, as all should have been set up last week
-
-Type the following in the command prompt (connect remotely via ``ssh mlvm@mlvm``)
-
-* ``pip install --upgrade tensorflow``
-* ``pip install --upgrade keras`` 
 
 For this lab, we will train a network to do sentiment analysis on IMDB data sets - actual data from here [http://ai.stanford.edu/~amaas/data/sentiment/](http://ai.stanford.edu/~amaas/data/sentiment/)
 

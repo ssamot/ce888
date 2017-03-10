@@ -1,4 +1,4 @@
-# Lab6
+# Lab7
 
 ## Setting up 
 * Do the following from the unix prompt of your VM
