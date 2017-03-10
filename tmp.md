@@ -82,7 +82,7 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab8"></a>
 
-7. [Lab 8: IMDB and text data](https://github.com/ssamot/ce888/tree/master/labs/lab8) 
+8. [Lab 8: IMDB and text data](https://github.com/ssamot/ce888/tree/master/labs/lab8) 
 
 
 
