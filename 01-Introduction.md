@@ -1,8 +1,8 @@
 % Introduction 
 % Spyros Samothrakis \
-  Research Fellow, IADS \
+  Lecturer/Assistant Director@IADS \
   University of Essex 
-% January 16, 2017
+% January 15, 2018
 
 
 
@@ -12,13 +12,16 @@
 * 10 weeks
 * Each week:
 	* 2-hour lecture
-	* 3-hour lab: a whole semester of Role-Playing!
+	* 3-hour lab!
 * Assessment:
 	* 2 assignments
 		* Project description (more on this later) - 15%
 		* Final application and report - 70%
+	* 10 Pages IEEE journal format
+		* No more no less! 
 	* Labs - 15% (1.5% each)
 		* You **must** complete each weekly lab!
+
 * This is the first and only non-technical lecture!
 * *Feel free to interrupt me at any point with questions/comments*
 
@@ -212,21 +215,80 @@ Dominic Cummings's (Head of *Vote Leave*) Blog\footnotemark
 
 ## Game playing
 
-* We recently have seen a resurgence of game playing machines
-* A computer GO programme finally outperformed top humans (AlphaGO)
-* No-limit heads up poker (matches still played as we speak!)
-* New labs are opening from major game companies dealing with game AI 
-* Though directly related, game analytics
+\columnsbegin
+\column{.3\textwidth}
+
+* Go, Chess machines are superhuman with no embedded human knowledge
+* Heads-up limit/no limit poker  - same deal, different kind of game
+
+\column{.7\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/alphago-zero.png} 
+
+\columnsend
+
+\footnotetext[7]{"DeepMind AlphaGo Zero learns on its own without meatbag intervention" \\ \tiny{\url{http://www.zdnet.com/article/deepmind-alphago-zero-learns-on-its-own-without-meatbag-intervention/
+}}}
 
 
-## Artificial intelligence
-* Everything we have seen so far are basically applications of Artificial Intelligence and Machine Learning
-* Inductive reasoning from a limited amount of examples
-	* Structured learning
-	* One-shot models
-* Deductive reasoning
-	* From concepts to data
-	* Platonic forms
+
+## Public Health
+
+\columnsbegin
+\column{.6\textwidth}
+
+* University of Michigan, Flint Water Crisis
+* "There is lead in Flint’s water. Where it is? Which homes are most at risk? When will the lead levels decrease?"
+* "We have data for over 8,000 properties, but there are over 50,000 parcels in Flint. Which of the not-yet-tested properties are at risk?"
+
+
+\column{.4\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/flint.jpeg} 
+
+\columnsend
+\footnotetext[8]{The Michigan Data Science Team (MDST) Work on the Flint Water Crisis" \\ \tiny{\url{http://web.eecs.umich.edu/~jabernet/FlintWater/data_dive_summary.html}}}
+
+
+
+## Predictive Firefighting
+
+\columnsbegin
+\column{.5\textwidth}
+
+* FireCast
+	* Risk of each building catching fire
+	* Collects about 60 features per building
+	* (V.3) Input for each building of about 8K features!
+
+* Image from Seattle
+* Act on Risk
+
+\column{.5\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/fire.png} 
+
+\columnsend
+
+\footnotetext[9]{New York City Fights Fire with Data \\\url{http://www.govtech.com/public-safety/New-York-City-Fights-Fire-with-Data.html}}
+
+
+## Interventions
+
+\columnsbegin
+\column{.6\textwidth}
+
+* "The collection of delinquent fines is a massive public administrative challenge. In the United Kingdom for instance, unpaid court fines amounted to more than £600 million in 2011"
+* Send personalized text messages/emails, tailored to individuals needs
+
+
+\column{.3\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/phone.jpeg} 
+
+\columnsend
+
+\footnotetext[2]{Assessing the Effectiveness of Alternative Text Messages to Improve Collection of Delinquent Fines in the United Kingdom\url{https://www.povertyactionlab.org/evaluation/assessing-effectiveness-alternative-text-messages-improve-collection-delinquent-fines}}
 
 
 
@@ -293,7 +355,7 @@ Dominic Cummings's (Head of *Vote Leave*) Blog\footnotemark
 	* See if they break down
 	* What is the optimal way of doing such a procedure?
 * Causality from experimental data - mostly what science is all about
-	* **Science is the epistemology of causality**
+	* **Science is the epistemology of causation**
 
 
 ## Anomaly Detection
@@ -305,10 +367,10 @@ Dominic Cummings's (Head of *Vote Leave*) Blog\footnotemark
 
 ## Generate new data
 * Can I generate fictional vehicles and their properties?
-* Mathematically, learn P(D;M), a model of the data
+* Mathematically, learn P(D;M) or P(D,C;M), a model of the data
 * You can then use your plausible, but fictional vehicles for entertainment
 * "Learning to draw before learning to see"
-	* $P(D,C;M) = P(C|D)P(D)$
+	* $P(D,C;M) = P(C|D; M )P(D;M)$
 	* $P(D|C;M)$
 
 ## Dimensionality reduction
@@ -410,11 +472,9 @@ with an occupation’s probability of computerisation"
 ## Linux VM
 
 * Download the VM for this module 
-* External link \url{https://docs.google.com/uc?id=0B_kDfEzMuWD6ZGJFU1VfeEY3TnM&export=download}
 * The VM contains all (or most) of what you need if you are to create a successful python project
-* Username/password is \texttt{mlvm/mlvm}
-* You will have a USB stick were you should copy the VM folder (after you un-rar the archive)
-* More about this on the labs
+* You will have a USB stick were you should copy the VM folder (after you un-zip the archive)
+* More about this in the labs
 
 ## Python
 * Python is the language of this module
@@ -429,7 +489,7 @@ with an occupation’s probability of computerisation"
 	* A massive amount of related libraries
 
 ## Ipython/Jupiter
-* A better command line interface to python
+* A "better" command line interpreter for python
 * Has something called a "notebook"
 	* A notebook combines code + natural language
 * See here for a very nice example
@@ -476,17 +536,6 @@ with an occupation’s probability of computerisation"
 \includegraphics[width = 0.9\textwidth]{graphics/lec1/seaborn-tsplot-2.png}
 
 
-## Twitter API
-* We are going to use this a lot
-* Most of the labs will be about creating twitter bots!
-* Twitter has a python API
-	* You will use it to send tweets and collect tweets
-	* Also \texttt{tweepy}
-* If you haven't used twitter, create an account now and tweet a bit 
-	* Read other people's tweets
-	* Get a feeling of the platform
-* You will need to create both a gmail account and a twitter account for the labs
-
 ## Pandas
 * *R* had dataframes
 	* Essentially, a very SQL-like table-like data structure
@@ -501,6 +550,21 @@ with an occupation’s probability of computerisation"
 * (Kaggle) \url{https://www.kaggle.com/}
 * Now runs on GPUs!
 * We will deal with boosting at a later lecture
+
+## LIME
+
+* It will soon become a legal requirement to be able to explain your models
+\includegraphics[width = 0.9\textwidth]{graphics/lec1/tabular.png}
+
+
+## T-POT
+
+* The ML pipeline is getting more and more complicated
+* A number of tools has been developed to automate algorithm design
+* E.g. feature extraction, hyperparameter choices etc. 
+\includegraphics[width = 0.9\textwidth]{graphics/lec1/tpot-ml-pipeline.png}
+
+
 
 
 ## Apache Spark
@@ -525,7 +589,88 @@ with an occupation’s probability of computerisation"
 
 ## Assignments
 
-* Let's spend some time looking at possible projects
+* Different format than last year
+* 4 Groups
+	* Individual assignments
+	* You are encouraged to discuss within the group
+	* But it's still your own project
+	* You will be assigned to one of these groups randomely
+
+* Work on your own
+* DO NOT WAIT UNTIL THE VERY LAST MINUTE, EXPERIMENTS TAKE TIME
+
+
+## Domain Adaptation
+
+
+
+\columnsbegin
+\column{.5\textwidth}
+
+* The usual assumption is that the training and test set come from the same distribution
+* This is not always the case - in face almost never
+* What can we do about this?    
+* Auto-ML for domain adaptation	
+
+\column{.5\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/assi1/da_concept.png} 
+
+\columnsend
+
+
+## One-Shot learning
+
+\columnsbegin
+\column{.5\textwidth}
+
+* Most machine learning algorithms require a huge amount of data
+	* This is not always possible
+* Humans tend to generalise nicely using very few data samples
+* Massive datasets not always available
+* Auto-ML and Metric Learning
+
+\column{.5\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/assi2/Futurama.png} 
+
+\columnsend
+
+
+## Reinforcement Learning and Interpretability
+
+\columnsbegin
+\column{.5\textwidth}
+
+* We need to be able to explain the models
+* This is a a *legal* requirement 
+* We will use LIME to try and interpret some game-playing agents
+
+\column{.5\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/assi3/lime_expla.png} 
+
+\columnsend
+
+
+
+
+## Continual Learning
+
+\columnsbegin
+\column{.5\textwidth}
+
+* One of the hottest problems in ML right now
+* *Humans forget, Machines tend to forget catastrophically*
+* Most ML algorithms cannot learn without forgetting all past experience
+
+\column{.5\textwidth}
+
+\includegraphics[width = \textwidth]{graphics/lec1/assi4/hqdefault.jpg} 
+
+\columnsend
+
+
 
 ## Final remarks
 
@@ -535,7 +680,6 @@ with an occupation’s probability of computerisation"
 * The aim of this module is to get you practical skills that will help you survive the data science arena
 * Coding + ML + statistics!
 * We will try to get as much of a unified view of the field as possible
-* Next week: boostrapping!
 
 
 

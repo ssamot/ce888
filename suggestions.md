@@ -1,147 +1,132 @@
-# Assignment Suggestions
+# Assignments
 
-Below you will find a list of potential projects suitable for CE888. Each project has a number of core references and a data source that you should
-read and evaluate. Your goal should be to identify a project that should both align nicely with your personal interests and qualifies as "data science-y" 
-enough to be considered appropriate for the module. The write-up of your project would need to follow the template of a relevant conference or journal paper and the focus 
-should be on quality rather than quantity. A minimum of amount of novelty is expected at each project and toy problems are not acceptable - if you help deciding on which project to work, please talk to the module supervisor. 
+Below you will find a list of projects for CE888 - this is still a draft and I will refine the assignments as we get closer each coursework getting formally released. 
 
 
-### Role Playing Games: systems and statistics.
-A massive number of gaming systems has been proposed that range from the heavy dice pools of Shadowrun and World of Darkness to the percentile system of Eclipse Phase and Call of Cthulhu. The goal of the project is to analyse the statistical qualities of these games systems (means, medians, standard errors, variances, roll distributions etc. ) and identify possible "black spots" in game design (e.g. do we get games with heavy tailed distributions? Do the mechanics of most games fail to correctly simulate certain events?)
-
-**References:**
-
-1. [Isaksen, Aaron, et al. "Characterising Score Distributions in Dice Games." Game and Puzzle Design Journal, 2016 ](http://julian.togelius.com/Isaksen2016Characterising.pdf)
-2. [A Treatise on Different Dice-rolling Mechanics in RPGs](http://rpg-design.wikidot.com/evaluation)
-
-
-**Target Journal/Conference:** gapdjournal.com
-
-**Example Data:** You would need to have an interest and understanding of Role Playing Games so as to be able to at least appreciate major game systems. 
-
-* * *
-### Intransitivities
-
-It is often the case that we would like to organise tournaments where players of the same or similar skill are matched to one another. A phenomenon that has been observed in artificial systems is the intransitivity of skill between players. For example, let us assume that player A beats player B and that player B beats player C - one would normally conclude that A beats C. However this might not be the case, as certain qualities of player C might make it extremely advantageous against player A. The aim of this project is to identify how often intransitivities occur in real computer (or otherwise) games between players and if persistent intransitivities tell us anything about the structure of a game and the players that play it. 
-
-**References:**
-
-1. [Samothrakis, Spyridon, et al. "Coevolving game-playing agents: Measuring performance and intransitivities." IEEE Transactions on Evolutionary Computation 17.2 (2013): 213-226.](http://ieeexplore.ieee.org/document/6242396/)
-2. [Glickman, Mark E. "A comprehensive guide to chess ratings." American Chess Journal 3 (1995): 59-102.](http://www.glicko.net/research/acjpaper.pdf)
-3. [Herbrich, Ralf, Tom Minka, and Thore Graepel. "Trueskill™: A Bayesian skill rating system." Advances in neural information processing systems. 2006.](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2006_688.pdf)
-
-**Target Journal/Conference:** IEEE CIG
-
-**Example Data:** [Dota 2 Matches](https://www.kaggle.com/devinanzelmo/dota-2-matches). 
-
-* * *
 
 
 ### RL and Interpretability
 
-Modern Reinforcement Learning helps agents learn how to act using complex patterns of text, sound and video and it's slowly moving away from research and making inroads to traditional industries (e.g., creating game NPC characters). The high dimensionality of the input space makes it however very hard to interpret why an agent preferred one action over another. In this project we will try to transfer some novel methods from supervised learning to Reinforcement Learning  in order to interpret why agents make certain decisions. We will use already existing Atari game playing agents and try to interpret their actions profile in real time, effectively "seeing" through the agent's eyes.
+Modern Reinforcement Learning helps agents learn how to act using complex patterns of text, sound and video and it's slowly moving away from research and making inroads to traditional industries (e.g., creating game NPC characters). The high dimensionality of the input space makes it however very hard to interpret why an agent preferred one action over another. In this project we will try to transfer some novel methods from supervised learning to Reinforcement Learning in order to interpret why agents make certain decisions. We will use already existing Atari game playing agents and try to interpret their actions profile in real time, effectively "seeing" through the agent's eyes.
+
+**Target Journal/Conference:** IEEE Transactions on Games
+
+
 
 **References:**
 
 1. [Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin. "" Why Should I Trust You?": Explaining the Predictions of Any Classifier." KDD (2016).](https://arxiv.org/pdf/1602.04938v3)
 2. [Lipton, Zachary C., et al. "The Mythos of Model Interpretability." IEEE Spectrum (2016)](http://zacklipton.com/media/papers/mythos_model_interpretability_lipton2016.pdf)
+3. [Greydanus, Sam, et al. "Visualizing and Understanding Atari Agents." arXiv preprint arXiv:1711.00138 (2017).](https://arxiv.org/pdf/1711.00138)
+4. [OpenCV optical flow tutorial](https://docs.opencv.org/3.3.1/d7/d8b/tutorial_py_lucas_kanade.html)
 
-**Target Journal/Conference:** IEEE CIG/TCAIG/Neural Networks
 
-**Example Data:** 
+**Data:** 
 
-1. [Example Open AI gym Atari Controllers](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/OpenAIGym)
-2. [Lime](https://github.com/marcotcr/lime)
-3. [Example Open AI agent playing breakout](https://gym.openai.com/evaluations/eval_L55gczPrQJamMGihq9tzA)
+1. [Example Open AI gym Atari Controllers - look also in your VM](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/OpenAIGym)
+2. [LIME](https://github.com/marcotcr/lime)
+
+**Tasks**
+
+1. Each Atari agent perceives the world through an concatenation of 4 frames and outputs an action. Run agents in at least 6 games, in as diverse states as possible. Collect at least 30,000 data instances per game and load them for further processing.  
+2. Create a sample python programme that takes an instance, passes through the policy network and outputs an action.
+3. Find a useful high level image to pass to LIME (e.g. calculate the optical flow of the sequence of four actions and output a single image with the flow in it).
+4. Use one of the unsupervised learning algorithms from sci-kit learn to break down your data in various segments - are there clear clusters being formed? What is in each cluster? 
+5. Create a video of agent actions. 
+
 
 * * *
 
-### Head bootstrap vs Dropout
+### Genetic Programming/Auto-ML for Domain Adaptation
 
-Dropout is a well understood method for regularising neural networks. Outside neural networks, a framework commonly used for achieving similar (but not quite the same) results is "bagging". Unfortunately, one has to train multiple neural networks in order to gain the advantages of bagging, a process that is very slow. Recently, in the context of Reinforcement Learning, an algorithm has been proposed where multiple output layers of a neural network are trained in parallel using bootstrapping, while the core network remains the same. This project will evaluate this configuration in supervised learning problems.
-
-**References:**
-
-1. [Osband, Ian, et al. "Deep Exploration via Bootstrapped DQN." arXiv preprint arXiv:1602.04621 (2016).](http://arxiv.org/pdf/1602.04621)
-2. [Single estimator versus bagging: bias-variance decomposition](http://scikit-learn.org/stable/auto_examples/ensemble/plot_bias_variance.html#sphx-glr-auto-examples-ensemble-plot-bias-variance-py)
-3. [The Bagging Classifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html#sklearn.ensemble.BaggingClassifier)
+It is often the case that the source data is not the same as the target data; for example we only have labeled data examples from images of animals we took in artificial captivity conditions (*source data*), but we would like to classify animals in the wild (*target data*). We don't however know the labels of the target data, so we have to learn features that fail to discriminate between source and target distributions, but are good enough to actually learn the mapping between those distributions and their labels.
 
 **Target Journal/Conference:** IEEE Transactions on Neural Networks and Learning Systems
 
-**Example Data:** 
-
-1. [Example MNIST MLP for Keras](https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py)
-2. [Example CIFAR-10 for Keras](https://github.com/fchollet/keras/blob/master/examples/cifar10_cnn.py)
-
-* * *
-
-### Cause and effect 
-
-Understanding cause from effect in pairs of data is of paramount importance; for example one might want to understand if the raise in height is causing a drop in temperature or the other way around. This project will try to learn the causal direction of cause-effect pairs using recurrent neural networks. Data is presented as a set of collected datapoints (not a sequence, but we will treat it is us such) of various lengths and recurrent neural network should be trained to infer the causal direction of the data. 
 
 **References:**
 
-1. [Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras](http://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
-2. [Distinguishing cause from effect using observational data: methods and benchmarks](https://arxiv.org/pdf/1412.3773v3.pdf)
+1. [Ganin, Yaroslav, and Victor Lempitsky. "Unsupervised domain adaptation by backpropagation." International Conference on Machine Learning. 2015.](http://proceedings.mlr.press/v37/ganin15.html)
+2. [Lipton, Zachary C., et al. "The Mythos of Model Interpretability." IEEE Spectrum (2016)](http://zacklipton.com/media/papers/mythos_model_interpretability_lipton2016.pdf)
+3. [Greydanus, Sam, et al. "Visualizing and Understanding Atari Agents." arXiv preprint arXiv:1711.00138 (2017).](https://arxiv.org/pdf/1711.00138)
 
-**Target Journal/Conference:** IEEE Transactions on Knowledge and Data Engineering
 
-**Example Data:** 
+**Data:** 
 
-1. [Cause and effect pairs](http://webdav.tuebingen.mpg.de/cause-effect/)
-2. [Cause and effect pairs file to be used in experiments](http://webdav.tuebingen.mpg.de/cause-effect/pairs_1.0.zip)
+
+1. [MNIST-M Dataset, Blobs and related code](https://github.com/pumpikano/tf-dann) 
+2. [The office 31 Dataset](https://github.com/jindongwang/transferlearning/blob/master/doc/dataset.md#office-31)
+
+
+**Tasks**
+
+1. Download and load the above datasets in python, clearly separating the domain and source data. 
+2. Use the TPOT classifier to learn good classifiers for all datasets.
+3. Change the scorer of the TPOT classifier to one that takes into account domain adaptation; a good classifier both succeeds in achieving good performance for the source domain, while the features learned fail to discriminate between between source and target domains. You will need to create a scoring function with signature `scorer(estimator, X, y)`. The estimator passed is an sklearn `Pipeline` object - you need to get everything but the last part of the pipeline to transform the target data as well.
+4. Evaluate your method in both datasets.
+
 
 * * *
 
-### Bootstrapping for polling 
+### Genetic Programming/Auto-ML for One-Shot Learning
 
-It has been hypothesised that recent (repeated) poll failures have to do with three key assumptions a) that the "undecided" crowd will invariably move towards the status quo b) that voters are not lying on purpose or out of fear c) that no section of the demographic is completely missing from the poll. This project will try to align polling results with demographic data using a biased version of bootstrapping, where one should try to re-sample (and thus present to a learning algorithm) sampling points according to how often we assume they occur in the general population. 
+One of the issues of most ML algorithms is the need for copious amounts of data - neural networks are notorious for that. It might be possible to transform our data in a way that algorithms that algorithms can use a very limited number of examples and still perform well. A possible method for doing this is transforming classification/regression tasks to metric learning tasks, i.e. how far away is a new data instance from ones observed already.  
+
+
+**Target Journal/Conference:** IEEE Transactions on Neural Networks and Learning Systems
+
 
 **References:**
 
-1. [Online Bagging and Boosting](http://ieeexplore.ieee.org/document/1571498/)
-2. [Similarity Measures](http://www.scholarpedia.org/article/Similarity_measures)
+1. [One Shot Learning and Siamese Networks in Keras](https://sorenbouma.github.io/blog/oneshot/)
+2. [Lake, Brenden M., Ruslan Salakhutdinov, and Joshua B. Tenenbaum. "Human-level concept learning through probabilistic program induction." Science 350.6266 (2015): 1332-1338.](https://staff.fnwi.uva.nl/t.e.j.mensink/zsl2016/zslpubs/lake15science.pdf)
 
-**Target Journal/Conference:** IEEE Transactions on Knowledge and Data Engineering
+**Data:** 
 
-**Example Data:** Identify an event of interest to you (e.g. elections) and find polling data from it, preferably ones that have the demographic characteristics of the people polled. 
+
+1. [Omniglot dataset](https://github.com/brendenlake/omniglot) 
+
+**Tasks:**
+
+1. Download and load the above datasets in python, clearly separating the training and the test data. Generate image combinations (same /different) according the blog post above (reference 2)
+2. Use the TPOT classifier to learn the metric - as a common classification with probabilities task.
+3. Change the scorer of the TPOT classifier; a good scorer both succeeds in achieving good performance for the original task, while the features learned fail to discriminate between between source and target domain. You will need to create a scoring function with signature `scorer(estimator, X, y)`. The estimator passed is an sklearn Pipeline object - manipulate it to get any. Re-run TPOT with your new scorer and record the results.
+4. Try to use methods for upsampling/downsampling to capture the the fact that your dataset is now imbalanced - incorporate them within TPOT's pipeline if you can.
+
+
+
 
 * * *
 
+### Continual Learning using auto-encoders
 
-### Artificial Intelligence and society 
+One of the most important unsolved issues in Machine Learning is learning concepts incrementally. For this project we will try 
 
-There is an active debate on what the impact of the raise of artificial intelligence will be on labour and labour time. One could possibly use data from previous industrial revolutions
-and try to make a coherent argument on whether labour hours will go up or down as a result of improved machinery (i.e. intelligent machines). This is a "small data" project and methods tailored to smaller datasets should be used - examples in the references below.
+**Target Journal/Conference:** IEEE Transactions on Neural Networks and Learning Systems
+
 
 **References:**
 
-1. [Joy, Bill. "Why the future doesn’t need us." Nanoethics. The Ethical and Social Implications of Nanotechnology (2000): 17-30.](http://xa.yimg.com/kq/groups/20503014/322130564/name/ch3.pdf)
-2. [Pre-industrial workers had a shorter workweek than today's](http://groups.csail.mit.edu/mac/users/rauch/worktime/hours_workweek.html)
-3. [Example of time series analysis](http://scikit-learn.org/stable/auto_examples/gaussian_process/plot_compare_gpr_krr.html)
+1. [Keras Autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
+1. [Kirkpatrick, James, et al. "Overcoming catastrophic forgetting in neural networks." Proceedings of the National Academy of Sciences (2017): 201611835.](http://www.pnas.org/content/114/13/3521.full)
+1. [Goodfellow, Ian J., et al. "An empirical investigation of catastrophic forgetting in gradient-based neural networks." arXiv preprint arXiv:1312.6211 (2013).](https://arxiv.org/pdf/1312.6211.pdf)
 
-**Target Journal/Conference:** Journal of Artificial Intelligence Research, AI and Society track
+**Data:** 
 
-**Example Data:** See the second reference above, but also you probably need to discover data online. 
+1. [MNIST dataset](https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py)
+1. [CIFAR10 dataset](https://github.com/keras-team/keras/blob/master/examples/cifar10_cnn.py)
 
-* * *
 
+**Tasks**
 
-### Question Answering using Random Forests 
+1. Create three or more tasks of MNIST digits by permuting the pixels (i.e shuffling the images) in a fixed way for each task and save the new datasets in a file. Do the same with CIFAR10 data. 
+2. Instantiate $n$ of keras/neural network autoencoders and associate an instance of a classifier with each one.
+3. Send data in batches and pick the auto-encoder with the lowest error - train the autoencoder and the associated classifier with that batch.
+4. Evaluate the setup in all tasks.
+5. Redo the above experiment with an increased amount of autoencoders ($n+1$). 
+6. Create new autoencoders on the fly if the error is too high. 
 
-Random Forests are a machine learning method that is trivially parallelisable and extremely fast to train. With the advent of word2vec, one has a mechanism that can extract the semantic meaning of words directly, by having them converted into vector representations. For this project we will use random forests directly on word2vec sequences on the bABi tasks, a set of question answering tasks for Artificial Intelligence. You will not need to actually use any word2vec method for this project, just to convert tasks sentences to fixed length representations of vectors and feed them to a Random Forest. 
-
-**References:**
-
-1. [Weston, Jason, et al. "Towards ai-complete question answering: A set of prerequisite toy tasks." arXiv preprint arXiv:1502.05698 (2015).](https://arxiv.org/pdf/1502.05698v10)
-2. [Mikolov, Tomas, et al. "Distributed representations of words and phrases and their compositionality." Advances in neural information processing systems. 2013.](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
-
-**Target Journal/Conference:** IEEE Transactions on Knowledge and Data Engineering 
-
-**Example Data:** 
-
-1. [bAbi Tasks](http://www.thespermwhale.com/jaseweston/babi/tasks_1-20_v1-2.tar.gz)
-2. [Glove Vectors](http://nlp.stanford.edu/projects/glove/)
+* * * 
 
 
 * * *

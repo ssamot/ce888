@@ -2,7 +2,7 @@
 % Spyros Samothrakis \
   Research Fellow, IADS \
   University of Essex 
-% February 7, 2017
+% March 7, 2017
 
 
 
@@ -58,7 +58,7 @@ Very popular benchmark
 
 ## Data trumps algorithms
 
-* It is often tempteing to try to find a better algorithm to solve a certain problem
+* It is often tempting to try to find a better algorithm to solve a certain problem
 * But it has been shown time and time again that one much better off by adding more data
 * Problems with neat solutions are very rare, more data 
 * *Physics envy* \footnote{Halevy, Alon, Peter Norvig, and Fernando Pereira. "The unreasonable effectiveness of data." IEEE Intelligent Systems 24.2 (2009): 8-12.}
@@ -67,7 +67,7 @@ Very popular benchmark
 * We are modelling human perception as much as we are modelling cars or numbers!
 
 
-## CIFAR 0
+## CIFAR 10
 
 
 \includegraphics[width=0.89\textwidth]{./graphics/lec8/cifar10.png}
@@ -159,7 +159,7 @@ Can you do the same data augmentation operations on MNIST images?
 * Another common approach is to constraint the number of parameters
 * In a layer type in neural networks become very popular due to huge successes in computer vision
 * It tries to learn different filters
-    * Have you ever played with photohop filters? 
+    * Have you ever played with photoshop filters? 
 
 ## 2D convolutions
 
@@ -170,7 +170,7 @@ Can you do the same data augmentation operations on MNIST images?
 
 ## Learnning 2D convolutions
 
-* You pass the filter over the whole imeage
+* You pass the filter over the whole image
     * Some way of treating borders 
         * Padding with zeros
         * Do not calculate values if the kernel cannot fit
@@ -237,7 +237,7 @@ model.add(Activation('softmax'))
 
 * Video is effectively a stream of images
 * It has a time component
-* Multiple ways of attaking this
+* Multiple ways of attacking this
 * You can unfold and create a really large image!
 * Or, 3D convolutions!
 * Not too many benchmarks

@@ -1,0 +1,40 @@
+Question Answering Using Random Forests
+1. Domain Adaptation using Auto-ML
+
+a) Download data and 
+
+https://github.com/pumpikano/tf-dann
+a) blobs
+b) MNIST
+
+https://people.eecs.berkeley.edu/~jhoffman/domainadapt/#datasets_code
+
+-----------------------------------------------------
+
+
+Explaining Reinforcement Learning - LIME
+
+----------------------------------------------------
+
+* One shot learning - random forests
+	* Create a new classifier and evaluate it
+	* Use Meta-ML
+	* Use KNN 
+	* Auto-ml to create new features
+	* Present results
+--
+
+---------------------------------------------------
+
+* Incremental Learning
+
+---------------------------------------------------
+
+IOANNOUS PAPER META-STUDY
+
+10 Pages, IEEE format. 
+
+
+Marvin Minsky
+All Information in the Price (Hayek)
+Falsifiable

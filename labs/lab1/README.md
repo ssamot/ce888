@@ -4,25 +4,21 @@
 
 * (Quick) format your USB stick to NTFS
 
-* Download in your tmp directory: [mlvm](https://docs.google.com/uc?id=0B_kDfEzMuWD6ZGJFU1VfeEY3TnM&export=download)
+* Download in your tmp directory: [mlvm2](https://drive.google.com/drive/folders/1SwdnpeJfjzUH7YDgwgrtDb7mve6d4zIe)
 * Unrar the VM in your tmp directory
 * Copy the VM to the USB stick
 * Start the VM 
-	* Double click on `mlvm.vbox`
+	* Double click on `mlvm2.vbox`
 	* Try to start the VM 
 	* An error might pop up
-	* Press change settings and change the network adapter to another value, and then back to NAT
-* Login using mlvm/mlvm
+	* Press change settings and change the network adapter to any other value (or the same), and then back to NAT
+* Login using mlvm2/mlvm2
 	* Click on the vm window
 	* (To exit vm mode press ctrl+alt)
-	* Type "sudo reboot" to reboot the machine
-	* Find your local ip address (type "ifconfig")
-	* Ping google to check if you have network access
-	* Open an explore window and type "\\\\mlvm\\mlvm"
-		* If that doesn't work, use the local IP you got from ifconfig (`192.168...`)
-			* "\\\\192.168....\\mlvm"
-		* Enter your credentials (mlvm/mlvm)
+	* "\\\\mlvm2\\mlvm2"
+	* Enter your credentials (mlvm2/mlvm2)
 	* For ease of use (so you can copy paste) start an ssh session with the vm (again using the local address)
+		* Open a command line window and create type `ssh mlvm2@mlvm2`, password is `mlvm2`
 
 
 ## Creating a github account and CE888 project
@@ -46,7 +42,7 @@
 	
 
 
-
+<!-- 
 ## Configuring the VM with extra packages
 
 
@@ -55,14 +51,14 @@
 	* `sudo apt-get install enchant`
 	
 
-* Install NLTK 
+* Install NLTK - THIS IS ALLREADY DONE, DON'T DO IT
   *  `sudo pip install sopel`
   * ```sudo pip install nltk```
   * ```sudo python -m nltk.downloader -d /usr/local/share/nltk_data punkt```
   * ```sudo python -m nltk.downloader -d /usr/local/share/nltk_data wordnet```
   * ```sudo python -m nltk.downloader -d /usr/local/share/nltk_data averaged_perceptron_tagger```
 
-
+ -->
 ## Running a Sopel bot
 
 Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
@@ -101,8 +97,8 @@ Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 
 
 ## Bringing the labs from github
-* Got your home directory (i.e. /home/mlvm)
-* Do `git clone git@github.com:ssamot/ce888.git`
+* Got your home directory (i.e. /home/mlvm2)
+* Do `git clone https://github.com/ssamot/ce888.git`
 * Copy ce888/labs/lab1 into your local github lab directory
 	* That would be something like ce888labs/lab1
 	* Obviously create the directory if it doesn't exist 
@@ -110,7 +106,7 @@ Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 
 ## Lab Exercises
 - [ ] Create a pycharm project in the remote directory of your labs. You will need to modify `bot.py`
-- [ ] I will tell everyone what to comment in the IRC channel!
+- [ ] Keep throwing emotional word stuff in the channel!
 	* You will need to type messages from time to time as the lab progresses
 - [ ] Using the emotion detector, find the average of each emotion present in the comments
 	* Add the emotions for each message

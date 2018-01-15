@@ -2,18 +2,20 @@
 
 ### Overall
 
-This is a new module on Data Science and Decision Making - we will examine most aspects of modern data science and try to create a fully-fledged end-to-end data science app. The module outline can be found [here](https://www.essex.ac.uk/modules/Default.aspx?coursecode=CE888&year=17) - but it is still subject to minor changes. The lecture notes and lab scripts for this course will be made available and further developed during the module.  
+This is a new module on Data Science and Decision Making - we will examine most aspects of modern data science and try to create a fully-fledged end-to-end data science study. The module outline can be found [here](https://www.essex.ac.uk/modules/Default.aspx?coursecode=CE888&year=17) - but it is still subject to changes. The lecture notes and lab scripts for this course will be made available and further developed during the module.  
 
 This is a very hands-on module, where the goal is to give you sufficient breadth and depth to work as an independent data scientist. The course is assessed solely through coursework. 
 
 
 
 ### Lectures
-Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**. 
+Lectures take place on **Monday 14:00-16:00 at Room NTC.2.04**. 
 
 <a id="lec1"></a> 
 
 1. [Lecture 1: Introduction](./slides/01-Introduction-slides.pdf), [Handouts](./slides/01-Introduction-handouts.pdf) 
+
+<!--
 
 <a id="lec2"></a> 
 
@@ -39,22 +41,35 @@ Lectures take place on **Tuesday 09:00-11:00 at Room 6.345**.
 
 7. [Lecture 7: Neural networks](./slides/07-Neural-slides.pdf), [Handouts](./slides/07-Neural-handouts.pdf) 
 
-<a id="lec7"></a> 
+<a id="lec8"></a> 
 
-8. [Lecture 8: Images, Video, Audio, Text](./slides/08-Text-slides.pdf), [Handouts](./slides/07-Text-handouts.pdf) 
+8. [Lecture 8: Images, Video, Audio, Text](./slides/08-Text-slides.pdf), [Handouts](./slides/08-Text-handouts.pdf) 
 
+<a id="lec9"></a> 
 
+9. [Lecture 9: Data and Systems](./slides/09-Systems-slides.pdf), [Handouts](./slides/09-Systems-handouts.pdf) 
+
+<a id="lec10"></a> 
+
+10. [Lecture 10: Discussion](./slides/10-Discussion-slides.pdf), [Handouts](./slides/10-Discussion-handouts.pdf) 
+
+-->
 
 ### Labs
-Labs are every **Fridays 15:00-18:00, CES Lab 3**. Labs are assessed and they should be completed either in class or later on. 
+Labs are every **Tuesday 12:00-15:00, CES Lab 6,7**. Labs are assessed and they should be completed either in class or later on. 
 
-Please download the lab Virtual Machine from here: [MLVM Virtual Machine](https://docs.google.com/uc?id=0B_kDfEzMuWD6ZGJFU1VfeEY3TnM&export=download)
+
+
+Please download the lab Virtual Machine from here: [MLVM Virtual Machine](https://drive.google.com/drive/folders/1SwdnpeJfjzUH7YDgwgrtDb7mve6d4zIe
+
 
 All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](https://github.com/ssamot/ce888/tree/master/labs/)
 
 <a id="lab1"></a>
 
 1. [Lab 1: VM setup and simple emotion detection](https://github.com/ssamot/ce888/tree/master/labs/lab1) 
+
+<!--
 
 <a id="lab2"></a>
 
@@ -83,7 +98,7 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 <a id="lab8"></a>
 
 8. [Lab 8: IMDB and text data](https://github.com/ssamot/ce888/tree/master/labs/lab8) 
-
+-->
 
 
 ### IDEs
@@ -96,9 +111,11 @@ You can use whatever IDE you want for the course, however my proposal would be t
 
 The objective of the module and the main assignment is to produce a Data Science app (i.e. make use of data to generate results, make inferences, present the results to third parties) and write down the description of the methods and the results in a scientific paper. Some ideas for possible apps are provided [here](#assignment-suggestions).
 
-
+<!--
 * Assigments
 	* [Assignment 1](./assignments/ce888-assignment-1.pdf)
+	* [Assignment 2](./assignments/ce888-assignment-2.pdf)
+-->
 
 	
 
@@ -111,13 +128,13 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 **Lecture 1**
 
-[Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. The elements of statistical learning. Vol. 1. Springer, Berlin: Springer series in statistics, 2001.](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)
+[James, Gareth, et al. An introduction to statistical learning. Vol. 112. New York: springer, 2013.](https://s3.amazonaws.com/academia.edu.documents/37162300/An_Introduction_to_Statistical_Learning_with_Applications_in_R.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1515959849&Signature=1vCfZn0dpIe%2FL45pgI2fjn9GrlI%3D&response-content-disposition=inline%3B%20filename%3DPrinter_Opaque_this_An_Introduction_to_S.pdf)
 
 [Breiman, Leo. "Statistical modeling: The two cultures (with comments and a rejoinder by the author)." Statistical Science 16.3 (2001): 199-231.](http://projecteuclid.org/download/pdf_1/euclid.ss/1009213726%20)
 
 [Anderson, Philip W. "More is different." Science 177.4047 (1972): 393-396.](https://www.tkm.kit.edu/downloads/TKM1_2011_more_is_different_PWA.pdf)
 
-
+<!--
 **Lecture 2**
 
 [Efron, Bradley, and Robert J. Tibshirani. An introduction to the bootstrap. CRC press, 1994.](http://cds.cern.ch/record/526679/files/0412042312_TOC.pdf)
@@ -167,12 +184,18 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Bengio, Yoshua. "Learning deep architectures for AI." Foundations and trends® in Machine Learning 2.1 (2009): 1-127.](http://www.nowpublishers.com/article/DownloadSummary/MAL-006)
 
 
-**Lecture **
+**Lecture 8**
 
 [Halevy, Alon, Peter Norvig, and Fernando Pereira. "The unreasonable effectiveness of data." IEEE Intelligent Systems 24.2 (2009): 8-12.](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf)
 
 [Zhou, Zhi-Hua, and Ji Feng. "Deep Forest: Towards An Alternative to Deep Neural Networks." arXiv preprint arXiv:1702.08835 (2017).](https://arxiv.org/pdf/1702.08835.pdf)
 
+**Lecture 9** 
+
+[Dean, Jeffrey, and Sanjay Ghemawat. "MapReduce: simplified data processing on large clusters." Communications of the ACM 51.1 (2008): 107-113.](https://www.usenix.org/legacy/publications/library/proceedings/osdi04/tech/full_papers/dean/dean_html/)
+[Karau, Holden, et al. Learning spark: lightning-fast big data analysis. " O'Reilly Media, Inc.", 2015.](http://shop.oreilly.com/product/0636920028512.do)
+
+-->
 
 ### People
 * Module Supervisor: *Spyros Samothrakis*, <ssamot@essex.ac.uk>
