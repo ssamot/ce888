@@ -108,8 +108,8 @@ Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 - [ ] Create a pycharm project in the remote directory of your labs. You will need to modify `bot.py`
 - [ ] Keep throwing emotional word stuff in the channel!
 	* You will need to type messages from time to time as the lab progresses
-- [ ] Using the emotion detector, find the average of each emotion present in the comments
-	* Add the emotions for each message
+- [ ] Using the emotion detector, print the emotional content of each message (a vector of six numbers) 
+<!-- 	* Add the emotions for each message
 	* Divide by the number of emotions by the number of messages received 
 	* Also find the average of each emotion for each nick!
 - [ ] Print the results every time a new comment is entered and it contains some new emotional information
@@ -117,10 +117,11 @@ Type `sopel` AND ENTER YOUR OWN NICKNAME+bot as nickname
 	* Calculate rolling average as ``ave = ave + a * (emotion -ave)``
 	* Set `a = 0.01`
 	* Find the average emotion for each nick as well
+ -->
 - [ ] Once you are done, save your changes in github
 	* Go inside your lab directory and do 
       * ``git add -A -v``
-      * ``git commit -m <message>``
+      * ``git commit -m lab1``
       * ``git push origin master``
 
 

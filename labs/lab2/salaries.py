@@ -27,7 +27,7 @@ def mad(arr):
 
 if __name__ == "__main__":
 	df = pd.read_csv('./customers.csv')
-	print df.columns
+	print((df.columns))
 	sns_plot = sns.lmplot(df.columns[0], df.columns[1], data=df, fit_reg=False)
 
 	sns_plot.axes[0,0].set_ylim(0,)
@@ -38,11 +38,11 @@ if __name__ == "__main__":
 
 	data = df.values.T[1]
 	
-	print ("Mean: %f")%(np.mean(data))
-	print ("Median: %f")%(np.median(data))
-	print ("Var: %f")%(np.var(data))
-	print ("std: %f")%(np.std(data))
-	print ("MAD: %f")%(mad(data))
+	print((("Mean: %f")%(np.mean(data))))
+	print((("Median: %f")%(np.median(data))))
+	print((("Var: %f")%(np.var(data))))
+	print((("std: %f")%(np.std(data))))
+	print((("MAD: %f")%(mad(data))))
 
 	plt.clf()
 	sns_plot2 = sns.distplot(data, bins=20, kde=False, rug=True).get_figure()

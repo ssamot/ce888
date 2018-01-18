@@ -21,7 +21,7 @@ size = 20000
 
 for dist in dists:
 
-	print dist[0]
+	print((dist[0]))
 	if(dist[0] == "pareto"):
 		sample = dist[2].rvs(b, size = size)
 		sample = sample[(sample < 8)]
@@ -30,7 +30,7 @@ for dist in dists:
 	if(dist[0] == "uniform"):
 		sample = dist[2].rvs(size = size)
 	if(dist[0] == "normal_sc"):
-		print "normal high variance"
+		print("normal high variance")
 		#sample = dist[2].rvs(size = size, scale = 3)
 		sample = np.random.normal(0, 3, size)
 		sample = sample[((sample < 5) & (sample > -5))]

@@ -15,11 +15,12 @@ Lectures take place on **Monday 14:00-16:00 at Room NTC.2.04**.
 
 1. [Lecture 1: Introduction](./slides/01-Introduction-slides.pdf), [Handouts](./slides/01-Introduction-handouts.pdf) 
 
-<!--
 
 <a id="lec2"></a> 
 
 2. [Lecture 2: Summary and resampling statistics](./slides/02-Stats-Slides.pdf), [Handouts](./slides/02-Stats-handouts.pdf) 
+
+<!--
 
 <a id="lec3"></a> 
 
@@ -60,7 +61,7 @@ Labs are every **Tuesday 12:00-15:00, CES Lab 6,7**. Labs are assessed and they 
 
 
 
-Please download the lab Virtual Machine from here: [MLVM Virtual Machine](https://drive.google.com/drive/folders/1SwdnpeJfjzUH7YDgwgrtDb7mve6d4zIe
+Please download the lab Virtual Machine from here: [MLVM2 Virtual Machine](https://drive.google.com/drive/folders/1SwdnpeJfjzUH7YDgwgrtDb7mve6d4zIe)
 
 
 All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](https://github.com/ssamot/ce888/tree/master/labs/)
@@ -69,11 +70,11 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 1. [Lab 1: VM setup and simple emotion detection](https://github.com/ssamot/ce888/tree/master/labs/lab1) 
 
-<!--
 
 <a id="lab2"></a>
 
 2. [Lab 2: Creating plots, overleaf and confidence bounds](https://github.com/ssamot/ce888/tree/master/labs/lab2) 
+<!--
 
 <a id="lab3"></a>
 
@@ -134,14 +135,16 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 [Anderson, Philip W. "More is different." Science 177.4047 (1972): 393-396.](https://www.tkm.kit.edu/downloads/TKM1_2011_more_is_different_PWA.pdf)
 
-<!--
+
 **Lecture 2**
 
 [Efron, Bradley, and Robert J. Tibshirani. An introduction to the bootstrap. CRC press, 1994.](http://cds.cern.ch/record/526679/files/0412042312_TOC.pdf)
 
 [Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. "False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant." Psychological science 22.11 (2011): 1359-1366.](http://www.haas.berkeley.edu/groups/online_marketing/facultyCV/papers/nelson_false-positive.pdf)
 
-[Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.](htps://www.jstor.org/stable/2685796)
+[Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.](https://www.jstor.org/stable/2685796)
+
+<!--
 
 **Lecture 3** 
 

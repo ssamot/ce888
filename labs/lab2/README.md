@@ -55,5 +55,5 @@ Use the example code for the bootstrap provided in ``bootstrap.py'' to do the fo
 - [ ] Once you are done, save your changes in github
 	* Go inside your lab directory and do 
       * ``git add -A -v``
-      * ``git commit -m <message>``
+      * ``git commit -m lab2``
       * ``git push origin master``

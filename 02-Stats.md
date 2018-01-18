@@ -1,8 +1,8 @@
 % Summary and resampling statistics 
 % Spyros Samothrakis \
-  Research Fellow, IADS \
+  Lecturer/Assistant Director@IADS \
   University of Essex 
-% January 24, 2017
+% January 22, 2018
 
 
 
@@ -117,12 +117,12 @@ rug=True).get_figure()
 ## Measures of central tendency 
 
 * (Sample) mean
-	* $\mu = \frac{1}{N}\sum\limits_{i = 1}^NX_i$
+	* $\bar x = \frac{1}{n}\sum\limits_{i = 1}^nx_i$
 * (Sample) median
-	* Rank $X_i$
-	* $M = \twopartdef { X_{N/2 + 1} } {n\ is\ odd} { (X_{N/2} + X_{(N+1)/2} )/2} {n\ is\ even}$
+	* Rank $x_i$
+	* $M = \twopartdef { x_{n/2 + 1} } {n\ is\ odd} { (x_{/2} + x_{(n+1)/2} )/2} {n\ is\ even}$
 * In the salary data
-	* $\mu =  42809.523810$
+	* $\bar x =  42809.523810$
     * $M =  14000.000000$
 
 
@@ -130,13 +130,13 @@ rug=True).get_figure()
 ## Measurements of dispersion
 
 * (Sample) Standard deviation 
-	* $\sigma = \sqrt {\frac{1}{N-1}\sum\limits_{i = 1}^N {\left( {X_i - \bar X} \right)^2 } }$
-	* Variance is $\sigma^2$
+	* $s= \sqrt {\frac{1}{n-1}\sum\limits_{i = 1}^n {\left( {x_i - \bar x} \right)^2 } }$
+	* Variance is $s^2$
 * Median absolute deviation
-	* $MAD = M(|X_i - M(X)|)$ 
+	* $MAD = M(|x_i - M(x)|)$ 
 * In our data we have: 
-	* $\sigma^2  =  3230916099.773242$
-	* $\sigma =  56841.147946$
+	* $s^2  =  3230916099.773242$
+	* $s =  56841.147946$
 	* $MAD: 4000.000000$
 
 
@@ -169,13 +169,13 @@ rug=True).get_figure()
 
 ## Summary statistics
 
-$\mu = 9.214$
+$\bar x = 9.214$
 
 $M: 8.500000$
 
-$\sigma^2: 32.311$
+$s^2: 32.311$
 
-$\sigma: 5.684296$
+$s: 5.684296$
 
 $M: 2.500$
 
@@ -233,22 +233,22 @@ certain probability
 
 * Sample with replacement from the data you have already
 	* Create $\{1...B\}$ bootstraps of the same size
-	* Let's assume each observation in the initial dataset is $X_i$, where $i$ is the order appearing
+	* Let's assume each observation in the initial dataset is $x_i$, where $i$ is the order appearing
 
-$X^1 = {X^1_4, X_5^1 , X^1_3, X^1_5...}$
+$x^1 = {x^1_4, x_5^1 , x^1_3, x^1_5...}$
 
-$X^2 = {X^2_3, X_7^2 , X^2_7, X^2_8...}$
+$x^2 = {x^2_3, x_7^2 , x^2_7, x^2_8...}$
 
-$X^{...} = {...}$
+$x^{...} = {...}$
 
-$X^B = {X^B_8, X_3^B , X^4_2, X^1_4...}$
+$x^B = {x^B_8, x_3^B , x^4_2, x^1_4...}$
 
 
 ## Bootstrapping (3)
 
-* Let's do one one example
+* Let's do one example
 
-* X = \{1,0,1,2\}
+* x = \{1,0,1,2\}
 * Let's draw three samples
 	* I will simulate the dice rolls
 
@@ -260,10 +260,10 @@ $X^B = {X^B_8, X_3^B , X^4_2, X^1_4...}$
 * Get the mean for each sample (since this is what we are interested in)
 * We can now rank the means
 * We remove the bottom $10\%$  and the top $10\%$  to find  $\gamma = 0.80$
-* For the salary data
+* For the sales data
 
 \begin{gather*}
-    X = [  6.86,7.29,7.86,8.14   \\
+    x = [  6.86,7.29,7.86,8.14   \\
     	  8.36,   8.79,   8.86,   9.14 \\
     	   9.29,   9.5,    9.5,    9.71 \\
     	   10.36,  11.14,  11.14,  13.21 ]
@@ -350,11 +350,11 @@ $X^B = {X^B_8, X_3^B , X^4_2, X^1_4...}$
 old = np.array([0,1,1,1,0,1,1,0,0,1,0])
 new = np.array([0,1,1,0,1,1,0,1,1,1,0])
 ~~~
-$\mu_{old} = 0.18$ 
+$\bar x_{old} = 0.18$ 
 
-$\mu_{new} = 0.455$
+$\bar x_{new} = 0.455$
 
-$t_{obs} = \mu_{new} - \mu_{old} =  0.27$
+$t_{obs} = \bar x_{new} - \bar x_{old} =  0.27$
 
 Should they change?
 
@@ -405,7 +405,7 @@ pnew = np.array([0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0])
 ~~~
 
 * Record if the value of the test was more extreme or not
-	* $t_{perm} = \mu_{pnew} - \mu_{pold}$
+	* $t_{perm} = \bar x_{pnew} - \bar x_{pold}$
 	* $t_{perm} > t_{obs}$
 * Keep on permuting and recording
 * Find the number of times $t_{perm} > t_{obs}$
@@ -442,11 +442,11 @@ old = np.array([0,1,1,1,0,1,1,0,0,1,0])
 new = np.array([0,1,1,0,1,1,0,1,1,1,0,0,1,1,1,1,1,1,1])
 ~~~
 
-$\mu_{old} = 0.546$ 
+$\bar x_{old} = 0.546$ 
 
-$\mu_{new} = 0.73$
+$\bar x_{new} = 0.73$
 
-$t_{obs} = \mu_{new} - \mu_{old} =  0.19$
+$t_{obs} = \bar x_{new} - \bar x_{old} =  0.19$
 
 
 ## Results 

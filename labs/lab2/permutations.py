@@ -78,12 +78,12 @@ if __name__ == "__main__":
 	new = np.array([0,1,1,0,1,1,0,1,1,1,0,0,1,1,1,1,1,1,1])
 
 
-	print old.mean(), new.mean(), len(old), len(new),  new.mean() - old.mean()
+	print((old.mean(), new.mean(), len(old), len(new),  new.mean() - old.mean()))
 	#exit()
 	boots = []
 	for i in range(500,20000,100):
 		boot = permutation_resampling(i, new, old)
-		print i,boot
+		print((i,boot))
 		boots.append([i,boot])
 
 
