@@ -20,11 +20,13 @@ Lectures take place on **Monday 14:00-16:00 at Room NTC.2.04**.
 
 2. [Lecture 2: Summary and resampling statistics](./slides/02-Stats-Slides.pdf), [Handouts](./slides/02-Stats-handouts.pdf) 
 
-<!--
 
 <a id="lec3"></a> 
 
 3. [Lecture 3: Predictive modelling](./slides/03-Modelling-slides.pdf), [Handouts](./slides/03-Modelling-handouts.pdf) 
+
+
+<!--
 
 <a id="lec4"></a> 
 
@@ -74,11 +76,13 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 <a id="lab2"></a>
 
 2. [Lab 2: Creating plots, overleaf and confidence bounds](https://github.com/ssamot/ce888/tree/master/labs/lab2) 
-<!--
+
 
 <a id="lab3"></a>
 
 3. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab3) 
+
+<!--
 
 <a id="lab4"></a>
 
@@ -112,9 +116,10 @@ You can use whatever IDE you want for the course, however my proposal would be t
 
 The objective of the module and the main assignment is to produce a Data Science app (i.e. make use of data to generate results, make inferences, present the results to third parties) and write down the description of the methods and the results in a scientific paper. Some ideas for possible apps are provided [here](#assignment-suggestions).
 
-<!--
 * Assigments
 	* [Assignment 1](./assignments/ce888-assignment-1.pdf)
+
+<!--
 	* [Assignment 2](./assignments/ce888-assignment-2.pdf)
 -->
 
@@ -144,7 +149,6 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 [Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.](https://www.jstor.org/stable/2685796)
 
-<!--
 
 **Lecture 3** 
 
@@ -155,6 +159,9 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Geman, Stuart, Elie Bienenstock, and René Doursat. "Neural networks and the bias/variance dilemma." Neural computation 4.1 (1992): 1-58.](https://stuff.mit.edu/afs/athena.mit.edu/course/6/6.435/www/Geman92.pdf)
 
 [scikit-learn's website](http://scikit-learn.org/)
+
+<!--
+
 
 **Lecture 4**
 

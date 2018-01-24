@@ -30,7 +30,7 @@ class EmotionDetector():
         emotions_type =  self.get_all_emotion_types_from_disk()
         emotions = {}
         for emotion in emotions_type:
-            print(emotion)
+            print emotion
             emotions[emotion[1]] = self.load_synsets_from_file(emotion[0])
 
         return emotions
@@ -60,7 +60,7 @@ class EmotionDetector():
         for ss in sslist:
                     #print ss
                     #print ssid, len(synset2domains)
-                    for name, emotion in emotions.items():
+                    for name, emotion in emotions.iteritems():
                         if ss in emotion: # not all synsets are in WordNet Domain.
                             #print "Detected", ss, name
                             return name
@@ -119,7 +119,7 @@ class EmotionDetector():
 
         allvs = np.array(allvs)
         #print allvs.shape
-        print(resultfile)
+        print resultfile
         np.savetxt(resultfile, allvs, header= ", ".join(self.sorted_keys))
 
 
@@ -130,7 +130,7 @@ if __name__ == '__main__':
 
     raw = "Full of love and not hate."
 
-    print(ed.detect_emotion_in_raw_np(raw))
+    print ed.detect_emotion_in_raw_np(raw)
 
 
 

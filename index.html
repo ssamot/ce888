@@ -98,11 +98,11 @@
 <ol start="2" style="list-style-type: decimal">
 <li><a href="./slides/02-Stats-Slides.pdf">Lecture 2: Summary and resampling statistics</a>, <a href="./slides/02-Stats-handouts.pdf">Handouts</a></li>
 </ol>
+<p><a id="lec3"></a></p>
+<ol start="3" style="list-style-type: decimal">
+<li><a href="./slides/03-Modelling-slides.pdf">Lecture 3: Predictive modelling</a>, <a href="./slides/03-Modelling-handouts.pdf">Handouts</a></li>
+</ol>
 <!--
-
-<a id="lec3"></a> 
-
-3. [Lecture 3: Predictive modelling](./slides/03-Modelling-slides.pdf), [Handouts](./slides/03-Modelling-handouts.pdf) 
 
 <a id="lec4"></a> 
 
@@ -143,11 +143,13 @@
 </ol>
 <p><a id="lab2"></a></p>
 <ol start="2" style="list-style-type: decimal">
-<li><a href="https://github.com/ssamot/ce888/tree/master/labs/lab2">Lab 2: Creating plots, overleaf and confidence bounds</a> <!--
-
-<a id="lab3"></a>
-
-3. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab3) 
+<li><a href="https://github.com/ssamot/ce888/tree/master/labs/lab2">Lab 2: Creating plots, overleaf and confidence bounds</a></li>
+</ol>
+<p><a id="lab3"></a></p>
+<ol start="3" style="list-style-type: decimal">
+<li><a href="https://github.com/ssamot/ce888/tree/master/labs/lab3">Lab 3: Jupiter/IPython and Classification</a></li>
+</ol>
+<!--
 
 <a id="lab4"></a>
 
@@ -168,8 +170,7 @@
 <a id="lab8"></a>
 
 8. [Lab 8: IMDB and text data](https://github.com/ssamot/ce888/tree/master/labs/lab8) 
---></li>
-</ol>
+-->
 <h3 id="ides">IDEs</h3>
 <p>You can use whatever IDE you want for the course, however my proposal would be to use PyCharm - which is installed in the lab machines:</p>
 <ul>
@@ -177,9 +178,13 @@
 </ul>
 <h3 id="assessment">Assessment</h3>
 <p>The objective of the module and the main assignment is to produce a Data Science app (i.e. make use of data to generate results, make inferences, present the results to third parties) and write down the description of the methods and the results in a scientific paper. Some ideas for possible apps are provided <a href="#assignment-suggestions">here</a>.</p>
+<ul>
+<li>Assigments
+<ul>
+<li><a href="./assignments/ce888-assignment-1.pdf">Assignment 1</a></li>
+</ul></li>
+</ul>
 <!--
-* Assigments
-    * [Assignment 1](./assignments/ce888-assignment-1.pdf)
     * [Assignment 2](./assignments/ce888-assignment-2.pdf)
 -->
 <p>See FASER for exact assignment deadlines.</p>
@@ -193,17 +198,13 @@
 <p><a href="http://cds.cern.ch/record/526679/files/0412042312_TOC.pdf">Efron, Bradley, and Robert J. Tibshirani. An introduction to the bootstrap. CRC press, 1994.</a></p>
 <p><a href="http://www.haas.berkeley.edu/groups/online_marketing/facultyCV/papers/nelson_false-positive.pdf">Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. &quot;False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant.&quot; Psychological science 22.11 (2011): 1359-1366.</a></p>
 <p><a href="https://www.jstor.org/stable/2685796">Schenker, Nathaniel, and Jane F. Gentleman. &quot;On judging the significance of differences by examining the overlap between confidence intervals.&quot; The American Statistician 55.3 (2001): 182-186.</a></p>
+<p><strong>Lecture 3</strong></p>
+<p><a href="https://github.com/jakevdp/PythonDataScienceHandbook">Jake VanderPlas, Python Data Science Handbook Essential Tools for Working with Data 2016. O'Reilly Media, 2016</a></p>
+<p><a href="https://pdfs.semanticscholar.org/0be0/d781305750b37acb35fa187febd8db67bfcc.pdf">Kohavi, Ron. &quot;A study of cross-validation and bootstrap for accuracy estimation and model selection.&quot; IJCAI. Vol. 14. No. 2. 1995.</a></p>
+<p><a href="https://stuff.mit.edu/afs/athena.mit.edu/course/6/6.435/www/Geman92.pdf">Geman, Stuart, Elie Bienenstock, and René Doursat. &quot;Neural networks and the bias/variance dilemma.&quot; Neural computation 4.1 (1992): 1-58.</a></p>
+<p><a href="http://scikit-learn.org/">scikit-learn's website</a></p>
 <!--
 
-**Lecture 3** 
-
-[Jake VanderPlas, Python Data Science Handbook Essential Tools for Working with Data 2016. O'Reilly Media, 2016](https://github.com/jakevdp/PythonDataScienceHandbook)
-
-[Kohavi, Ron. "A study of cross-validation and bootstrap for accuracy estimation and model selection." IJCAI. Vol. 14. No. 2. 1995.](https://pdfs.semanticscholar.org/0be0/d781305750b37acb35fa187febd8db67bfcc.pdf)
-
-[Geman, Stuart, Elie Bienenstock, and René Doursat. "Neural networks and the bias/variance dilemma." Neural computation 4.1 (1992): 1-58.](https://stuff.mit.edu/afs/athena.mit.edu/course/6/6.435/www/Geman92.pdf)
-
-[scikit-learn's website](http://scikit-learn.org/)
 
 **Lecture 4**
 
@@ -262,7 +263,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <h1 id="assignments">Assignments</h1>
 <p>Below you will find a list of projects for CE888 - this is still a draft and I will refine the assignments as we get closer each coursework getting formally released.</p>
 <h3 id="rl-and-interpretability">RL and Interpretability</h3>
-<p>Modern Reinforcement Learning helps agents learn how to act using complex patterns of text, sound and video and it's slowly moving away from research and making inroads to traditional industries (e.g., creating game NPC characters). The high dimensionality of the input space makes it however very hard to interpret why an agent preferred one action over another. In this project we will try to transfer some novel methods from supervised learning to Reinforcement Learning in order to interpret why agents make certain decisions. We will use already existing Atari game playing agents and try to interpret their actions profile in real time, effectively &quot;seeing&quot; through the agent's eyes.</p>
+<p>Modern Reinforcement Learning helps agents learn how to act using complex patterns of text, sound and video and it's slowly moving away from research and making inroads to traditional industries (e.g., creating game NPC characters). The high dimensionality of the input space makes it very hard to interpret why an agent preferred one action over another. In this project we will try to transfer some novel methods from supervised learning to Reinforcement Learning in order to interpret why agents make certain decisions. We will use already existing Atari game playing agents and try to interpret their actions profile in real time, effectively &quot;seeing&quot; through the agent's eyes.</p>
 <p><strong>Target Journal/Conference:</strong> IEEE Transactions on Games</p>
 <p><strong>References:</strong></p>
 <ol style="list-style-type: decimal">
@@ -270,30 +271,44 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><a href="http://zacklipton.com/media/papers/mythos_model_interpretability_lipton2016.pdf">Lipton, Zachary C., et al. &quot;The Mythos of Model Interpretability.&quot; IEEE Spectrum (2016)</a></li>
 <li><a href="https://arxiv.org/pdf/1711.00138">Greydanus, Sam, et al. &quot;Visualizing and Understanding Atari Agents.&quot; arXiv preprint arXiv:1711.00138 (2017).</a></li>
 <li><a href="https://docs.opencv.org/3.3.1/d7/d8b/tutorial_py_lucas_kanade.html">OpenCV optical flow tutorial</a></li>
+<li><a href="https://github.com/marcotcr/lime">LIME</a></li>
 </ol>
 <p><strong>Data:</strong></p>
 <ol style="list-style-type: decimal">
-<li><a href="https://github.com/ppwwyyxx/tensorpack/tree/master/examples/OpenAIGym">Example Open AI gym Atari Controllers - look also in your VM</a></li>
-<li><a href="https://github.com/marcotcr/lime">LIME</a></li>
+<li><a href="https://github.com/ppwwyyxx/tensorpack/tree/master/examples/A3C-Gym">Example Open AI gym Atari Controllers - look also in your VM</a></li>
 </ol>
 <p><strong>Tasks</strong></p>
 <ol style="list-style-type: decimal">
-<li>Each Atari agent perceives the world through an concatenation of 4 frames and outputs an action. Run agents in at least 6 games, in as diverse states as possible. Collect at least 30,000 data instances per game and load them for further processing.<br />
+<li>Each Atari agent perceives the world through an concatenation of 4 frames and outputs an action. Run agents in at least 6 games, in as diverse states as possible. Collect at least 3,000 observation instances per game and their associated actions and load them for further processing. You will find the code that the agent actually runs here: <a href="https://github.com/ppwwyyxx/tensorpack/blob/master/examples/DeepQNetwork/common.py">common.py</a>. Note that <code>play_one_episode(env, func, render=False)</code> redefines predict using a random search - disable it. You should focus on <code>ob</code> and <code>act</code> variables inside the <code>while True:</code> loop. Also note that some helpful code is:</li>
+</ol>
+<pre class="{python}"><code>from PIL import Image
+
+stacker = np.empty((84, 0, 3),dtype=&quot;uint8&quot;)
+
+for it in range(4):
+    im = Image.fromarray(s[:, :, it*3:3*(it+1)])
+    q = np.asarray(im)
+    stacker = np.hstack((stacker, q))
+
+im = Image.fromarray(stacker)
+im.save(&quot;game_name-&quot; + str(t) + &quot;.png&quot;) # you need to define (t) somewhere so that you know which part of the game you are in. </code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Pass the observations to LIME and get an interpreted image/observation. Save the interpreted images.</li>
+<li>Calculate the optical flow between the first image in an observation and the last image.<br />
 </li>
-<li>Create a sample python programme that takes an instance, passes through the policy network and outputs an action.</li>
-<li>Find a useful high level image to pass to LIME (e.g. calculate the optical flow of the sequence of four actions and output a single image with the flow in it).</li>
 <li>Use one of the unsupervised learning algorithms from sci-kit learn to break down your data in various segments - are there clear clusters being formed? What is in each cluster?</li>
-<li>Create a video of agent actions.</li>
+<li>Create a video of interpreted agent actions and upload on youtube (optional)</li>
 </ol>
 <hr />
-<h3 id="genetic-programmingauto-ml-for-domain-adaptation">Genetic Programming/Auto-ML for Domain Adaptation</h3>
-<p>It is often the case that the source data is not the same as the target data; for example we only have labeled data examples from images of animals we took in artificial captivity conditions (<em>source data</em>), but we would like to classify animals in the wild (<em>target data</em>). We don't however know the labels of the target data, so we have to learn features that fail to discriminate between source and target distributions, but are good enough to actually learn the mapping between those distributions and their labels.</p>
-<p><strong>Target Journal/Conference:</strong> IEEE Transactions on Neural Networks and Learning Systems</p>
+<h3 id="evolutionary-strategies-for-domain-adaptation">Evolutionary Strategies for Domain Adaptation</h3>
+<p>It is often the case that the distribution of the source data is not the same as the target data; for example we only have labeled data examples from images of animals we took in artificial captivity conditions (<em>source data</em>), but we would like to classify animals in the wild (<em>target data</em>). We don't know the labels of the target data, so we have to learn features that fail to discriminate between source and target distributions, but are good enough to actually learn the mapping between those distributions and their labels.</p>
+<p><strong>Target Journal/Conference:</strong> IEEE Transactions on Evolutionary Computation</p>
 <p><strong>References:</strong></p>
 <ol style="list-style-type: decimal">
 <li><a href="http://proceedings.mlr.press/v37/ganin15.html">Ganin, Yaroslav, and Victor Lempitsky. &quot;Unsupervised domain adaptation by backpropagation.&quot; International Conference on Machine Learning. 2015.</a></li>
 <li><a href="http://zacklipton.com/media/papers/mythos_model_interpretability_lipton2016.pdf">Lipton, Zachary C., et al. &quot;The Mythos of Model Interpretability.&quot; IEEE Spectrum (2016)</a></li>
 <li><a href="https://arxiv.org/pdf/1711.00138">Greydanus, Sam, et al. &quot;Visualizing and Understanding Atari Agents.&quot; arXiv preprint arXiv:1711.00138 (2017).</a></li>
+<li><a href="https://github.com/ssamot/infoGA">InfoGA archive</a></li>
 </ol>
 <p><strong>Data:</strong></p>
 <ol style="list-style-type: decimal">
@@ -302,19 +317,21 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </ol>
 <p><strong>Tasks</strong></p>
 <ol style="list-style-type: decimal">
-<li>Download and load the above datasets in python, clearly separating the domain and source data.</li>
-<li>Use the TPOT classifier to learn good classifiers for all datasets.</li>
-<li>Change the scorer of the TPOT classifier to one that takes into account domain adaptation; a good classifier both succeeds in achieving good performance for the source domain, while the features learned fail to discriminate between between source and target domains. You will need to create a scoring function with signature <code>scorer(estimator, X, y)</code>. The estimator passed is an sklearn <code>Pipeline</code> object - you need to get everything but the last part of the pipeline to transform the target data as well.</li>
-<li>Evaluate your method in both datasets.</li>
+<li>Download and load the above datasets in python, clearly separating the domain and source data - write down what you observe.</li>
+<li>Create a neural network that takes as input the data provided and outputs a set of features - use RELU units.</li>
+<li>Use the outputs of the random neural network to train a Random Forest.</li>
+<li>Start an evolutionary process using SNES, adapting the weights of the neural network. The score of your classifier should take into account domain adaptation; a good classifier both succeeds in achieving good performance for the source domain, while the features learned fail to discriminate between source and target domains. The score that you give back to SNES should should thus be a weighted sum between how bad a random forest fails to discriminate between source and target, while at the same time how well it does to discriminate between the different classes.</li>
+<li>Plot the loss you get at each generation and evaluate your method in both datasets.</li>
 </ol>
 <hr />
 <h3 id="genetic-programmingauto-ml-for-one-shot-learning">Genetic Programming/Auto-ML for One-Shot Learning</h3>
-<p>One of the issues of most ML algorithms is the need for copious amounts of data - neural networks are notorious for that. It might be possible to transform our data in a way that algorithms that algorithms can use a very limited number of examples and still perform well. A possible method for doing this is transforming classification/regression tasks to metric learning tasks, i.e. how far away is a new data instance from ones observed already.</p>
+<p>One of the issues of most ML algorithms is the need for copious amounts of data - neural networks are notorious for that. It might be possible to transform our data in a way that algorithms can use a very limited number of examples and still perform well. A possible method for doing this is transforming classification/regression tasks to metric learning tasks, i.e. how far away is a new data instance from ones observed already.</p>
 <p><strong>Target Journal/Conference:</strong> IEEE Transactions on Neural Networks and Learning Systems</p>
 <p><strong>References:</strong></p>
 <ol style="list-style-type: decimal">
 <li><a href="https://sorenbouma.github.io/blog/oneshot/">One Shot Learning and Siamese Networks in Keras</a></li>
 <li><a href="https://staff.fnwi.uva.nl/t.e.j.mensink/zsl2016/zslpubs/lake15science.pdf">Lake, Brenden M., Ruslan Salakhutdinov, and Joshua B. Tenenbaum. &quot;Human-level concept learning through probabilistic program induction.&quot; Science 350.6266 (2015): 1332-1338.</a></li>
+<li><a href="https://github.com/EpistasisLab/tpot">TPOT</a></li>
 </ol>
 <p><strong>Data:</strong></p>
 <ol style="list-style-type: decimal">
@@ -322,14 +339,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </ol>
 <p><strong>Tasks:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Download and load the above datasets in python, clearly separating the training and the test data. Generate image combinations (same /different) according the blog post above (reference 2)</li>
-<li>Use the TPOT classifier to learn the metric - as a common classification with probabilities task.</li>
-<li>Change the scorer of the TPOT classifier; a good scorer both succeeds in achieving good performance for the original task, while the features learned fail to discriminate between between source and target domain. You will need to create a scoring function with signature <code>scorer(estimator, X, y)</code>. The estimator passed is an sklearn Pipeline object - manipulate it to get any. Re-run TPOT with your new scorer and record the results.</li>
-<li>Try to use methods for upsampling/downsampling to capture the the fact that your dataset is now imbalanced - incorporate them within TPOT's pipeline if you can.</li>
+<li>Download and load the omniglot dataset, clearly separating the training and the test data. Generate image combinations (same/different) according the blog post above (reference 2).</li>
+<li>Use TPOT to learn a classifier/regressor based on Random Forests that tries to differentiate between objects being in the same or different class.</li>
+<li>Use the classifier as a metric function for a scikit-learn <code>sklearn.neighbors.KNeighborsClassifier</code> with a custom metric function that is based on the classifier/regressor learned above.</li>
+<li>Revisit the TPOT regressor/classifier by adding <code>class_weight</code> as <code>balanced</code> or <code>balanced_subsample</code> in the parameters of the classifier/regressor.</li>
 </ol>
 <hr />
 <h3 id="continual-learning-using-auto-encoders">Continual Learning using auto-encoders</h3>
-<p>One of the most important unsolved issues in Machine Learning is learning concepts incrementally. For this project we will try</p>
+<p>One of the most important unsolved issues in Machine Learning is learning concepts incrementally. For this project we will try a novel idea of creating auto-encoders to detect if there has been a change in the setting we find ourselves in.</p>
 <p><strong>Target Journal/Conference:</strong> IEEE Transactions on Neural Networks and Learning Systems</p>
 <p><strong>References:</strong></p>
 <ol style="list-style-type: decimal">
@@ -349,7 +366,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>Send data in batches and pick the auto-encoder with the lowest error - train the autoencoder and the associated classifier with that batch.</li>
 <li>Evaluate the setup in all tasks.</li>
 <li>Redo the above experiment with an increased amount of autoencoders (<span class="math inline"><em>n</em> + 1</span>).</li>
-<li>Create new autoencoders on the fly if the error is too high.</li>
+<li>Create new autoencoders on the fly if all the the already instantiated autoencoders errors are too high.</li>
 </ol>
 <hr />
 <hr />

@@ -1,12 +1,17 @@
 % Predictive Modelling 
 % Spyros Samothrakis \
-  Research Fellow, IADS \
+  Lecturer/Assistant Director@IADS \
   University of Essex 
-% January 24, 2017
+% January 29, 2018
 
 
 
 # About
+
+## Optimal Projects
+
+* Let's have a look at some projects I consider superb
+* Could potentially guide your work
 
 ## Predictive Modelling
 
@@ -149,7 +154,7 @@ X_df.head()
 * Otherwise it is just views on the same data
 	* You will modify everything
 
-* Not the double "[[column1, column2...]]" notation
+* Note the double "[[column1, column2...]]" notation
 	* If you just use [column1] you get back a Series, not a DataFrame
 * We used the LabelEncoder to encode the labels
 	* but how about decoding?
@@ -376,7 +381,7 @@ Random Forest: 0.0107 ((bias^2) + (var)) = 0.0099 (bias^2) + 0.0008 (var)
 
 \normalfont
 
-* The procedure for using the bootstrap to find better values for model is called "Bagging"
+* The procedure for using the bootstrap to find better values for a model is called "Bagging"
 	* Mostly minimises the variance
 	* Very commonly used trick
 

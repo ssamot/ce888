@@ -416,7 +416,7 @@ pnew = np.array([0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0])
 ## Permutation tests (3)
 
 * If you do this for 19,000 permutations you get $p-value = 0.032$
-* Hence we can conclude 5 out of a 100 times you will get a higher difference in means
+* Hence we can conclude 3 out of a 100 times you will get a higher difference in means
 * Find out if this number is smaller than than $\alpha = 0.05$
 * If yes, you can reject the $H_0$ (which it is)
 
