@@ -25,16 +25,19 @@ Lectures take place on **Monday 14:00-16:00 at Room NTC.2.04**.
 
 3. [Lecture 3: Predictive modelling](./slides/03-Modelling-slides.pdf), [Handouts](./slides/03-Modelling-handouts.pdf) 
 
+<a id="lec4"></a> 
+
+4. [Lecture 4: Recommender systems](./slides/04-Recommender-slides.pdf), [Handouts](./slides/04-Recommender-handouts.pdf) 
+
+
+
 
 <!--
-
-<a id="lec4"></a> 
 
 4. [Lecture 4: Bandits](./slides/04-Bandits-slides.pdf), [Handouts](./slides/04-Bandits-handouts.pdf) 
 
 <a id="lec5"></a> 
 
-5. [Lecture 5: Recommender systems](./slides/05-Recommender-slides.pdf), [Handouts](./slides/05-Recommender-handouts.pdf) 
 
 <a id="lec6"></a> 
 
@@ -82,17 +85,21 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 3. [Lab 3: Jupiter/IPython and Classification](https://github.com/ssamot/ce888/tree/master/labs/lab3) 
 
+<a id="lab4"></a>
+
+4. [Lab 4: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab4_new) 
+
+
+
 <!--
 
-<a id="lab4"></a>
+<a id="lab6"></a>
 
 4. [Lab 4: Bandits and time series plotting](https://github.com/ssamot/ce888/tree/master/labs/lab4) 
 
 <a id="lab5"></a>
 
-5. [Lab 5: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab5) 
 
-<a id="lab6"></a>
 
 6. [Lab 6: Clustering and visualisation](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
 
@@ -160,6 +167,14 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 [scikit-learn's website](http://scikit-learn.org/)
 
+**Lecture 4**
+
+[Simon Funk, Netflix Update: Try This at Home](http://sifter.org/~simon/journal/20061211.html)
+
+[Barkan, Oren, and Noam Koenigstein. "Item2vec: neural item embedding for collaborative filtering." Machine Learning for Signal Processing (MLSP), 2016 IEEE 26th International Workshop on. IEEE, 2016.](https://arxiv.org/pdf/1603.04259.pdf)
+
+[Hu, Yifan, Yehuda Koren, and Chris Volinsky. "Collaborative filtering for implicit feedback datasets." Data Mining, 2008. ICDM'08. Eighth IEEE International Conference on. Ieee, 2008.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.167.5120&rep=rep1&type=pdf)
+
 <!--
 
 
@@ -171,13 +186,7 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 [Osband, Ian, et al. "Deep exploration via bootstrapped DQN." Advances In Neural Information Processing Systems. 2016.](http://papers.nips.cc/paper/6500-deep-exploration-via-bootstrapped-dqn.pdf)
 
-**Lecture 5**
 
-[Simon Funk, Netflix Update: Try This at Home](http://sifter.org/~simon/journal/20061211.html)
-
-[Barkan, Oren, and Noam Koenigstein. "Item2vec: neural item embedding for collaborative filtering." Machine Learning for Signal Processing (MLSP), 2016 IEEE 26th International Workshop on. IEEE, 2016.](https://arxiv.org/pdf/1603.04259.pdf)
-
-[Hu, Yifan, Yehuda Koren, and Chris Volinsky. "Collaborative filtering for implicit feedback datasets." Data Mining, 2008. ICDM'08. Eighth IEEE International Conference on. Ieee, 2008.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.167.5120&rep=rep1&type=pdf)
 
 **Lecture 6**
 

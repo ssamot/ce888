@@ -1,8 +1,8 @@
 % Recommender Systems 
 % Spyros Samothrakis \
-  Research Fellow, IADS \
+  Lecturer/Assistant Director@IADS \
   University of Essex 
-% February 14, 2017
+% February 5, 2017
 
 
 
@@ -524,6 +524,7 @@ def train(user_id, item_id, rating,alpha = 0.0001,
 
 
 ## No negative feedback regimes
+
 
 * Not clicking is not negative feedback
 * Create a preference matrix - 1 if user has clicked, 0 if she hasn't
