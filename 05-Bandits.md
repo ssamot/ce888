@@ -1,8 +1,8 @@
 % Bandits 
 % Spyros Samothrakis \
-  Research Fellow, IADS \
+  Lecturer/Assistant Director@IADS \
   University of Essex 
-% February 7, 2017
+% February 12, 2018
 
 
 
@@ -331,7 +331,7 @@ $\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \frac{\overbrace{\mathrm{v_t} - \hat{Q}_{
 
 
 
-$\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \frac{1 }{t} \overbrace{\mathrm{v_t} - \hat{Q}_{t-1}(s,a)}^{\textbf{Error}}$
+$\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \frac{1 }{t} \overbrace{[\mathrm{v_t} - \hat{Q}_{t-1}(s,a)}^{\textbf{Error}}$
 $\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \alpha \left[\mathrm{v_t} - \hat{Q}_{t-1}(s,a)\right]$
 
 
@@ -339,7 +339,6 @@ $\hat{Q}_t(s,a) = \hat{Q}_{t-1}(s,a) + \alpha \left[\mathrm{v_t} - \hat{Q}_{t-1}
 
 Oza, Nikunj C., and Stuart Russell "Online bagging and boosting." Systems, man and cybernetics, 2005 IEEE international conference on. Vol. 3. IEEE, 2005.
 
-* We will implement this in the labs
 
 # The adversarial case
 

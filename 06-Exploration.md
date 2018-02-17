@@ -1,8 +1,9 @@
-% Data exploration 
+% Bandits 
 % Spyros Samothrakis \
-  Research Fellow, IADS \
+  Lecturer/Assistant Director@IADS \
   University of Essex 
-% February 21, 2017
+% February 19, 2018
+
 
 
 
@@ -36,6 +37,24 @@
 "If intelligence was a cake, unsupervised learning would be the cake, supervised learning would be the icing on the cake, and reinforcement learning would be the cherry on the cake. We know how to make the icing and the cherry, but we don’t know how to make the cake."
 
 -- Yann LeCun
+
+
+## Data Science Operations
+
+
+* Descriptive
+    * "I'll create high level views of your data"
+    * What is sometimes termed analytics
+* Predictive
+    * "I'll try to predict a possible version of your future". 
+    * Show me a some good customers in your database, I'll try getting you more
+* Prescriptive
+    * "What should I do to achieve certain results?"
+    * Reinforcement Learning and Causality
+
+\footnotetext[1]{Chris Wiggins. "Lectures delivered Aug 8-9, 2016 at MLSS.cc (Arequipa, Peru)".  \\ \tiny{\url{https://www.slideshare.net/chrishwiggins/machine-learning-summer-school-2016/75}}}
+
+
 
 ## Types of learning (again)
 

@@ -29,19 +29,15 @@ Lectures take place on **Monday 14:00-16:00 at Room NTC.2.04**.
 
 4. [Lecture 4: Recommender systems](./slides/04-Recommender-slides.pdf), [Handouts](./slides/04-Recommender-handouts.pdf) 
 
-
-
-
-<!--
-
-4. [Lecture 4: Bandits](./slides/04-Bandits-slides.pdf), [Handouts](./slides/04-Bandits-handouts.pdf) 
-
 <a id="lec5"></a> 
 
+5. [Lecture 5: Bandits](./slides/05-Bandits-slides.pdf), [Handouts](./slides/05-Bandits-handouts.pdf) 
 
 <a id="lec6"></a> 
 
 6. [Lecture 6: Data exploration](./slides/06-Exploration-slides.pdf), [Handouts](./slides/06-Exploration-handouts.pdf) 
+
+<!--
 
 <a id="lec7"></a> 
 
@@ -60,6 +56,8 @@ Lectures take place on **Monday 14:00-16:00 at Room NTC.2.04**.
 10. [Lecture 10: Discussion](./slides/10-Discussion-slides.pdf), [Handouts](./slides/10-Discussion-handouts.pdf) 
 
 -->
+
+
 
 ### Labs
 Labs are every **Tuesday 12:00-15:00, CES Lab 6,7**. Labs are assessed and they should be completed either in class or later on. 
@@ -87,21 +85,28 @@ All labs can be found here: [https://github.com/ssamot/ce888/tree/master/labs/](
 
 <a id="lab4"></a>
 
-4. [Lab 4: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab4_new) 
+4. [Lab 4 and 5: Recommender systems and jokes](https://github.com/ssamot/ce888/tree/master/labs/lab4_new) 
 
 
 
-<!--
 
-<a id="lab6"></a>
+
+<!-- <a id="lab6"></a>
 
 4. [Lab 4: Bandits and time series plotting](https://github.com/ssamot/ce888/tree/master/labs/lab4) 
 
-<a id="lab5"></a>
+ -->
+
+<a id="lab6"></a>
+
+
+
 
 
 
 6. [Lab 6: Clustering and visualisation](https://github.com/ssamot/ce888/tree/master/labs/lab6) 
+
+<!--
 
 <a id="lab7"></a>
 
@@ -175,7 +180,7 @@ Every lecture will come with a set of online reading suggestions - they will be 
 
 [Hu, Yifan, Yehuda Koren, and Chris Volinsky. "Collaborative filtering for implicit feedback datasets." Data Mining, 2008. ICDM'08. Eighth IEEE International Conference on. Ieee, 2008.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.167.5120&rep=rep1&type=pdf)
 
-<!--
+
 
 
 **Lecture 4**
@@ -193,6 +198,8 @@ Every lecture will come with a set of online reading suggestions - they will be 
 [Rousseeuw, Peter J. "Silhouettes: a graphical aid to the interpretation and validation of cluster analysis." Journal of computational and applied mathematics 20 (1987): 53-65.](http://www.sciencedirect.com/science/article/pii/0377042787901257)
 
 [Arthur, David, and Sergei Vassilvitskii. "k-means++: The advantages of careful seeding." Proceedings of the eighteenth annual ACM-SIAM symposium on Discrete algorithms. Society for Industrial and Applied Mathematics, 2007.](http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf)
+
+<!--
 
 **Lecture 7**
 

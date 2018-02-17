@@ -18,7 +18,7 @@
 
 ## Ipython notebooks
 
-* Inside `lab5` you will see de.ipynb
+* Inside `lab6` you will see de.ipynb
 
 * Create a new Ipython notebook by copying de.ipynb
 

@@ -45,8 +45,8 @@ im.save("game_name-" + str(t) + ".png") # you need to define (t) somewhere so th
 ~~~
 
 
-3. Pass the observations to LIME and get an interpreted image/observation. Save the interpreted images. 
-4. Calculate the optical flow between the first image in an observation and the last image.  
+2. Pass the observations to LIME and get an interpreted image/observation. Save the interpreted images. 
+3. Calculate the optical flow between the first image in an observation and the last image.  
 4. Use one of the unsupervised learning algorithms from sci-kit learn to break down your data in various segments - are there clear clusters being formed? What is in each cluster? 
 5. Create a video of interpreted agent actions and upload on youtube (optional)
 

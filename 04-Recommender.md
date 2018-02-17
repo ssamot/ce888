@@ -2,7 +2,7 @@
 % Spyros Samothrakis \
   Lecturer/Assistant Director@IADS \
   University of Essex 
-% February 5, 2017
+% February 5, 2018
 
 
 
@@ -245,7 +245,7 @@ $rating[0][0] \gets 1.705*2.713 + 0.486*1.266 \approx 5.2$, not $6$, but close!
 ## How about adding known factors/features? 
 
 * Until now we only had latent factors
-* But latent factors arise only when you actually have some a good number of $<user, item, ratings> pairs for a user
+* But latent factors arise only when you actually have a good number of $<user, item, ratings>$ triplets for a user
     * What if the user just joined the website?
 * What if you don't have any?
     * Or what if you have further observations about a user
@@ -443,7 +443,7 @@ test = merged_df[merged.isnull().any(axis=1)]
 * Penalty strong for latent features
 * But could be the other way around
 
-* Weight decays / $l_2$ regulariser
+* Weight decay / $l_2$ regulariser
     * $w_i = w_i - \alpha  (y_p - y)   ( \phi_i + \lambda w_i)$
 
 
@@ -507,13 +507,14 @@ def train(user_id, item_id, rating,alpha = 0.0001,
 * Cross-validation again!
 * We have used all the data in our examples
     * Is this correct? 
+    * We have also evaluated the system using MSE - this is not entirely correct either
 * What would be the proper way of evaluating the system? 
 
 # Implicit feedback
 
 ## Implicit feedback
 
-* How about cases where you 
+
 * When you are recommending books or food user preferences user likes/dislikes something
 * How about if you are recommending
     * News?
@@ -537,9 +538,19 @@ def train(user_id, item_id, rating,alpha = 0.0001,
 * You can personalise the above scenario even further
 * Send the user some random examples (e.g. news)
     * With let's say $0.2$ probability
-* Seems familiar?
-* Obviously better solutions than $\epsilon$-greedy
+* Next week more on this...
 
+
+## Metrics
+
+* Serendipity
+    * Our predictions might not be surprising - you don't just need present the user with new items, but also with items that are sufficiently different than rated
+* Coverage 
+    * Some items are not bought often - they should be recommended as well
+* We have measured MSE, but ultimately this is a ranking problem
+    * We can use ranking metrics, e.g. Mean Average Precision
+* Diversity
+    * Some items are way too similar to each other - should they be presented to the user?
 
 # Conclusion
 ## Conclusion
